@@ -1,0 +1,15 @@
+
+\subsection{Chapter 2}
+ Chapter 2\\\
+ 
+ Lets consider following equation:
+ \begin{equation}
+S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t
+\end{equation}
+ Stock price is strict local martingale if and only if \\
+\begin{equation}
+\int_\alpha^\infty \frac{x}{\sigma\left(x\right)}dx < \infty  for all \alpha >0
+\end{equation} 
+According to Jarrow, Protter show that there are three types of asset price bubbles, from those three, two types of bubbles exist only in infinite horizon economies and the third which is called type 3 bubbles which exits in finite horizon economy. Type 3 bubbles are realted to martingales. When we have price process under a risk neutral measure strict local martingale, then there will be bubble in asset price. It is also depend on asymptotic behavior of the asset's price volatility. If the asset's price volatility is large enough, then a bubble exits. Type 3 bubbles exist if and only if integral is finite. Before we can evaluate the integrals, we would need volatility function (sigma). \\\\
+There are many estimators used to estimate volatility function. We will study floren Zmirou in this chapter and Smooth kernal estimators. Floren Zmirou propose a nonparametric estimator based on the local time of the diffusion process. This method will only can estimate volatility on visited points by the process. We can not know the tail of volatility function. Therefore we can not check if the integral is finite or infinite. 
+ 

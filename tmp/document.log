@@ -1,0 +1,956 @@
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  12 NOV 2013 20:27
+entering extended mode
+ restricted \write18 enabled.
+ Source specials enabled.
+ %&-line parsing enabled.
+**document.tex
+(./document.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, dumylang, nohyphenation, ge
+rman-x-2009-06-19, ngerman-x-2009-06-19, ancientgreek, ibycus, arabic, armenian
+, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutch, u
+kenglish, usenglishmax, esperanto, estonian, farsi, finnish, french, galician, 
+german, ngerman, swissgerman, monogreek, greek, hungarian, icelandic, assamese,
+ bengali, gujarati, hindi, kannada, malayalam, marathi, oriya, panjabi, tamil, 
+telugu, indonesian, interlingua, irish, italian, kurmanji, lao, latin, latvian,
+ lithuanian, mongolian, mongolianlmc, bokmal, nynorsk, polish, portuguese, roma
+nian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turkish,
+ turkmen, ukrainian, uppersorbian, welsh, loaded.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@section=\count80
+\c@subsection=\count81
+\c@subsubsection=\count82
+\c@paragraph=\count83
+\c@subparagraph=\count84
+\c@figure=\count85
+\c@table=\count86
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./document.aux
+
+LaTeX Warning: Label `eqnModelling2-1' multiply defined.
+
+
+LaTeX Warning: Label `eqnModelling4-1' multiply defined.
+
+)
+\openout1 = `document.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 5.
+LaTeX Font Info:    ... okay on input line 5.
+ (./Abstract.tex) (./introduction.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 6.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 6.
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+) (./Def.tex
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \subsection{Asset Price Bubbles}\\\\
+                                        
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4  T
+      he difference between the market and fundamental price, if any, is a p...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+[1
+
+{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7  T
+      he strike price or exercise price of an option is the fixed price at w...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 7--8
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 R
+      ate at which the price of security moves up and down.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--16
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 G
+      iven a probability space $\left( \Omega, \mathcal{F}, P \right) $, a s...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 A
+       differential equation with one or more terms is a stochastic process.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.28 C
+      onsider the linear SDE with a Brownian Motion $\left\lbrace S_t: 0\leq...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[2]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 36.
+ (/usr/local/texlive/2010/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.41 ...on{The Price Asset Model using an SDE}\\\\
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \subsection
+                {Brownian Motion}\\\\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \subsection{Brownian Motion}\\\\
+                                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 A
+       continuous-time stochastic process $\left\lbrace S_{t}: 0\leq t\leq T...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \subsection{Supermartingale}\\\\
+                                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.71 T
+      he stochastic process $S = \displaystyle{\left\lbrace S_n \right\rbrac...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.77  \subsection{Local Martingale}\\\\
+                                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.78 I
+      f $\left\lbrace S_n \right\rbrace$ is adapted to the filtration $\left...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (3.8368pt too wide) in paragraph at lines 78--83
+[]\OT1/cmr/m/n/10 If $[]$ is adapted to the fil-tra-tion $[]$, for all $0 \OMS/
+cmsy/m/n/10 ^^T \OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^T 1$\OT1/cmr/m/n/10 , the
+n $[]$
+ []
+
+[3]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.86  A
+        strict local martingale is a non-negative local martingale.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.89  I
+       f for any strict local martingale $$\left\lbrace S_t : 0 \leq t \leq ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (23.76118pt too wide) in paragraph at lines 89--92
+\OT1/cmr/m/n/10 with $\OML/cmm/m/it/10 E [] < \OMS/cmsy/m/n/10 1$ \OT1/cmr/m/n/
+10 is also a su-per-martin-gale and $\OML/cmm/m/it/10 E [] \OT1/cmr/m/n/10 = \O
+ML/cmm/m/it/10 E []$\OT1/cmr/m/n/10 , then $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.98 ...tion{Relating Martingales and Bubbles}\\\\
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99 \subsection
+                {theorem}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[4]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.124 ...at is the Florens-Zimirou Estimator?}\\\\
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.125 T
+       his estimator is a non-parametric estimator based on the local time o...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 \subsection{Random Variable }\\\\
+                                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 R
+       andom Variable is a variable whose value is subject to variations due...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 129--130
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--133
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 136--139
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.140 \subsection{Hilbert Space}\\\\
+                                    
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 142--143
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.144 ...ion{Reproducing Kernal Hilbert Space}\\\\
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.145 $
+       k(  )$ is a reproducing kernal of hilbert space \\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--148
+
+ []
+
+[5]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.150  $
+        k : \mathcal{X} X \mathcal{X} \rightarrow \mathcal{R}$ is a kernal i...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--152
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 155--156
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--161
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 157--161
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.162     T
+           he RKHS $H(D)$ has one and only one reproducing kernal $Q(x,x')$\\\\
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 162--163
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.164     $
+           Q(x,x')$ is symmetric  means $ Q(x,x') = Q(x',x)$\\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 164--166
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.167   S
+         mall changed in input to the expression will make small changes in ...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--168
+
+ []
+
+[6]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.169    S
+          mall changes in input to the expression will make large changes in...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.170    \subsection{Beta Function}\\\\
+                                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.171    $
+          B(x,y) = \int_0^1 {t^{x-1}}{(1-t)^{y-1}}dt$\\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--173
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.173 ...ion{Gaussian Hypergeometric function}\\\\
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.174    f
+          or $|z| <1 $\\
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--177
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 178--179
+
+ []
+
+[7]
+Underfull \hbox (badness 10000) in paragraph at lines 201--202
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--209
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 215--216
+
+ []
+
+) (./SDE.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+
+ []
+
+[8]
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 G
+      iven a probability space $\left( \Omega, \mathcal{F}, P \right) $, a s...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 43--44
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.45 A
+       differential equation with one or more terms is a stochastic process.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[9]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 90.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 90.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 90.
+ [10]
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+Missing character: There is no â in font cmbx10!
+Missing character: There is no € in font cmbx10!
+Missing character: There is no ¢ in font cmbx10!
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--113
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--124
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--124
+
+ []
+
+[11]) (./Estimators.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--4
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 12--15
+
+ []
+
+[12]) [13] (./document.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 274 strings out of 493747
+ 3113 string characters out of 3143546
+ 56070 words of memory out of 3000000
+ 3622 multiletter control sequences out of 15000+200000
+ 8549 words of font info for 30 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 23i,14n,20p,734b,173s stack positions out of 5000i,500n,10000p,200000b,50000s
+</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
+</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
+usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
+ocal/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
+al/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
+/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/tex
+live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texliv
+e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2
+010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2010
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2010/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2010/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2010/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on document.pdf (13 pages, 239994 bytes).
+PDF statistics:
+ 123 PDF objects out of 1000 (max. 8388607)
+ 88 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

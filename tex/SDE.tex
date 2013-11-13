@@ -1,0 +1,160 @@
+
+\subsection{Chapter 1}
+ Chapter 1\\\\
+ In this chapter, we will focus on numerical solution of stochastic differential equations (SDE). It will give us better understanding toward the theory behind SDE. SDE are used in various areas like biology, chemistry, economics and of course finance. We will also study Brownian motion and compute Brownian paths with different methods. Euler -Maruyama method, strong and weak convergence , milstein method are being used to show solutions of SDE. \\
+ Now let's start with finance knowledge, Suppose the market price of an asset increases significantly.  How can one determine if the market price is inflated
+above the actual price of an asset? This price behavior is know as a bubble.\\
+To model price bubbles, we want to consider the following:
+\begin{itemize}
+\item What is an asset price bubble?
+\item How does one determine if an asset price is experiencing a bubble?
+\item Can one detect an asset price bubble in \textit{real-time}?
+\end{itemize}
+Lets's consider finance definations :\\
+\begin{itemize}
+\item Market Price - The current price of an asset.
+\item Fundamental Price - The actual value of an asset based on an underlying perception of its \textit{true value}.
+\item Risk - Variance of return on an asset 
+\item Portfolio - Set of Assets.
+
+\item Asset Bubble- The difference between the market and fundamental price, if any, is a price bubble.
+ 
+ \item Strike price -The strike price or exercise price of an option is the fixed price at which the owner of the option can buy( in the case of call) or sell (in the case of a put) the underlying security or commodity.
+
+\item Volatility-Rate at which the price of security moves up and down.
+\end{itemize} 
+\begin{itemize}
+\item Probability Space ($\Omega,\mathcal{F},P$) where $\Omega$ is a set ( sample space), $\mathcal{F}$ is a sigma
+algebra of subsets (events) of $\Omega$, and $P$ is a Probability Measure.
+\item Random Variable - Measurable functions of real analysis.
+$X:\Omega\rightarrow \mathcal{R}$ map $X : (\Omega,\mathcal{F})\mapsto (\mathcal{R}, \mathcal{B})$ and $X$ is random variable if \\
+$X^{-1}(A) \epsilon \mathcal{F}, \forall A \epsilon\mathcal{B})$,\\
+where $X^{-1}(A):={\omega \epsilon \Omega\mid X(\omega) \epsilon A}$
+\end{itemize} 
+\subsection{Introduction to Stochastic Differential Equations}
+We treat the asset price as a stochastic process:\\\\
+\subsection{Stochastic Process}\\
+Given a probability space $\left( \Omega, \mathcal{F}, P \right) $, a stochastic process with state space X is a
+collection of X-valued random variables, $S_t$, on $\Omega$ indexed by a set $T$ (e.g. time).
+\begin{equation}\label{eqnModelling2-1}
+S = \left\lbrace S_t : t\in T \right\rbrace 
+\end{equation}
+
+One can think of $S_t$ as a asset price at time $t$.\\\\
+\subsection{Stochastic Differential Equation}\\
+A differential equation with one or more terms is a stochastic process.
+
+
+The Price Asset Model using an SDE\\
+Consider the linear SDE with a Brownian Motion $\left\lbrace S_t: 0\leq t\leq T\right\rbrace$:
+\begin{equation}\label{eqnModelling4-1}
+\begin{array}{rcl}
+dS_t &=& \sigma(S_t)dW_t+\mu(S_t)dt\\
+S_0 &=& 0
+\end{array}
+\end{equation}
+\begin{itemize}
+\item $W_{t}$ denotes the standard Brownian Motion.
+\item $\mu(S_{t})$ called the drift coefficient.
+\item $\sigma(S_{t})$ called the volatility coefficient.
+\end{itemize}
+%%%%%Modelling Page 3%%%%
+\subsection{The Price Asset Model using an SDE}
+Brownian Motion
+A continuous-time stochastic process $\left\lbrace S_{t}: 0\leq t\leq T\right\rbrace$ is called a \textit{Standard
+Brownian Motion} on $ \left[ 0, T\right]$ if it has the following four properties:
+\begin{itemize}
+\item[(i)]$S_{0} =0$
+\item[(ii)] The increment of $S_{t}$ are independent; given $$0\leq t_{1}< t_{2}< t_{3}<\cdots<t_{n}\leq T$$ the random
+variables $\left( S_{t_{2}} -S_{t_{1}}\right)$, $\left(S_{t_{3}} -S_{t_{2}} \right)$, $\cdots$, $\left( S_{t_{n}}
+-S_{t_{n-1}}\right)$  are independent.
+\item[(iii)]$\left( S_{t} -S_{s}\right)$, $0\leq s\leq t\leq T$ has the Gaussian distribution with mean zero and
+variance $\left( t-s \right) $
+\item[(iv)]$S_{t}(W)$ is a continuous function of $t$, where $W \in \Omega$.
+\end{itemize} 
+
+
+%%%%%Modelling Page 5%%%%
+\subsection{The Price Asset Model using an SDE}
+For $t \in [0,T]$, $(\ref{eqnModelling4-1})$ can be represented in an integral form in the following way:
+\begin{eqnarray*}
+dS_t &=& \sigma(t)dW_t+\mu(t)dt\\
+\int_0^t dS_t &=& \int_0^t \sigma \left(S_t\right)dW_t+\int_0^t \underbrace{\mu\left(S_t\right)}_{\in
+\mathcal{R}^+}dt\\
+S_t - S_0   &=& \int_0^t \sigma\left(S_t\right)dW_t+ \left( \underbrace{\mu\left(S_t\right) \cdot t}_{ x_0} -
+\mu\left(S_t \right) \cdot 0\right) \\
+S_t &=& x_0 + \int_0^t \sigma\left(S_t\right)dW_t
+\end{eqnarray*} 
+
+%%%%%Modelling Page 6%%%%
+\subsection{What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
+The price model is
+\begin{equation}\label{eqnModelling6-1}
+S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t
+\end{equation}
+
+%%%%%Modelling Page 7%%%%
+\subsection{ What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
+
+\begin{equation}
+\begin{array}{rcl}
+dS_t &=& \mu(S_t)dt+\sigma(S_t)dW_t\\
+S_0 \in \mathcal{R}
+\end{array}
+\end{equation}
+\subsection{The Euler-Maruyama Method}
+Equation (4) can be written into integral form as:\\
+\begin{equation}
+\begin{array}{rcl}
+S_t =S_0+ \int_0^t f\left(S_s\right)ds +\int_0^t g\left(S_s\right)dW(s),      t\in [0,T]\\
+\end{array}
+\end{equation}
+f, g are scaler function with $S_0 = x_0$\textbf{•} random variable\\
+$$\begin{cases}
+dS_t = \mu(S_t)dt+\sigma(S_t)dW_t\\
+S(0) = S_0
+\end{cases}$$
+ Using Euler Maruyama method:\\
+ $w_0 = S_0$\\\\
+ $w_{i+1} = w_i+a(t_i,w_i) \bigtriangleup t_{i+1}+b(t_i,w_i)\bigtriangleup W_{i+1}$\\\\
+ $w_{i+1} = w_i+\mu w_i \bigtriangleup t_i+\sigma w_i\bigtriangleup W_i$\\\\
+ $\bigtriangleup t_{i+1} = t_{i+1}-t_i$\\\\
+ $\bigtriangleup W_{i+1} = W(t_{i+1}-W(t_i)$\\
+Now drift coefficient $\mu$ and diffusion coefficient $\sigma$ are constants, the SDE has an exact solution:
+\begin{equation}\label{eqnModelling7-2}
+S(t) = S_0 \cdot Exp \left( \left( \mu - \frac{1}{2} \sigma^2 \right)t + \sigma W(t) \right) 
+\end{equation} 
+
+%%%%%Modelling Page 9%%%%
+\subsection{ What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
+\begin{equation}
+S(t) = S_0 \cdot Exp \left( \left( \mu - \frac{1}{2} \sigma^2 \right)t + \sigma W(t) \right) 
+\end{equation} 
+For an example, we use the Euler-Maruyama Approximation Method on the SDE where the constants $\mu = 2$, $\sigma = 1$,
+and $S_0 = 1$ are given.
+
+
+\subsection{ What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
+\begin{equation}
+S(t) = S_0 \cdot Exp \left( \left( \mu - \frac{1}{2} \sigma^2 \right)t + \sigma W(t) \right) 
+\end{equation} 
+\begin{figure}[h!]
+  \caption{Euler-Maruyama Approximation}
+  \centering
+
+\end{figure}
+
+\subsection{What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
+\begin{equation}
+S(t) = S_0 \cdot Exp \left( \left( \mu - \frac{1}{2} \sigma^2 \right)t + \sigma W(t) \right) 
+\end{equation} 
+Earlier we stated the price model is
+\begin{equation}
+S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t
+\end{equation}
+
+There are other methods such as Strong and weak convergence of the Euler Muruyama method, Milstein's Higher Order Method, Linear Stability and Stochastic Chain Rule are also used for numerical solutions for SDE.
+\begin{itemize}
+\item From this, we will focus on real time stock data. We will have couple estimators to determine volatility function. For instance, 
+\item We will assume that $\sigma$ is not constant.  We will approximate $\sigma$ with non parametric estimator method on local time.
+\end{itemize} 
