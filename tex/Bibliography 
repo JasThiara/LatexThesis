@@ -1,0 +1,9 @@
+\bibliographystyle{plain}
+\begin{thebibliography}{1}
+  \bibitem{1}
+    Robert A Jarrow,Younes Kchia,Philip Protter,
+    \emph{hOw to Detect an Asset Bubble}.
+    publisher, country,
+    edition,
+    March 2011.
+\end{thebibliography}
