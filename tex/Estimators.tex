@@ -11,5 +11,11 @@ S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t
 \int_\alpha^\infty \frac{x}{\sigma\left(x\right)}dx < \infty  for all \alpha >0
 \end{equation} 
 According to Jarrow, Protter show that there are three types of asset price bubbles, from those three, two types of bubbles exist only in infinite horizon economies and the third which is called type 3 bubbles which exits in finite horizon economy. Type 3 bubbles are realted to martingales. When we have price process under a risk neutral measure strict local martingale, then there will be bubble in asset price. It is also depend on asymptotic behavior of the asset's price volatility. If the asset's price volatility is large enough, then a bubble exits. Type 3 bubbles exist if and only if integral is finite. Before we can evaluate the integrals, we would need volatility function (sigma). \\\\
-There are many estimators used to estimate volatility function. We will study floren Zmirou in this chapter and Smooth kernal estimators. Floren Zmirou propose a nonparametric estimator based on the local time of the diffusion process. This method will only can estimate volatility on visited points by the process. We can not know the tail of volatility function. Therefore we can not check if the integral is finite or infinite. 
+There are many estimators used to estimate volatility function. We will study floren Zmirou in this chapter and Smooth kernal estimators. Floren Zmirou propose a nonparametric estimator based on the local time of the diffusion process. This method will only can estimate volatility on visited points by the process. We can not know the tail of volatility function. Therefore we can not check if the integral is finite or infinite.  we will introduce Floren Zmirou's nonparametric estimator which is based on local time of the diffusion process on compact domain. 
+ we only can estimate $\sigma(x)$ on points visited by the process. 
+ So we cant determine the tail of the volatility function to check whether the we have bubble or not. \\
+ 
+ Third, now we want to check the tail, so we will use RKHS (Reproducing Kernal Hilbert Space)  method which will allow us to construct an interpolationg function that extends the nonparametric estimator from the observation interval to the entire real line.\\
+ 
+ With the help of all these steps, we can able to estimate the fuction which will detect whether asset price has bubble or not.\\
  
