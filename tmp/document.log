@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  21 DEC 2013 14:40
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  21 DEC 2013 14:43
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -91,12 +91,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 2--14
 
 [1
 
-{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 10000) in paragraph at lines 15--28
-
- []
-
-) (./Def.tex
+{/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}])
+(./Def.tex
 
 ! LaTeX Error: There's no line here to end.
 
@@ -148,7 +144,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 7--8
 
  []
 
-[2]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -162,7 +157,7 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
+[2]
 Underfull \hbox (badness 10000) in paragraph at lines 15--16
 
  []
@@ -362,7 +357,6 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[4]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -394,6 +388,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
+[4]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -447,7 +442,6 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[5]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -480,7 +474,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 129--130
 
  []
 
-
+[5]
 Underfull \hbox (badness 10000) in paragraph at lines 131--133
 
  []
@@ -609,7 +603,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
-[6]
+
 Underfull \hbox (badness 10000) in paragraph at lines 155--156
 
  []
@@ -629,6 +623,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 157--161
 
  []
 
+[6]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -755,7 +750,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--173
 
  []
 
-[7]
 
 ! LaTeX Error: There's no line here to end.
 
@@ -797,7 +791,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 174--177
 
  []
 
-
+[7]
 Underfull \hbox (badness 10000) in paragraph at lines 178--179
 
  []
@@ -812,23 +806,23 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--209
 
  []
 
-[8]
+
 Underfull \hbox (badness 10000) in paragraph at lines 215--216
 
  []
 
-) (./Chapter2.tex
-Underfull \hbox (badness 10000) in paragraph at lines 12--13
+[8]) (./Chapter2.tex
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
 
  []
 
 [9]
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--35
+Underfull \hbox (badness 10000) in paragraph at lines 39--40
 
  []
 
@@ -839,7 +833,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.36 G
+l.41 G
       iven a probability space $\left( \Omega, \mathcal{F}, P \right) $, a s...
 
 Your command was ignored.
@@ -847,12 +841,12 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--43
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
 
  []
 
@@ -863,7 +857,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.44 A
+l.49 A
        differential equation with one or more terms is a stochastic process.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -871,13 +865,13 @@ or  <return>  to continue without it.
 
 [10]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 89.
+(Font)              <12> on input line 94.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 89.
+(Font)              <8> on input line 94.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 89.
+(Font)              <6> on input line 94.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--106
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
@@ -885,31 +879,31 @@ Missing character: There is no â in font cmbx10!
 Missing character: There is no € in font cmbx10!
 Missing character: There is no ¢ in font cmbx10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 110--112
-
- []
-
-[11]
-Underfull \hbox (badness 10000) in paragraph at lines 115--123
+Underfull \hbox (badness 10000) in paragraph at lines 115--117
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--123
+Underfull \hbox (badness 10000) in paragraph at lines 120--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--123
+Underfull \hbox (badness 10000) in paragraph at lines 120--128
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--123
+Underfull \hbox (badness 10000) in paragraph at lines 120--128
 
  []
 
-[12]) (./Estimators.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--128
+
+ []
+
+[11] [12]) (./Estimators.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -929,7 +923,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--17
 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
@@ -939,7 +933,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-) [14] (./document.aux)
+) [13] [14] (./document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -947,11 +941,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  277 strings out of 493747
  3159 string characters out of 3143546
- 56070 words of memory out of 3000000
+ 57070 words of memory out of 3000000
  3622 multiletter control sequences out of 15000+200000
  8549 words of font info for 30 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 23i,14n,20p,734b,173s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 23i,14n,20p,734b,171s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -971,7 +965,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2010/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2010/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (14 pages, 243870 bytes).
+Output written on document.pdf (14 pages, 243244 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  90 compressed objects within 1 object stream
