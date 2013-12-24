@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  23 DEC 2013 18:08
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  23 DEC 2013 18:20
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -38,6 +38,9 @@ LaTeX Warning: Label `eqnModelling2-1' multiply defined.
 
 
 LaTeX Warning: Label `eqnModelling4-1' multiply defined.
+
+
+LaTeX Warning: Label `eqnMartingalesAndBubbles4-1' multiply defined.
 
 )
 \openout1 = `document.aux'.
@@ -881,7 +884,139 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [11]
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.92 \subsection{Supermartingale}\\\\
+                                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 T
+      he stochastic process $S = \displaystyle{\left\lbrace S_n \right\rbrac...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.99  \subsection{Local Martingale}\\\\
+                                       
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.100 I
+       f $\left\lbrace S_n \right\rbrace$ is adapted to the filtration $\lef...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (3.8368pt too wide) in paragraph at lines 100--105
+[]\OT1/cmr/m/n/10 If $[]$ is adapted to the fil-tra-tion $[]$, for all $0 \OMS/
+cmsy/m/n/10 ^^T \OML/cmm/m/it/10 t \OMS/cmsy/m/n/10 ^^T 1$\OT1/cmr/m/n/10 , the
+n $[]$
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108  A
+         strict local martingale is a non-negative local martingale.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111  I
+        f for any strict local martingale $$\left\lbrace S_t : 0 \leq t \leq...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (23.76118pt too wide) in paragraph at lines 111--114
+\OT1/cmr/m/n/10 with $\OML/cmm/m/it/10 E [] < \OMS/cmsy/m/n/10 1$ \OT1/cmr/m/n/
+10 is also a su-per-martin-gale and $\OML/cmm/m/it/10 E [] \OT1/cmr/m/n/10 = \O
+ML/cmm/m/it/10 E []$\OT1/cmr/m/n/10 , then $[]$
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 111--114
+
+ []
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.120 ...ion{Relating Martingales and Bubbles}\\\\
+                                                  
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.121 \subsection
+                 {theorem}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[12]
+Underfull \hbox (badness 10000) in paragraph at lines 165--166
 
  []
 
@@ -889,38 +1024,42 @@ Missing character: There is no â in font cmbx10!
 Missing character: There is no € in font cmbx10!
 Missing character: There is no ¢ in font cmbx10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--116
+Underfull \hbox (badness 10000) in paragraph at lines 170--172
+
+ []
+
+[13]
+Underfull \hbox (badness 10000) in paragraph at lines 175--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--127
+Underfull \hbox (badness 10000) in paragraph at lines 175--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--127
+Underfull \hbox (badness 10000) in paragraph at lines 175--183
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--127
+Underfull \hbox (badness 10000) in paragraph at lines 175--183
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 119--127
-
- []
-
-[12]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 132.
+(Font)              <12> on input line 188.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 132.
+(Font)              <8> on input line 188.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 132.
-) (./Estimators.tex
+(Font)              <6> on input line 188.
+
+Underfull \hbox (badness 10000) in paragraph at lines 208--210
+
+ []
+
+[14]) (./Estimators.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -940,7 +1079,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--17
 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
@@ -950,7 +1089,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-) [14] (./document.aux)
+) [15] (./document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -982,10 +1121,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2010/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2010/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (14 pages, 247564 bytes).
+Output written on document.pdf (15 pages, 250395 bytes).
 PDF statistics:
- 126 PDF objects out of 1000 (max. 8388607)
- 90 compressed objects within 1 object stream
+ 129 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

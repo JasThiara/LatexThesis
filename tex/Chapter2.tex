@@ -78,6 +78,62 @@ variance $\left( t-s \right) $
 
 
 %%%%%Modelling Page 5%%%%
+\subsection{Martingales}
+\begin{itemize}
+\item[(a)] $E[ \mid S_{n}\mid]< +\infty$, for all n.
+\item[(b)] $S_n$ is said to be \textit{adapted} if and only if $S_{n}$ is $\mathcal{F}_{n}$-measurable. 
+\end{itemize} 
+The stochastic process $S = \displaystyle{\left\lbrace S_n \right\rbrace_{n=0}^\infty}$ is a \textit{martingale} with
+respect to $\left( \lbrace\mathcal{F}_{n}\rbrace, P \right)$  if $E[ S_{n+1}\mid \mathcal{F}_{n}] = S_{n}$, for all n,
+almost surely and:
+  \begin{itemize}
+  \item S satifies (a) and (b).
+  \end{itemize}
+\subsection{Supermartingale}\\\\
+The stochastic process $S = \displaystyle{\left\lbrace S_n \right\rbrace_{n=0}^\infty}$ is a \textit{supermartingale}
+with respect to $\left( \lbrace\mathcal{F}_{n}\rbrace, P \right)$  if $E[ S_{n+1}\mid \mathcal{F}_{n}] \leq S_{n}$, for
+all n, almost surely and:
+  \begin{itemize}
+  \item S satifies (a) and (b).
+  \end{itemize}
+ \subsection{Local Martingale}\\\\
+If $\left\lbrace S_n \right\rbrace$ is adapted to the filtration $\left\lbrace \mathcal{F}_n \right\rbrace $, for all $0
+\leq t\leq \infty$, then $\left\lbrace S_n: 0 \leq t \leq \infty \right\rbrace$ is called a \textit{local martingle}
+provided that there is nondecreasing sequence $\left\lbrace \tau_k \right\rbrace $ of stopping times with the property
+that $\tau_k \rightarrow \infty$ with probability one as $k \rightarrow \infty$ and such that for each $k$, the process
+defined by
+$$S_t^{(k)} = S_{t \wedge \tau_k} - S_0$$ for $t \in [0 , \infty)$ is a martingale with respect to the filtration
+$$\left\lbrace \mathcal{F}_n : 0 \leq t < \infty \right\rbrace$$
+\subsection{Remark}\\
+ A strict local martingale is a non-negative local martingale.
+
+\subsection{Theorem}\\
+ If for any strict local martingale $$\left\lbrace S_t : 0 \leq t \leq T\right\rbrace $$ with $E \left[ \left\vert S_0
+\right\vert \right] < \infty$ is also a supermartingale and $E \left[ S_T \right] = E \left[ S_0 \right] $, then
+$\left\lbrace S_t : 0 \leq t \leq T\right\rbrace $ is in fact a martingale. \\\\
+\subsection{Remark}
+\begin{itemize}
+\item $\left\lbrace S_t : 0 \leq t \leq T\right\rbrace $ is a supermartingale and a martingale if and only if it
+has constant expectation.\item For a strict local martingale its expectation decreases with time.
+\end{itemize} 
+
+\subsection{Relating Martingales and Bubbles}\\\\
+\subsection{theorem}
+ $\left\lbrace S_t : 0 \leq t \leq T\right\rbrace $ is a strict local martingale if and only if
+\begin{equation}\label{eqnMartingalesAndBubbles4-1}
+\int_\alpha^\infty \frac{x}{\sigma^2(x)}dx < \infty
+\end{equation} 
+for all $\alpha > 0$.
+
+\begin{itemize}
+\item A bubble exists if and only if (\ref{eqnMartingalesAndBubbles4-1}) is finite.
+\item We shall call (\ref{eqnMartingalesAndBubbles4-1}) the volatility of asset return.
+\end{itemize} 
+\begin{itemize}
+\item In this scope, the difference between a martingale and a strict local martingale is whether the volatility of
+asset return, (\ref{eqnMartingalesAndBubbles4-1}), is finite or not finite.
+\end{itemize}
+
 \subsection{Numerical Methods of SDE}
 For $t \in [0,T]$, $(\ref{eqnModelling4-1})$ can be represented in an integral form in the following way:
 \begin{eqnarray*}
@@ -142,3 +198,17 @@ There are other methods such as Strong and weak convergence of the Euler Muruyam
 \item From this, we will focus on real time stock data. We will have couple estimators to determine volatility function. For instance, 
 \item We will assume that $\sigma$ is not constant.  We will approximate $\sigma$ with non parametric estimator method on local time.
 \end{itemize} 
+
+
+%(2.2) Describe the math problem: parametric estimation, interpolation, extrapolation, minimization
+\subsection{Methods used to solve the problem}
+Lets consider following equation:
+ \begin{equation}
+S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t
+\end{equation}
+ Stock price is strict local martingale if and only if \\
+\begin{equation}
+\int_\alpha^\infty \frac{x}{\sigma\left(x\right)}dx < \infty  for all \alpha >0
+\end{equation} 
+ 
+
