@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  21 DEC 2013 17:46
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  23 DEC 2013 18:08
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -829,17 +829,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--216
  []
 
 ) (./Chapter2.tex [9]
-Underfull \hbox (badness 10000) in paragraph at lines 17--18
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 39--40
+Underfull \hbox (badness 10000) in paragraph at lines 41--42
 
  []
 
@@ -850,24 +850,23 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.41 G
+l.43 G
       iven a probability space $\left( \Omega, \mathcal{F}, P \right) $, a s...
 
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--48
-
- []
-
 [10]
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 49--50
+
+ []
+
 
 ! LaTeX Error: There's no line here to end.
 
@@ -875,21 +874,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.49 A
+l.51 A
        differential equation with one or more terms is a stochastic process.
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 [11]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 94.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 94.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 94.
-
-Underfull \hbox (badness 10000) in paragraph at lines 110--111
+Underfull \hbox (badness 10000) in paragraph at lines 109--110
 
  []
 
@@ -897,36 +889,43 @@ Missing character: There is no â in font cmbx10!
 Missing character: There is no € in font cmbx10!
 Missing character: There is no ¢ in font cmbx10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 115--117
+Underfull \hbox (badness 10000) in paragraph at lines 114--116
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--128
+Underfull \hbox (badness 10000) in paragraph at lines 119--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--128
+Underfull \hbox (badness 10000) in paragraph at lines 119--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--128
+Underfull \hbox (badness 10000) in paragraph at lines 119--127
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--128
+Underfull \hbox (badness 10000) in paragraph at lines 119--127
 
  []
 
-[12]) (./Estimators.tex
+[12]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 132.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 132.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 132.
+) (./Estimators.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-[13]
+
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
 
  []
@@ -941,7 +940,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--17
 
  []
 
-
+[13]
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
@@ -957,10 +956,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 277 strings out of 493747
- 3159 string characters out of 3143546
+ 276 strings out of 493747
+ 3153 string characters out of 3143546
  58070 words of memory out of 3000000
- 3622 multiletter control sequences out of 15000+200000
+ 3621 multiletter control sequences out of 15000+200000
  8549 words of font info for 30 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  23i,14n,20p,734b,173s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -983,7 +982,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2010/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2010/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (14 pages, 244195 bytes).
+Output written on document.pdf (14 pages, 247564 bytes).
 PDF statistics:
  126 PDF objects out of 1000 (max. 8388607)
  90 compressed objects within 1 object stream

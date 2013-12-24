@@ -1,5 +1,7 @@
 
 \section{Chapter 2}
+\subsection {Theoretical Background }
+%Where does your problem come from? (you’ll have to talk about stochastic PDEs, volatility, assets price modeling, martingales, etc.) 
 First of all we will introduce Stochastic Differential Equations. 
  SDE are being used in various fields for example biology, physics, mathematics and of course finance. 
  In finance, SDE is used to model asset price included with Brownian motion. 
@@ -27,17 +29,17 @@ Lets's consider finance definations :\\
 
 \item Volatility-Rate at which the price of security moves up and down.
 \end{itemize} 
-\begin{itemize}
-\item Probability Space ($\Omega,\mathcal{F},P$) where $\Omega$ is a set ( sample space), $\mathcal{F}$ is a sigma
+\subsection {Probability Measure}
+\subsubsection{Probability Space} ($\Omega,\mathcal{F},P$) where $\Omega$ is a set ( sample space), $\mathcal{F}$ is a sigma
 algebra of subsets (events) of $\Omega$, and $P$ is a Probability Measure.
-\item Random Variable - Measurable functions of real analysis.
+ \subsubsection{Random Variable} - Measurable functions of real analysis.
 $X:\Omega\rightarrow \mathcal{R}$ map $X : (\Omega,\mathcal{F})\mapsto (\mathcal{R}, \mathcal{B})$ and $X$ is random variable if \\
 $X^{-1}(A) \epsilon \mathcal{F}, \forall A \epsilon\mathcal{B})$,\\
 where $X^{-1}(A):={\omega \epsilon \Omega\mid X(\omega) \epsilon A}$
-\end{itemize} 
-\subsection{Introduction to Stochastic Differential Equations}
+
+\subsection{ Stochastic Differential Equations}
 We treat the asset price as a stochastic process:\\\\
-\subsection{Stochastic Process}\\
+\subsubsection{Stochastic Process}\\
 Given a probability space $\left( \Omega, \mathcal{F}, P \right) $, a stochastic process with state space X is a
 collection of X-valued random variables, $S_t$, on $\Omega$ indexed by a set $T$ (e.g. time).
 \begin{equation}\label{eqnModelling2-1}
@@ -45,12 +47,10 @@ S = \left\lbrace S_t : t\in T \right\rbrace
 \end{equation}
 
 One can think of $S_t$ as a asset price at time $t$.\\\\
-\subsection{Stochastic Differential Equation}\\
+\subsubsection{Stochastic Differential Equation}\\
 A differential equation with one or more terms is a stochastic process.
 
-
-The Price Asset Model using an SDE\\
-Consider the linear SDE with a Brownian Motion $\left\lbrace S_t: 0\leq t\leq T\right\rbrace$:
+\subsection{Brownian Motion} $\left\lbrace S_t: 0\leq t\leq T\right\rbrace$:
 \begin{equation}\label{eqnModelling4-1}
 \begin{array}{rcl}
 dS_t &=& \sigma(S_t)dW_t+\mu(S_t)dt\\
@@ -63,8 +63,7 @@ S_0 &=& 0
 \item $\sigma(S_{t})$ called the volatility coefficient.
 \end{itemize}
 %%%%%Modelling Page 3%%%%
-\subsection{The Price Asset Model using an SDE}
-Brownian Motion
+\subsubsection{Defination of Brownian motion}
 A continuous-time stochastic process $\left\lbrace S_{t}: 0\leq t\leq T\right\rbrace$ is called a \textit{Standard
 Brownian Motion} on $ \left[ 0, T\right]$ if it has the following four properties:
 \begin{itemize}
@@ -79,7 +78,7 @@ variance $\left( t-s \right) $
 
 
 %%%%%Modelling Page 5%%%%
-\subsection{The Price Asset Model using an SDE}
+\subsection{Numerical Methods of SDE}
 For $t \in [0,T]$, $(\ref{eqnModelling4-1})$ can be represented in an integral form in the following way:
 \begin{eqnarray*}
 dS_t &=& \sigma(t)dW_t+\mu(t)dt\\
@@ -91,14 +90,14 @@ S_t &=& x_0 + \int_0^t \sigma\left(S_t\right)dW_t
 \end{eqnarray*} 
 
 %%%%%Modelling Page 6%%%%
-\subsection{What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
+\subsubsection{What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
 The price model is
 \begin{equation}\label{eqnModelling6-1}
 S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t
 \end{equation}
 
 %%%%%Modelling Page 7%%%%
-\subsection{ What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
+\subsubsection{ What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
 
 \begin{equation}
 \begin{array}{rcl}
@@ -106,7 +105,7 @@ dS_t &=& \mu(S_t)dt+\sigma(S_t)dW_t\\
 S_0 \in \mathcal{R}
 \end{array}
 \end{equation}
-\subsection{The Euler-Maruyama Method}
+\subsubsection{The Euler-Maruyama Method}
 Equation (4) can be written into integral form as:\\
 \begin{equation}
 \begin{array}{rcl}
@@ -137,25 +136,6 @@ S(t) = S_0 \cdot Exp \left( \left( \mu - \frac{1}{2} \sigma^2 \right)t + \sigma 
 For an example, we use the Euler-Maruyama Approximation Method on the SDE where the constants $\mu = 2$, $\sigma = 1$,
 and $S_0 = 1$ are given.
 
-
-\subsection{ What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
-\begin{equation}
-S(t) = S_0 \cdot Exp \left( \left( \mu - \frac{1}{2} \sigma^2 \right)t + \sigma W(t) \right) 
-\end{equation} 
-\begin{figure}[h!]
-  \caption{Euler-Maruyama Approximation}
-  \centering
-
-\end{figure}
-
-\subsection{What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
-\begin{equation}
-S(t) = S_0 \cdot Exp \left( \left( \mu - \frac{1}{2} \sigma^2 \right)t + \sigma W(t) \right) 
-\end{equation} 
-Earlier we stated the price model is
-\begin{equation}
-S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t
-\end{equation}
 
 There are other methods such as Strong and weak convergence of the Euler Muruyama method, Milstein's Higher Order Method, Linear Stability and Stochastic Chain Rule are also used for numerical solutions for SDE.
 \begin{itemize}
