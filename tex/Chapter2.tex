@@ -202,13 +202,42 @@ There are other methods such as Strong and weak convergence of the Euler Muruyam
 
 %(2.2) Describe the math problem: parametric estimation, interpolation, extrapolation, minimization
 \subsection{Methods used to solve the problem}
-Lets consider following equation:
- \begin{equation}
-S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t
-\end{equation}
+In this classical setting, Jarrow, Protter, and Shimbo [19], [20] show that there are three types of asset price bubbles possible. 
+Two of these price bubbles exist only in infinite horizon economies, the third—called type 3 bubbles—exist in finite horizon settings. 
+Consequently, type 3 bubbles are those most rele- vant to actual market experiences. 
+For this type of bubble, saying whether or not a bubble exists amounts to determining whether the price process under a risk neutral measure is a martingale or a strict local martingale: if it is a strict local martingale, there is a bubble.
+
  Stock price is strict local martingale if and only if \\
 \begin{equation}
 \int_\alpha^\infty \frac{x}{\sigma\left(x\right)}dx < \infty  for all \alpha >0
 \end{equation} 
- 
+ Floren Zmirou's non parametric estimator is based on the local time of the Diffusion Process.
+ \subsubsection{Diffusion Process}
+ In probability theory, a branch of mathematics, a diffusion process is a solution to a stochastic differential equation. 
+ It is a continuous-time Markov process with almost surely continuous sample paths.\\
+ \subsection{Floren Zmirou}
+ Lets consider following equation:
+ \begin{equation}
+S_t = S_0 + \int_0^t \sigma\left(S_t\right)dW_t
+\end{equation}
+In Floren Zmirou, the drift coefficient $\mu(S_{t})$ is null which is ignored without loss of generality. 
+It is not involved in our problem. $\sigma(S_{t})$ the volatility coefficient is unknown. We will follow steps for Floren Zmirou method:\\
+\begin{itemize}
+  \item $(S_t_1\ldots S_t_n)$ are the stock prices in the interval $t_1\ldots t_n \in [0,T]$
+  \item Without loss of generality, we assume T = 1, therefore $t_i = i/n$
+\end{itemize}
+Estimator as follows:\\
+Local time = $l_T(x)= lim_{\epsilon\longrightarrow 0} \frac{1}{2 \epsilon} \int_0^T 1_{\{|S_s-x|<\epsilon\}} d \langle S,S\rangle_s$\\\\
+where $d \langle S,S\rangle_s = \sigma^2(S_{s})$\\\\
+$L_T(x)= lim_{\epsilon\longrightarrow 0} \frac{1}{2 \epsilon} \int_0^T 1_{\{|S_s-x|<\epsilon\}} dS$\\\\
+$\Longrightarrow l_T(x) = \sigma^2(S_{s})L_T(x)$\\\\
+$\Longrightarrow l_T(x)\L_T(x) = \sigma^2(S_{s})$\\\\
+Now we will define local time of $S_{s}$ in $x$ during [0,t].\\\\
+Let's assume that $nh_n \rightarrow \infty$ and $h_n\rightarrow 0$\\\\
+$\Longrightarrow L^n_{T}(x)= \frac{T}{2nh_n}\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} $\\\\
+estimator of $\sigma^2(S_{x})$ as follows:\\\\
+$S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}$\\\\
+\subsection {Theorem}
+If $Sigma$is bounded above and below from zero, has three continuous and bounded
+derivatives, and if $(h_n)_n≥1 $satisfies $nh_n\rightarrow \infty $ and $nh_4n\rightarrow 0$, then $S_n(x)$ is a consistent estimator of $\sigma^2(x)$.
 

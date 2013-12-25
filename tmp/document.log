@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  23 DEC 2013 18:20
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  24 DEC 2013 16:57
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1054,12 +1054,94 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 188.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 188.
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--210
+Missing character: There is no Ñ in font cmr10!
+Missing character: There is no Ñ in font cmr10!
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 210--211
 
  []
 
-[14]) (./Estimators.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 216--218
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 222--225
+
+ []
+
+! Double subscript.
+l.226   \item $(S_t_
+                    1\ldots S_t_n)$ are the stock prices in the interval $t_...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+! Double subscript.
+l.226   \item $(S_t_1\ldots S_t_
+                                n)$ are the stock prices in the interval $t_...
+I treat `x_1_2' essentially like `x_1{}_2'.
+
+
+LaTeX Warning: Command \L invalid in math mode on input line 234.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 229--240
+
+ []
+
+[15]
+Missing character: There is no ³ in font cmr10!
+) (./Estimators.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
@@ -1079,7 +1161,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--17
 
  []
 
-
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
@@ -1089,7 +1171,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
-) [15] (./document.aux)
+) [17] (./document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1121,10 +1203,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2010/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2010/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (15 pages, 250395 bytes).
+Output written on document.pdf (17 pages, 260255 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 92 compressed objects within 1 object stream
+ 135 PDF objects out of 1000 (max. 8388607)
+ 96 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
