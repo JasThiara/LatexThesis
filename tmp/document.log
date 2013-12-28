@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  28 DEC 2013 15:25
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  28 DEC 2013 15:44
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1160,33 +1160,38 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-) (./Estimators.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--263
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--268
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--268
+
+ []
+
+[16]) (./Estimators.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
-
- []
-
-[16]
-Underfull \hbox (badness 10000) in paragraph at lines 8--10
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 12--17
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 18--19
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 20--21
 
  []
 
@@ -1202,7 +1207,7 @@ Here is how much of TeX's memory you used:
  3621 multiletter control sequences out of 15000+200000
  8549 words of font info for 30 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 23i,14n,20p,734b,173s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 23i,14n,20p,484b,173s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
 </usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></
@@ -1222,7 +1227,7 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2010/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2010/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (17 pages, 262514 bytes).
+Output written on document.pdf (17 pages, 261391 bytes).
 PDF statistics:
  135 PDF objects out of 1000 (max. 8388607)
  96 compressed objects within 1 object stream

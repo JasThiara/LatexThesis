@@ -258,6 +258,15 @@ It will allows an exact interpolation with minimal squared norm.
 it will yields quasi interpolative results, accompained by an error bound analysis with Tikhonov Regularization produces an approximate solution $f_\alpha$ which belongs to $H(D)$and that can be obtained via the minimization of the regularization functional.
 \subsubsubsection {Regularized solution with Kernal function}
 For interpolation, we denote kernal function $K^{a,b}_{n,\tau}$ for n =1 and n = 2. of $H^n(a,d)$ where $D = (a,b)$
-
+\indent Now one we have interpolation function and extended form of the estimated $\sigma^2(x)$, we can
+decide if there is need of extrapolation.\\
+\begin{itemize}
+  \item if the volatility $\sigma^2(x_i)$ doesn not diverge to $\infty$ when $x\rightarrow \infty$ and it remains bounded on $\mathcal{R^+}$.\\\\
+  		- No extrapolation is required.\\\\
+  		- $\int_\epsilon^\infty \frac{x}{\sigma^2(x)}$ is infinite.\\\\
+  		- The process is true martingale.\\\\
+  \item If the volatility diverges to $\infty$ when $x\rightarrow \infty$ then we will extrapolate.
+  
+\end{itemize}
 
  
