@@ -239,5 +239,25 @@ estimator of $\sigma^2(S_{x})$ as follows:\\\\
 $S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}$\\\\
 \subsection {Theorem}
 If $Sigma$is bounded above and below from zero, has three continuous and bounded
-derivatives, and if $(h_n)_n³1 $satisfies $nh_n\rightarrow \infty $ and $nh_4n\rightarrow 0$, then $S_n(x)$ is a consistent estimator of $\sigma^2(x)$.
+derivatives, and if $(h_n)_n³1 $satisfies $nh_n\rightarrow \infty $ and $nh_4n\rightarrow 0$, then $S_n(x)$ is a consistent estimator of $\sigma^2(x)$.\\
 
+Now we have $\sigma^2(x)$ and we will use interpolation methods to see function's behaviour. 
+
+\subsection{Interpolation}
+Interpolation is a method of constructing new data points within the range of a discrete set of known data points. There are many methods to do interpolation. 
+For example Linear Interpolation,polynomial interpolation, piecewise constant interpolation, spline interpolation.
+Here we will interpolate an estimate of $\sigma^2(x_i)$ where $i \in [1.M]$ within the bounded finite interval $D$ where we have observations.
+We used cubic spline interpolation and Reproducing Kernal Hilbert Spaces to get interpolation function.\\
+\begin{itemize}
+\item Interpolation is seen as inverse problem.
+\item We will have two types of solutions for inverse problem.
+\end{itemize}
+\subsubsection{Normal Solution}
+It will allows an exact interpolation with minimal squared norm.
+\subsubsection{Regularized Solution}
+it will yields quasi interpolative results, accompained by an error bound analysis with Tikhonov Regularization produces an approximate solution $f_\alpha$ which belongs to $H(D)$and that can be obtained via the minimization of the regularization functional.
+\subsubsubsection {Regularized solution with Kernal function}
+For interpolation, we denote kernal function $K^{a,b}_{n,\tau}$ for n =1 and n = 2. of $H^n(a,d)$ where $D = (a,b)$
+
+
+ 
