@@ -201,6 +201,8 @@ There are other methods such as Strong and weak convergence of the Euler Muruyam
 
 
 %(2.2) Describe the math problem: parametric estimation, interpolation, extrapolation, minimization
+%What is your solution?  Based on all this theory connecting math and finance and assets and asset bubbles, how can you get an answer to your (math) problem as you described in chapter (1).
+
 \subsection{Methods used to solve the problem}
 In this classical setting, Jarrow, Protter, and Shimbo [19], [20] show that there are three types of asset price bubbles possible. 
 Two of these price bubbles exist only in infinite horizon economies, the third—called type 3 bubbles—exist in finite horizon settings. 
@@ -248,17 +250,17 @@ Interpolation is a method of constructing new data points within the range of a 
 For example Linear Interpolation,polynomial interpolation, piecewise constant interpolation, spline interpolation.
 Here we will interpolate an estimate of $\sigma^2(x_i)$ where $i \in [1.M]$ within the bounded finite interval $D$ where we have observations.
 We used cubic spline interpolation and Reproducing Kernal Hilbert Spaces to get interpolation function.\\
-\begin{itemize}
-\item Interpolation is seen as inverse problem.
-\item We will have two types of solutions for inverse problem.
-\end{itemize}
+\subsubsection{Cubic Spline}
+A cubic spline is a spline for which the function is a polynomial of degree  3 on every subinterval, and a function with two continuous derivatives overall.
+\subsubsection {Interpolation is seen as inverse problem.}
+\subsubsection {We will have two types of solutions for inverse problem.}
 \subsubsection{Normal Solution}
 It will allows an exact interpolation with minimal squared norm.
 \subsubsection{Regularized Solution}
 it will yields quasi interpolative results, accompained by an error bound analysis with Tikhonov Regularization produces an approximate solution $f_\alpha$ which belongs to $H(D)$and that can be obtained via the minimization of the regularization functional.
 \subsubsubsection {Regularized solution with Kernal function}
 For interpolation, we denote kernal function $K^{a,b}_{n,\tau}$ for n =1 and n = 2. of $H^n(a,d)$ where $D = (a,b)$
-\indent Now one we have interpolation function and extended form of the estimated $\sigma^2(x)$, we can
+\indent Now one we have interpolation function and extended form of the estimated $\sigma^2(x)$ call this extended function $\sigma^b(x)$, we can
 decide if there is need of extrapolation.\\
 \begin{itemize}
   \item if the volatility $\sigma^2(x_i)$ doesn not diverge to $\infty$ when $x\rightarrow \infty$ and it remains bounded on $\mathcal{R^+}$.\\\\
@@ -268,5 +270,20 @@ decide if there is need of extrapolation.\\
   \item If the volatility diverges to $\infty$ when $x\rightarrow \infty$ then we will extrapolate.
   
 \end{itemize}
+\subsection{Extrapolation ,Optimization and Minimization}
+Now since we have extended function $\sigma^b(x)$, we will extrapolate this over $\mathcal{R^+}$.\\
+Let's consider following optimization with minimazation problem:\\\\
+$m\bar$ = argmin_$m\geq 0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\sigma^b|^2}dS$\\\\
+\begin{itemize}
+  \item $\sigma_m$ will interpolate the input data points when n = 2.
+  \item $\sigma_m\bar$ has the asymptotic behavior that beast matches our function on the estimation interval. 
+  We will construct extrapolation by choosing the asymptotic weighting function parameter $m$ such that $f_m = \frac {1}{\sigma^2m}$.
+  \item $a$ = max S - $\frac{1}{3}$(maxS-min S)
+  \item $H_{2,m}$ allows the best interpolation of M which is estimated points such that the extrapolation function remains as close as possible to $\sigma^b(x)$.
+  \item We will plot function with different asymptotic weighting parameter m which is obtained from RKHS extrapolation method.
+  \item The asymptotic weighting function's parameter $m\bar$
+ obtained by optimization and minimization is the most consistent which exactly match the input data within all the function in $H_{1,m}$
+\end{itemize}
+
 
  

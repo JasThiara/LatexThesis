@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  28 DEC 2013 15:44
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  31 DEC 2013 11:03
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1057,102 +1057,102 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 Missing character: There is no Ñ in font cmr10!
 Missing character: There is no Ñ in font cmr10!
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 210--211
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
+Underfull \hbox (badness 10000) in paragraph at lines 218--220
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--225
+Underfull \hbox (badness 10000) in paragraph at lines 224--227
 
  []
 
 ! Double subscript.
-l.226   \item $(S_t_
+l.228   \item $(S_t_
                     1\ldots S_t_n)$ are the stock prices in the interval $t_...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 ! Double subscript.
-l.226   \item $(S_t_1\ldots S_t_
+l.228   \item $(S_t_1\ldots S_t_
                                 n)$ are the stock prices in the interval $t_...
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 
-LaTeX Warning: Command \L invalid in math mode on input line 234.
+LaTeX Warning: Command \L invalid in math mode on input line 236.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 229--240
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--242
 
  []
 
 [15]
 Missing character: There is no ³ in font cmr10!
 
-Underfull \hbox (badness 10000) in paragraph at lines 241--243
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--251
+Underfull \hbox (badness 10000) in paragraph at lines 249--253
 
  []
 
 ! Undefined control sequence.
-l.259 \subsubsubsection
+l.261 \subsubsubsection
                         {Regularized solution with Kernal function}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1161,41 +1161,156 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 258--263
+Underfull \hbox (badness 10000) in paragraph at lines 260--265
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 266--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--268
+Underfull \hbox (badness 10000) in paragraph at lines 266--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--268
+Underfull \hbox (badness 10000) in paragraph at lines 266--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--268
+Underfull \hbox (badness 10000) in paragraph at lines 266--270
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--268
+Underfull \hbox (badness 10000) in paragraph at lines 266--270
+
+ []
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.276 $m\bar$
+              = argmin_$m\geq 0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\si...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.276 $m\bar$
+              = argmin_$m\geq 0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\si...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.276 $m\bar$ = argmin_
+                       $m\geq 0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\si...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.276 $m\bar$ = argmin_$
+                        m\geq 0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\si...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.276 $m\bar$ = argmin_$
+                        m\geq 0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\si...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.276 $m\bar$ = argmin_$m\geq
+                              0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\si...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--277
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--268
+Underfull \hbox (badness 10000) in paragraph at lines 274--277
 
  []
 
-[16]) (./Estimators.tex
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--277
+
+ []
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.279   \item $\sigma_m\bar$
+                             has the asymptotic behavior that beast matches ...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.279   \item $\sigma_m\bar$
+                             has the asymptotic behavior that beast matches ...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.284 ...ic weighting function's parameter $m\bar$
+                                                  
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.284 ...ic weighting function's parameter $m\bar$
+                                                  
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+) (./Estimators.tex
 Underfull \hbox (badness 10000) in paragraph at lines 3--4
 
  []
 
-) [17] (./document.aux)
+) [17] [18] (./document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1227,10 +1342,10 @@ xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2010/texmf
 -dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2010/texmf-d
 ist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on document.pdf (17 pages, 261391 bytes).
+Output written on document.pdf (18 pages, 265104 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 96 compressed objects within 1 object stream
+ 138 PDF objects out of 1000 (max. 8388607)
+ 98 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
