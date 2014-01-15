@@ -1,4 +1,40 @@
 
-\subsection{Chapter 2}
- Chapter 2\\\
+\chapter{Implementation of an Asset Bubble Problem}
+\section{Implementation}
+We orgnize our data and process in six classes. Each class is designed to store the information about Stock, Floren Zmirou
+AssetBubble, AssetBubbleDetection, Approximation, and Run.
+\subsection{Stock Class}
+\paragraph{Methods of Stock Class}
+\begin{enumerate}
+  \item \verb! IsNumber()!: Input for this function is rowValue. This function determine if rows of stock data is a numerical string or not.
+  \item \verb! GetGoogleData()!: Input for this function are Ticker,days and period. This function obtains data for any stock from Google
+  finance.
+  \begin{algorithm}
+  \caption{GetGoogleData ()}
+  \bigskip
+  \textbf{Inputs}: Ticker, days, period\\
+  \textbf{Steps}
+  \begin{algorithmic}[1]
+  \If {the length of the Ticker is less than equal to 3} 
+  \State{exchange it with New York Stock Exchange (NYSE)}.
+  \Else 
+  \State {exchange it with Natinal Association of Securities Dealers (NASD)}
+  \EndIf\\
+  We initialize current time in integer.\\
+  We will open Google Finance link.\\
+  We initialize dataList to read each line from opened link.\\
+  We initialize tickerData to be the list of array of dataList.\\
+  We will put stockPrices in list.\\
+  We initialize  minuteData.\\
+  \For {minuteData in tickerData}
+  \State We initialize datum and put split minuteData in commas in datum.
+  \State We will append datum row one in float and store it in stockPrice list.\\
+  \Return {stockPrices}
+  
+  
+  \end{algorithmic}
+  \end{algorithm}
  
+\end{enumerate}
+
+
