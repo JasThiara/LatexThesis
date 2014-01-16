@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  16 JAN 2014 15:09
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  16 JAN 2014 15:14
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1748,10 +1748,22 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.111   \end{algorithmic}
+                         
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.102   \end{algorithmic}
+l.113   \end{algorithmic}
                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1760,19 +1772,20 @@ look up `weird error' in the index to The TeXbook.)
 ! Missing = inserted for \ifnum.
 <to be read again> 
                    \ALG@currentblock@0 
-l.102   \end{algorithmic}
+l.113   \end{algorithmic}
                          
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.102   \end{algorithmic}
+l.113   \end{algorithmic}
                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
+[19]
 
 ! LaTeX Error: \begin{enumerate} on input line 9 ended by \end{list}.
 
@@ -1780,7 +1793,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.102   \end{algorithmic}
+l.113   \end{algorithmic}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1793,7 +1806,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.102   \end{algorithmic}
+l.113   \end{algorithmic}
                          
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1802,7 +1815,7 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.102   \end{algorithmic}
+l.113   \end{algorithmic}
                          
 Things are pretty mixed up, but I think the worst is over.
 
@@ -1813,7 +1826,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.103 \end{enumerate}
+l.114 \end{enumerate}
                      
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -1822,13 +1835,13 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.103 \end{enumerate}
+l.114 \end{enumerate}
                      
 Things are pretty mixed up, but I think the worst is over.
 
 ) (./Ends/Ends/postfix.tex
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[19] [20] (./document.aux)
+[20] (./document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1860,7 +1873,7 @@ f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2010/texmf-dist/f
 onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on document.pdf (28 pages, 239731 bytes).
+Output written on document.pdf (28 pages, 239880 bytes).
 PDF statistics:
  168 PDF objects out of 1000 (max. 8388607)
  118 compressed objects within 2 object streams
