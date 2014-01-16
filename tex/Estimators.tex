@@ -99,16 +99,24 @@ Now we will derive hn, x-step\_size, and x values which will be used in Floren Z
   \item Return x\_hn
   \end{algorithmic}
   \end{algorithm}
-  \item \verb! (x_step_size)!: Input for this function is Stock Prices which we obtained from Stock class. 
-  This function will derive x\_step\_size which will be used  to create step size to generate x.
+  \item \verb! (Derive_x_values)!: Input for this function is Stock Prices which we obtained from Stock class. 
+  This function will derive x\_values which will be used  in Floren Zmirou Estimator.
   \begin{algorithm}
-  \caption{x step size ()}
+  \caption{Derive x Values}
   \bigskip
   \textbf{Inputs}: Stock Prices S\\
   \textbf{Steps}
   \begin{algorithmic}[1]
-  
+  \item We will use x\_hn from function x step size.
+  \item halfh\_n = x\_hn /2.0
+  \item We will define x to be equal to empty list.
+  \item We will append x with min S + halfh\_n
+  \item We initilaize ex to be first element of x's list.
+  \While {ex < max S}
+  \State{ex = ex+x\_hn}
+  \EndWhile
+  \item We will append ex into x's list
+  \item Return x
   \end{algorithmic}
   \end{algorithm}
-  \end{algorithmic}
 \end{enumerate}
