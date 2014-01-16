@@ -1,7 +1,7 @@
 
 \chapter{Implementation of an Asset Bubble Problem}
 \section{Implementation}
-We orgnize our data and process in six classes. Each class is designed to store the information about Stock, Floren Zmirou
+We used sage python to solve this problem. We orgnize our data and process in six classes. Each class is designed to store the information about Stock, Floren Zmirou
 AssetBubble, AssetBubbleDetection, Approximation, and Run.
 \subsection{Stock Class}
 \paragraph{Methods of Stock Class}
@@ -64,7 +64,40 @@ We obtain stock data by two types of methods. First, we will get it through Goog
   \Elif{Ticker is used in keyward Usage}
   \State{We will obtain Stock Prices from GetGoogleData in a list of Ticker}
   \Else{We will give exception of bad parameters}
-  \item 
   \end{algorithmic}
   \end{algorithm}
+\subsection{Floren Zmirou Class}
+\paragraph{Process to solve Floren Zmirou}
+Now we have Stock Prices from Stock class. We will obtain list of sigma values from list of Stock Prices.We will explain this class in following algorithms:\\\\
+T = 60*n where T is the minute to minute time period [0,T].\\
+Now we will derive hn, x-step\_size, and x values which will be used in Floren Zmirou Estimator.
+  \item \verb! (Derive_hn)!: Input for this function is Stock Prices which we obtained from Stock class. 
+  This function will derive hn which will be used in Floren Zmirou Estimator.
+  \begin{algorithm}
+  \caption{Derive hn ()}
+  \bigskip
+  \textbf{Inputs}: Stock Prices S\\
+  \textbf{Steps}
+  \begin{algorithmic}[1]
+  \item n = length of Stock Prices S.
+  \item hn = 1.0/n**(1.0/3.0)
+  \item return hn
+  \end{algorithmic}
+  \end{algorithm}
+  \item \verb! (x_step_size)!: Input for this function is Stock Prices which we obtained from Stock class. 
+  This function will derive x\_step\_size which will be used  to create step size to generate x.
+  \begin{algorithm}
+  \caption{x step size ()}
+  \bigskip
+  \textbf{Inputs}: Stock Prices S\\
+  \textbf{Steps}
+  \begin{algorithmic}[1]
+  \item We obtained hn from Derive hn function.
+  \item Double hn = 2 **hn
+  \item Difference = max S-min S
+  \item x\_hn = Difference * Double hn
+  \item Return x\_hn
+  \end{algorithmic}
+  \end{algorithm}
+  \end{algorithmic}
 \end{enumerate}
