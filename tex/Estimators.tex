@@ -5,6 +5,7 @@ We orgnize our data and process in six classes. Each class is designed to store 
 AssetBubble, AssetBubbleDetection, Approximation, and Run.
 \subsection{Stock Class}
 \paragraph{Methods of Stock Class}
+We obtain stock data by two types of methods. First, we will get it through Google Finance and second, we will get it from CSV file.
 \begin{enumerate}
   \item \verb! IsNumber()!: Input for this function is rowValue. This function determine if rows of stock data is a numerical string or not.
   \item \verb! GetGoogleData()!: Input for this function are Ticker,days and period. This function obtains data for any stock from Google
@@ -30,11 +31,40 @@ AssetBubble, AssetBubbleDetection, Approximation, and Run.
   \State We initialize datum and put split minuteData in commas in datum.
   \State We will append datum row one in float and store it in stockPrice list.\\
   \Return {stockPrices}
-  
-  
   \end{algorithmic}
   \end{algorithm}
- 
+  \item \verb! GetStockPrices()!: Input for this function is csv filename. This function obtains stock prices which are stored
+  in csv file by filename. It will read the yahoo API based minute to minute data.
+  \begin{algorithm}
+  \caption{GetStockPrices ()}
+  \bigskip
+  \textbf{Inputs}: filename\\
+  \textbf{Steps}
+  \begin{algorithmic}[1]
+  \item We saved stock Prices downloaded from yahoo in csv filename.
+  \item We initialize cr which will open and read the csv filename.
+  \item We skip the header.
+  \item Define c1 to be the empty list.
+  \For {row in cr}
+  \If {the second row is numberical string}
+  \State {we add second row to c1.}\\
+  \Return{c1}
+  \end{algorithmic}
+  \end{algorithm}
+  \item \verb! __init__()!: Input for this function is keyward Usage.This function will analyzie wheather csv filename is used or Ticker parameter 
+  for Google finance.
+  \begin{algorithm}
+  \caption{--init--()}
+  \bigskip
+  \textbf{Inputs}: Keyword Usage \\
+  \textbf{Steps}
+  \begin{algorithmic}[1]
+  \If {filename is in keyward Usage}
+  \State We  will obtain Stock Prices from GetStockPrices in list of filename
+  \Elif{Ticker is used in keyward Usage}
+  \State{We will obtain Stock Prices from GetGoogleData in a list of Ticker}
+  \Else{We will give exception of bad parameters}
+  \item 
+  \end{algorithmic}
+  \end{algorithm}
 \end{enumerate}
-
-
