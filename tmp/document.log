@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  16 JAN 2014 15:43
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  17 JAN 2014 14:50
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1748,21 +1748,121 @@ A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-[19]) (./Ends/Ends/postfix.tex
+[19]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.125  Output for this function will be L_
+                                          ${T}^n(x) = (\frac{T}{2nhn}) \sum_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing { inserted.
+<to be read again> 
+                   $
+l.125  Output for this function will be L_$
+                                           {T}^n(x) = (\frac{T}{2nhn}) \sum_...
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.125  Output for this function will be L_$
+                                           {T}^n(x) = (\frac{T}{2nhn}) \sum_...
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.125  Output for this function will be L_${T}^
+                                               n(x) = (\frac{T}{2nhn}) \sum_...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+! Package algorithmicx Error: Some blocks are not closed!!!.
+
+See the algorithmicx package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.141   \end{algorithmic}
+                         
+(That was another \errmessage.)
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.153   \For
+            {for i in range of the length of Stock prices - 1}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.153   \For
+            {for i in range of the length of Stock prices - 1}
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package algorithmicx Error: Some blocks are not closed!!!.
+
+See the algorithmicx package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.162   \end{algorithmic}
+                         
+(That was another \errmessage.)
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.174   \end{algorithmic}
+                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Missing = inserted for \ifnum.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.174   \end{algorithmic}
+                         
+I was expecting to see `<', `=', or `>'. Didn't.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.174   \end{algorithmic}
+                         
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+[20] [21]) (./Ends/Ends/postfix.tex
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[20] (./document.aux)
+[22] (./document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 5034 strings out of 493747
- 69343 string characters out of 3143546
- 136122 words of memory out of 3000000
- 8179 multiletter control sequences out of 15000+200000
- 23640 words of font info for 53 fonts, out of 3000000 for 9000
+ 5038 strings out of 493747
+ 69385 string characters out of 3143546
+ 137122 words of memory out of 3000000
+ 8182 multiletter control sequences out of 15000+200000
+ 28006 words of font info for 56 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,14n,38p,484b,455s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,14n,38p,484b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local
 /texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/
 texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/te
@@ -1782,10 +1882,10 @@ f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2010/texmf-dist/f
 onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1
 /urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/times
 /utmri8a.pfb>
-Output written on document.pdf (28 pages, 240243 bytes).
+Output written on document.pdf (30 pages, 243838 bytes).
 PDF statistics:
- 168 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 174 PDF objects out of 1000 (max. 8388607)
+ 122 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

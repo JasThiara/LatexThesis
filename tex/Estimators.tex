@@ -119,4 +119,58 @@ Now we will derive hn, x-step\_size, and x values which will be used in Floren Z
   \item Return x
   \end{algorithmic}
   \end{algorithm}
+Now we have all the ingridents which will be usefull to solve floren zmirou estimator.
+We will implement floren Zmirou on the following functions. Floren Zmirou has Sublocal time, Local time, volatility Estimator and Indicator function.
+  \item \verb! (Sublocal_Time)!: Input for this function are T,S,x,n,hn
+ Output for this function will be L_${T}^n(x) = (\frac{T}{2nhn}) \sum_{i =1}^ n 1_{|S\_t(i)-x)| < hn}$
+  \begin{algorithm}
+  \caption{Sublocal Time}
+  \bigskip
+  \textbf{Inputs}: T=Time,S= Stock Prices,x= grid points,n= number of total Stock Prices,hn=Step Size\\
+  \textbf{Steps}
+  \begin{algorithmic}[1]
+  \item sum = 0.0
+  \item scalar = T/(2.0*n*hn)
+  \For {i in range of the length of Stock Prices}
+  \State{We initialize Sti to be the ith element of the list of Stock prices}
+  \State{absoluteValue = abs(Sti-x)}
+  \State{ We initilize indicatorValue to pass through indicator function}
+  \If{ absoluteValue is less than hn}
+  \State{sum = sum+indicatorValue} 
+  \Return{scalar*sum}
+  \end{algorithmic}
+  \end{algorithm}
+  \item \verb! (Local_Time)!: Input for this function are T,S,x,n,hn.
+ Output for this function will be $L_{T}^n(x) = (\frac{T}{2nhn}) \sum_{i =1}^ n 1_{|S\_t(i)-x)| < hn}*n(S(t(i+1))-S(t(i))^2$
+  \begin{algorithm}
+  \caption{Local Time}
+  \bigskip
+  \textbf{Inputs}: T=Time,S= Stock Prices,x= grid points,n= number of total Stock Prices,hn=Step Size\\
+  \textbf{Steps}
+  \begin{algorithmic}[1]
+  \item sum = 0.0
+  \item scalar = T/(2.0*n*hn)
+  \For{for i in range of the length of Stock prices - 1}
+  \State{We initialize Sti to be the ith element of the list of Stock prices}
+  \State{We initialize Stj to be the jth element of the list of Stock prices}
+  \State{absoluteValue = abs(Sti-x)}
+  \State{Difference = (Stj-Sti)**2}
+  \State{ We initilize indicatorValue to pass through indicator function}
+  \If{ absoluteValue is less than hn}
+  \State{sum = sum+indicatorValue*n*Difference} 
+  \Return{scalar*sum}
+  \end{algorithmic}
+  \end{algorithm}
+  \item \verb! (Volatility_Estimator Sn(x))!: Volatility Estimator is $\sigma^2(x)$.Input for this function are T,S,x,n,hn.
+ Output for this function will be Local Time$/$Sublocal Time.
+  \begin{algorithm}
+  \caption{Volatility Estimator}
+  \bigskip
+  \textbf{Inputs}: T=Time,S= Stock Prices,x= grid points,n= number of total Stock Prices,hn=Step Size\\
+  \textbf{Steps}
+  \begin{algorithmic}[1]
+  \item We will initialize ratio to be Local Time / Sublocal Time.
+  \item Return ratio.
+  \end{algorithmic}
+  \end{algorithm}
 \end{enumerate}
