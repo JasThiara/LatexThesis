@@ -2,10 +2,14 @@
 \chapter{Implementation of an Asset Bubble Problem}
 \section{Implementation}
 We used sage python to solve this problem. We orgnize our data and process in six classes. Each class is designed to store the information about Stock, Floren Zmirou
-AssetBubble, AssetBubbleDetection, Approximation, and Run.
+AssetBubble, AssetBubbleDetection, Approximation, and Run. First we will work with Stock Class.
+First We will start with time and stock prices for some stock symbol. First question which will come in mind that How to download and use historic stock prices?
+So to answer that question, we initialize Stock Class which will explain step by step process how to download, open, read and save historical stock prices.
+
 \subsection{Stock Class}
 \paragraph{Methods of Stock Class}
-We obtain stock data by two types of methods. First, we will get it through Google Finance and second, we will get it from CSV file.
+We obtain stock data by two types of methods. First, we will get it through Google Finance and second, we will get it from CSV file which we download and saved from yahoo finance.
+There are four functions IsNumber,GetGoogleData, GetStockPrice,and init in Stock Class.
 \begin{enumerate}
   \item \verb! IsNumber()!: Input for this function is rowValue. This function determine if rows of stock data is a numerical string or not.
   \item \verb! GetGoogleData()!: Input for this function are Ticker,days and period. This function obtains data for any stock from Google
@@ -171,6 +175,33 @@ We will implement floren Zmirou on the following functions. Floren Zmirou has Su
   \begin{algorithmic}[1]
   \item We will initialize ratio to be Local Time / Sublocal Time.
   \item Return ratio.
+  \end{algorithmic}
+  \end{algorithm}
+ We have $\sigma^2(x)$ for Stock Prices. Now we want to see how many stock prices are in each grid point. 
+ If there are less than 0 or 1 percent of stock prices in grid then we will exclude that grid point from
+ our calculation process.
+ \item \verb! (DoGridAnalysis)!:Input for this function are T,S,x,n,hn.
+ Output for this function give us the list of usable grid points and for each usable grid point, the list of Stock prices.
+  \begin{algorithm}
+  \caption{DoGridAnalysis}
+  \bigskip
+  \textbf{Inputs}: T=Time,S= Stock Prices,x= grid points,n= number of total Stock Prices,hn=Step Size,Y = Y percent of total data points.\\
+  \textbf{Steps}
+  \begin{algorithmic}[1]
+  \item We initialize x to be useableGridPoints.
+  \item Create a empty dictionary and call it d.
+  \item We initialize stockPriceCount Si to be the length of Stock Prices.
+  \For{grid Points in x}
+  \State{create a dictionary where the keys are the grid points and the value is a list for each grid point}
+  \For{stockPrice in S}
+  \If{|grid Points - stockPriceCount|$\leq$ hn}
+  \State{Add x value to corresponding Si}
+  \For{grid Points in x}
+  \If{if the list of data points corresponding to x has greater than Y percent of total grid points}
+  \State{add it to the list of usable grid points}
+  \Return
+  \item 1) the list of usable grid points
+  \item 2) for each usable grid point, the list of stockprices}
   \end{algorithmic}
   \end{algorithm}
 \end{enumerate}

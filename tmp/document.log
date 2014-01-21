@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  17 JAN 2014 14:50
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  21 JAN 2014 13:26
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -285,36 +285,25 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 \c@case=\count120
 \c@prob=\count121
 
-(./document.aux
-
-LaTeX Warning: Label `eqnModelling2-1' multiply defined.
-
-
-LaTeX Warning: Label `eqnModelling4-1' multiply defined.
-
-
-LaTeX Warning: Label `eqnMartingalesAndBubbles4-1' multiply defined.
-
-)
+(./document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 59.
-LaTeX Font Info:    ... okay on input line 59.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 59.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
+LaTeX Font Info:    ... okay on input line 68.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 68.
  (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+) (/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen125
@@ -327,11 +316,11 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \MPnumerator=\count126
 \everyMPtoPDFconversion=\toks31
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 59.
+LaTeX Font Info:    Try loading font information for U+msa on input line 68.
  (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 59.
+LaTeX Font Info:    Try loading font information for U+msb on input line 68.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -340,17 +329,17 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 {/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
  [4]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 59.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
 
-(./document.toc [5
-
-])
+(./document.toc)
 \tf@toc=\write3
 \openout3 = `document.toc'.
 
- [6]
+ [5
+
+]
 \oldbaselineskip=\skip55
- [7]
+ [6]
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -400,1244 +389,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 )))
-(./Outline.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--9
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--18
-
- []
-
-) (./Abstract.tex [1]) (./Introduction.tex
-
-! LaTeX Error: \mathcal allowed only in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.25 ...used which is a compact subset of \mathcal
-                                                  {R+}.Therefore we can not ...
-
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-) (./Def.tex
-Underfull \hbox (badness 10000) in paragraph at lines 2--1
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.3 \subsection{Asset Price Bubbles}\\\\
-                                        
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.4  T
-      he difference between the market and fundamental price, if any, is a p...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
-
- []
-
-[1]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7  T
-      he strike price or exercise price of an option is the fixed price at w...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 7--8
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.10 R
-      ate at which the price of security moves up and down.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 15--16
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.17 G
-      iven a probability space $\left( \Omega, \mathcal{F}, P \right) $, a s...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 23--24
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.25 A
-       differential equation with one or more terms is a stochastic process.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.28 C
-      onsider the linear SDE with a Brownian Motion $\left\lbrace S_t: 0\leq...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 36.
-(/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/omsptm.fd
-File: omsptm.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 36.
- [2]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.41 ...on{The Price Asset Model using an SDE}\\\\
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.42 \subsection
-                {Brownian Motion}\\\\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.42 \subsection{Brownian Motion}\\\\
-                                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.43 A
-       continuous-time stochastic process $\left\lbrace S_{t}: 0\leq t\leq T...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.70 \subsection{Supermartingale}\\\\
-                                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.71 T
-      he stochastic process $S = \displaystyle{\left\lbrace S_n \right\rbrac...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.77  \subsection{Local Martingale}\\\\
-                                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.78 I
-      f $\left\lbrace S_n \right\rbrace$ is adapted to the filtration $\left...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[3]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.86  A
-        strict local martingale is a non-negative local martingale.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.89  I
-       f for any strict local martingale $$\left\lbrace S_t : 0 \leq t \leq ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98 ...tion{Relating Martingales and Bubbles}\\\\
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99 \subsection
-                {theorem}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[4]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.124 ...at is the Florens-Zimirou Estimator?}\\\\
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.125 T
-       his estimator is a non-parametric estimator based on the local time o...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.128 \subsection{Random Variable }\\\\
-                                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.129 R
-       andom Variable is a variable whose value is subject to variations due...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 129--130
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 131--133
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--139
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 136--139
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.140 \subsection{Hilbert Space}\\\\
-                                    
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.141 
-      
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 142--143
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.144 ...ion{Reproducing Kernal Hilbert Space}\\\\
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.145 $
-       k(  )$ is a reproducing kernal of hilbert space \\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 145--148
-
- []
-
-[5]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.150  $
-        k : \mathcal{X} X \mathcal{X} \rightarrow \mathcal{R}$ is a kernal i...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 150--152
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 155--156
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--161
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 157--161
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.162     T
-           he RKHS $H(D)$ has one and only one reproducing kernal $Q(x,x')$\\\\
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 162--163
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.164     $
-           Q(x,x')$ is symmetric  means $ Q(x,x') = Q(x',x)$\\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 164--166
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.167   S
-         mall changed in input to the expression will make small changes in ...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
-
- []
-
-[6]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.169    S
-          mall changes in input to the expression will make large changes in...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 169--170
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.170    \subsection{Beta Function}\\\\
-                                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.171    $
-          B(x,y) = \int_0^1 {t^{x-1}}{(1-t)^{y-1}}dt$\\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 171--173
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.173 ...ion{Gaussian Hypergeometric function}\\\\
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.174    f
-          or $|z| <1 $\\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--177
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--177
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 174--177
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 178--179
-
- []
-
-[7]
-Underfull \hbox (badness 10000) in paragraph at lines 201--202
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 208--209
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 215--216
-
- []
-
-) (./Chapter2.tex [8]
-Underfull \hbox (badness 10000) in paragraph at lines 19--20
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 41--42
-
- []
-
-[9]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.43 G
-      iven a probability space $\left( \Omega, \mathcal{F}, P \right) $, a s...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 49--50
-
- []
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.51 A
-       differential equation with one or more terms is a stochastic process.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[10]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.92 \subsection{Supermartingale}\\\\
-                                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.93 T
-      he stochastic process $S = \displaystyle{\left\lbrace S_n \right\rbrac...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99  \subsection{Local Martingale}\\\\
-                                       
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100 I
-       f $\left\lbrace S_n \right\rbrace$ is adapted to the filtration $\lef...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.108  A
-         strict local martingale is a non-negative local martingale.
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.111  I
-        f for any strict local martingale $$\left\lbrace S_t : 0 \leq t \leq...
-
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--114
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 111--114
-
- []
-
-[11]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.120 ...ion{Relating Martingales and Bubbles}\\\\
-                                                  
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.121 \subsection
-                 {theorem}
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 165--166
-
- []
-
-
-! Package inputenc Error: Keyboard character used is undefined
-(inputenc)                in inputencoding `latin1'.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.171 ...ler function with $S_0 = x_0$\textbf{•}
-                                                   random variable\\
-You need to provide a definition with \DeclareInputText 
-or \DeclareInputMath before using this key.
-
-
-! LaTeX Error: Command \textcent unavailable in encoding T1.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.171 ...ler function with $S_0 = x_0$\textbf{•}
-                                                   random variable\\
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 170--172
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--183
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 175--183
-
- []
-
-[13]
-Underfull \hbox (badness 10000) in paragraph at lines 212--213
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 218--220
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--227
-
- []
-
-! Double subscript.
-l.228   \item $(S_t_
-                    1\ldots S_t_n)$ are the stock prices in the interval $t_...
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-! Double subscript.
-l.228   \item $(S_t_1\ldots S_t_
-                                n)$ are the stock prices in the interval $t_...
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-
-LaTeX Warning: Command \L invalid in math mode on input line 236.
-
-Missing character: There is no � in font cmr12!
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 231--242
-
- []
-
-[14]
-Underfull \hbox (badness 10000) in paragraph at lines 243--245
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 249--253
-
- []
-
-[15]
-! Undefined control sequence.
-l.261 \subsubsubsection
-                        {Regularized solution with Kernal function}
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 260--265
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--270
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--270
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--270
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--270
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 266--270
-
- []
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.276 $m\bar$
-              = argmin_$m\geq 0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\si...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.276 $m\bar$
-              = argmin_$m\geq 0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\si...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing { inserted.
-<to be read again> 
-                   $
-l.276 $m\bar$ = argmin_$
-                        m\geq 0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\si...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.276 $m\bar$ = argmin_$
-                        m\geq 0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\si...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.276 $m\bar$ = argmin_$m\geq
-                              0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\si...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--277
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--277
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 274--277
-
- []
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.279   \item $\sigma_m\bar$
-                             has the asymptotic behavior that beast matches ...
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.279   \item $\sigma_m\bar$
-                             has the asymptotic behavior that beast matches ...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.280 ...ting function parameter $m$ such that $f_
-                                                  m = \frac {1}{\sigma^2m}$.
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (556.60625pt too wide) in paragraph at lines 279--281
-[][]$\OML/cmm/m/it/12 ^^[[]hastheasymptoticbehaviorthatbeastmatchesourfunctiono
-ntheestimationinterval:Wewillconstructextrapolationbychoosingtheasymptoticweigh
-tingfunctionparameter$\T1/ptm/m/n/12 m$\OML/cmm/m/it/12 suchthat$\T1/ptm/m/n/12
- f$[] \OT1/cmr/m/n/12 =
- []
-
-[16]
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.284 ...ic weighting function's parameter $m\bar$
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.284 ...ic weighting function's parameter $m\bar$
-                                                  
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.285 ...input data within all the function in $H_
-                                                  {1,m}$
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-
-Overfull \hbox (466.36899pt too wide) in paragraph at lines 284--286
-[][]\T1/ptm/m/n/12 The asymp-totic weight-ing func-tion's pa-ram-e-ter $\OML/cm
-m/m/it/12 mobtainedbyoptimizationandminimizationisthemostconsistentwhichexactly
-matchtheinputdatawithinallthefunctionin$\T1/ptm/m/n/12 H$[]$ 
- []
-
-) (./Estimators.tex [17]
+(./Chapter3.tex
 Chapter 1.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 10.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 14.
 (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/t1pcr.fd
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 )
@@ -1648,7 +402,7 @@ See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.34   \end{algorithmic}
+l.38   \end{algorithmic}
                         
 This error message was generated by an \errmessage
 command, so I can't give any explicit help.
@@ -1658,7 +412,7 @@ and deduce the truth by order and method.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.48   \For
+l.52   \For
             {row in cr}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1666,7 +420,7 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.48   \For
+l.52   \For
             {row in cr}
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -1677,14 +431,14 @@ See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.52   \end{algorithmic}
+l.56   \end{algorithmic}
                         
 (That was another \errmessage.)
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.62   \If
+l.66   \If
            {filename is in keyward Usage}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1692,12 +446,12 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.62   \If
+l.66   \If
            {filename is in keyward Usage}
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Undefined control sequence.
-l.64   \Elif
+l.68   \Elif
             {Ticker is used in keyward Usage}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -1712,21 +466,19 @@ See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.67   \end{algorithmic}
+l.71   \end{algorithmic}
                         
 (That was another \errmessage.)
 
-[18
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 71--74
+Underfull \hbox (badness 10000) in paragraph at lines 75--78
 
  []
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.85   \end{algorithmic}
+l.89   \end{algorithmic}
                         
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1735,24 +487,26 @@ look up `weird error' in the index to The TeXbook.)
 ! Missing = inserted for \ifnum.
 <to be read again> 
                    \ALG@currentblock@0 
-l.85   \end{algorithmic}
+l.89   \end{algorithmic}
                         
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.85   \end{algorithmic}
+l.89   \end{algorithmic}
                         
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-[19]
+[1
+
+] [2]
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.125  Output for this function will be L_
+l.129  Output for this function will be L_
                                           ${T}^n(x) = (\frac{T}{2nhn}) \sum_...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1760,7 +514,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing { inserted.
 <to be read again> 
                    $
-l.125  Output for this function will be L_$
+l.129  Output for this function will be L_$
                                            {T}^n(x) = (\frac{T}{2nhn}) \sum_...
 A left brace was mandatory here, so I've put one in.
 You might want to delete and/or insert some corrections
@@ -1770,7 +524,7 @@ so that I will find a matching right brace soon.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.125  Output for this function will be L_$
+l.129  Output for this function will be L_$
                                            {T}^n(x) = (\frac{T}{2nhn}) \sum_...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1781,7 +535,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.125  Output for this function will be L_${T}^
+l.129  Output for this function will be L_${T}^
                                                n(x) = (\frac{T}{2nhn}) \sum_...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1793,14 +547,15 @@ See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.141   \end{algorithmic}
+l.145   \end{algorithmic}
                          
 (That was another \errmessage.)
 
+[3]
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.153   \For
+l.157   \For
             {for i in range of the length of Stock prices - 1}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -1808,7 +563,7 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.153   \For
+l.157   \For
             {for i in range of the length of Stock prices - 1}
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -1819,14 +574,14 @@ See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.162   \end{algorithmic}
+l.166   \end{algorithmic}
                          
 (That was another \errmessage.)
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.174   \end{algorithmic}
+l.178   \end{algorithmic}
                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -1835,57 +590,65 @@ look up `weird error' in the index to The TeXbook.)
 ! Missing = inserted for \ifnum.
 <to be read again> 
                    \ALG@currentblock@0 
-l.174   \end{algorithmic}
+l.178   \end{algorithmic}
                          
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.174   \end{algorithmic}
+l.178   \end{algorithmic}
                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
 
-[20] [21]) (./Ends/Ends/postfix.tex
+! Extra }, or forgotten \endgroup.
+l.204 ...able grid point, the list of stockprices}
+                                                  
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+
+! Package algorithmicx Error: Some blocks are not closed!!!.
+
+See the algorithmicx package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.205   \end{algorithmic}
+                         
+(That was another \errmessage.)
+
+) (./Ends/Ends/postfix.tex
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[22] (./document.aux)
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) ) 
+[4] [5] (./document.aux) ) ) 
 Here is how much of TeX's memory you used:
- 5038 strings out of 493747
- 69385 string characters out of 3143546
- 137122 words of memory out of 3000000
- 8182 multiletter control sequences out of 15000+200000
- 28006 words of font info for 56 fonts, out of 3000000 for 9000
+ 4991 strings out of 493747
+ 68778 string characters out of 3143546
+ 139122 words of memory out of 3000000
+ 8164 multiletter control sequences out of 15000+200000
+ 22389 words of font info for 45 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,14n,38p,484b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local
-/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/
-texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/te
-xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/tex
-live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texl
-ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texliv
-e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/
-2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/
-2010/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texl
-ive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texliv
-e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2
-010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2010
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2010/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2010/texm
-f-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2010/texmf-dist/f
-onts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1
-/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/times
-/utmri8a.pfb>
-Output written on document.pdf (30 pages, 243838 bytes).
+ 43i,7n,38p,414b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips
+/base/8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmex10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmmi12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
+fb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
+></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/l
+ocal/texlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texli
+ve/2010/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on document.pdf (11 pages, 113163 bytes).
 PDF statistics:
- 174 PDF objects out of 1000 (max. 8388607)
- 122 compressed objects within 2 object streams
+ 81 PDF objects out of 1000 (max. 8388607)
+ 57 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
