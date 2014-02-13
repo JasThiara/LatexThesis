@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  21 JAN 2014 13:26
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  13 FEB 2014 15:10
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -288,19 +288,19 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 (./document.aux)
 \openout1 = `document.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 68.
-LaTeX Font Info:    ... okay on input line 68.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 68.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 66.
+LaTeX Font Info:    ... okay on input line 66.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 66.
  (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) (/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
@@ -316,11 +316,11 @@ File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 \MPnumerator=\count126
 \everyMPtoPDFconversion=\toks31
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 68.
+LaTeX Font Info:    Try loading font information for U+msa on input line 66.
  (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 68.
+LaTeX Font Info:    Try loading font information for U+msb on input line 66.
 
 (/usr/local/texlive/2010/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -329,7 +329,7 @@ File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 {/usr/local/texlive/2010/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
  [4]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 68.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 66.
 
 (./document.toc)
 \tf@toc=\write3
@@ -412,7 +412,7 @@ and deduce the truth by order and method.
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.52   \For
+l.51   \For
             {row in cr}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -420,7 +420,7 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.52   \For
+l.51   \For
             {row in cr}
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -431,14 +431,14 @@ See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.56   \end{algorithmic}
+l.55   \end{algorithmic}
                         
 (That was another \errmessage.)
 
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.66   \If
+l.65   \If
            {filename is in keyward Usage}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -446,12 +446,12 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.66   \If
+l.65   \If
            {filename is in keyward Usage}
 I'm ignoring this, since I wasn't doing a \csname.
 
 ! Undefined control sequence.
-l.68   \Elif
+l.67   \Elif
             {Ticker is used in keyward Usage}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -466,19 +466,19 @@ See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.71   \end{algorithmic}
+l.70   \end{algorithmic}
                         
 (That was another \errmessage.)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 75--78
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
  []
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.89   \end{algorithmic}
+l.88   \end{algorithmic}
                         
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -487,14 +487,14 @@ look up `weird error' in the index to The TeXbook.)
 ! Missing = inserted for \ifnum.
 <to be read again> 
                    \ALG@currentblock@0 
-l.89   \end{algorithmic}
+l.88   \end{algorithmic}
                         
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.89   \end{algorithmic}
+l.88   \end{algorithmic}
                         
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -503,42 +503,16 @@ look up `weird error' in the index to The TeXbook.)
 [1
 
 ] [2]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.129  Output for this function will be L_
-                                          ${T}^n(x) = (\frac{T}{2nhn}) \sum_...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing { inserted.
-<to be read again> 
-                   $
-l.129  Output for this function will be L_$
-                                           {T}^n(x) = (\frac{T}{2nhn}) \sum_...
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
 ! Missing } inserted.
 <inserted text> 
                 }
-l.129  Output for this function will be L_$
-                                           {T}^n(x) = (\frac{T}{2nhn}) \sum_...
+l.132 ...T}{2nhn}) \sum_{i =1}^ n 1_{|S\_t(i)-x)|$
+                                                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.129  Output for this function will be L_${T}^
-                                               n(x) = (\frac{T}{2nhn}) \sum_...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
 
 ! Package algorithmicx Error: Some blocks are not closed!!!.
@@ -547,7 +521,7 @@ See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.145   \end{algorithmic}
+l.143   \end{algorithmic}
                          
 (That was another \errmessage.)
 
@@ -555,7 +529,7 @@ l.145   \end{algorithmic}
 ! Missing \endcsname inserted.
 <to be read again> 
                    \ALG@currentblock@0 
-l.157   \For
+l.155   \For
             {for i in range of the length of Stock prices - 1}
 The control sequence marked <to be read again> should
 not appear between \csname and \endcsname.
@@ -563,7 +537,7 @@ not appear between \csname and \endcsname.
 ! Extra \endcsname.
 \ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
                                                   \relax \def \ALG@thisblock...
-l.157   \For
+l.155   \For
             {for i in range of the length of Stock prices - 1}
 I'm ignoring this, since I wasn't doing a \csname.
 
@@ -574,14 +548,14 @@ See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.166   \end{algorithmic}
+l.164   \end{algorithmic}
                          
 (That was another \errmessage.)
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.178   \end{algorithmic}
+l.176   \end{algorithmic}
                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -590,27 +564,18 @@ look up `weird error' in the index to The TeXbook.)
 ! Missing = inserted for \ifnum.
 <to be read again> 
                    \ALG@currentblock@0 
-l.178   \end{algorithmic}
+l.176   \end{algorithmic}
                          
 I was expecting to see `<', `=', or `>'. Didn't.
 
 ! Missing number, treated as zero.
 <to be read again> 
                    \ALG@currentblock@0 
-l.178   \end{algorithmic}
+l.176   \end{algorithmic}
                          
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
 look up `weird error' in the index to The TeXbook.)
-
-! Extra }, or forgotten \endgroup.
-l.204 ...able grid point, the list of stockprices}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
 
 
 ! Package algorithmicx Error: Some blocks are not closed!!!.
@@ -619,36 +584,127 @@ See the algorithmicx package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.205   \end{algorithmic}
+l.207   \end{algorithmic}
                          
 (That was another \errmessage.)
 
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.217   \For
+            {x in usable grid points}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.217   \For
+            {x in usable grid points}
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package algorithmicx Error: Some blocks are not closed!!!.
+
+See the algorithmicx package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.221   \end{algorithmic}
+                         
+(That was another \errmessage.)
+
+[4] [5]
+
+! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.224   \item \verb
+                   ! (GetGridInverseStandardDeviation)!:Input for this funct...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Underfull \hbox (badness 10000) detected at line 224
+[][]
+ []
+
+! Missing \endcsname inserted.
+<to be read again> 
+                   \ALG@currentblock@0 
+l.232   \For
+            {x in usable grid points}
+The control sequence marked <to be read again> should
+not appear between \csname and \endcsname.
+
+! Extra \endcsname.
+\ALG@makebeginrepeat ...\ALG@thisblock \endcsname 
+                                                  \relax \def \ALG@thisblock...
+l.232   \For
+            {x in usable grid points}
+I'm ignoring this, since I wasn't doing a \csname.
+
+
+! Package algorithmicx Error: Some blocks are not closed!!!.
+
+See the algorithmicx package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.236   \end{algorithmic}
+                         
+(That was another \errmessage.)
+
+
+! LaTeX Error: \begin{document} ended by \end{enumerate}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.238 \end{enumerate}
+                     
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Extra \endgroup.
+<recently read> \endgroup 
+                          
+l.238 \end{enumerate}
+                     
+Things are pretty mixed up, but I think the worst is over.
+
 ) (./Ends/Ends/postfix.tex
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[4] [5] (./document.aux) ) ) 
+[6] (./document.aux) ) ) 
 Here is how much of TeX's memory you used:
- 4991 strings out of 493747
- 68778 string characters out of 3143546
+ 4995 strings out of 493747
+ 68838 string characters out of 3143546
  139122 words of memory out of 3000000
- 8164 multiletter control sequences out of 15000+200000
+ 8168 multiletter control sequences out of 15000+200000
  22389 words of font info for 45 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,7n,38p,414b,470s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips
-/base/8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmex10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmmi12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
-12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
-pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.p
-fb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb
-></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/l
-ocal/texlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texli
-ve/2010/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on document.pdf (11 pages, 113163 bytes).
+ 43i,8n,38p,414b,476s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/bas
+e/8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cme
+x10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.p
+fb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+</usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></u
+sr/local/texlive/2010/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local
+/texlive/2010/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2
+010/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
+Output written on document.pdf (12 pages, 114412 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 57 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

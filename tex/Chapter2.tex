@@ -1,38 +1,35 @@
 
-\section{Chapter 2}
-\subsection {Theoretical Background }
+{Chapter 2}
+\section {Theoretical Background }
 %Where does your problem come from? (you’ll have to talk about stochastic PDEs, volatility, assets price modeling, martingales, etc.) 
-First of all we will introduce Stochastic Differential Equations. 
- SDE are being used in various fields for example biology, physics, mathematics and of course finance. 
- In finance, SDE is used to model asset price included with Brownian motion. 
- Here we will use constant parameters drift and diffusion coeficients. 
- With these constants , we will use euler muruyama method to model asset price. \\
- In this chapter, we will focus on numerical solution of stochastic differential equations (SDE). It will give us better understanding toward the theory behind SDE. SDE are used in various areas like biology, chemistry, economics and of course finance. We will also study Brownian motion and compute Brownian paths with different methods. Euler -Maruyama method, strong and weak convergence , milstein method are being used to show solutions of SDE. \\
+First of all we will introduce Stochastic Differential Equations SDE. 
+ SDE are used in various fields like biology, physics, mathematics and of course finance. 
+ We will focus in finance , SDE is used to model asset price with Brownian motion. 
+ In this thesis work, we will use constant parameters drift $\mu$ and diffusion coeficients $\sigma$. Let's suppose we have $\mu$ and $\sigma$
+ With these assumptions, we will use euler muruyama method to model asset price. \\
+ In this chapter, we will focus on numerical solution of stochastic differential equations (SDE). It will give us better understanding toward the theory behind SDE. 
+ We will also study Brownian motion and compute Brownian paths with different methods for example Euler -Maruyama method, strong and weak convergence , milstein method are being used to show solutions of SDE. \\
  Now let's start with finance knowledge, Suppose the market price of an asset increases significantly.  How can one determine if the market price is inflated
 above the actual price of an asset? This price behavior is know as a bubble.\\
 To model price bubbles, we want to consider the following:
 \begin{itemize}
 \item What is an asset price bubble?
 \item How does one determine if an asset price is experiencing a bubble?
-\item Can one detect an asset price bubble in \textit{real-time}?
 \end{itemize}
-Lets's consider finance definations :\\
+
 \begin{itemize}
 \item Market Price - The current price of an asset.
 \item Fundamental Price - The actual value of an asset based on an underlying perception of its \textit{true value}.
 \item Risk - Variance of return on an asset 
 \item Portfolio - Set of Assets.
-
 \item Asset Bubble- The difference between the market and fundamental price, if any, is a price bubble.
- 
  \item Strike price -The strike price or exercise price of an option is the fixed price at which the owner of the option can buy( in the case of call) or sell (in the case of a put) the underlying security or commodity.
-
 \item Volatility-Rate at which the price of security moves up and down.
 \end{itemize} 
-\subsection {Probability Measure}
-\subsubsection{Probability Space} ($\Omega,\mathcal{F},P$) where $\Omega$ is a set ( sample space), $\mathcal{F}$ is a sigma
+Lets's consider mathematical definations :\\
+\subsection{Probability Space} ($\Omega,\mathcal{F},P$) where $\Omega$ is a set ( sample space), $\mathcal{F}$ is a sigma
 algebra of subsets (events) of $\Omega$, and $P$ is a Probability Measure.
- \subsubsection{Random Variable} - Measurable functions of real analysis.
+ \subsection{Random Variable} - Measurable functions of real analysis.
 $X:\Omega\rightarrow \mathcal{R}$ map $X : (\Omega,\mathcal{F})\mapsto (\mathcal{R}, \mathcal{B})$ and $X$ is random variable if \\
 $X^{-1}(A) \epsilon \mathcal{F}, \forall A \epsilon\mathcal{B})$,\\
 where $X^{-1}(A):={\omega \epsilon \Omega\mid X(\omega) \epsilon A}$
@@ -153,8 +150,6 @@ S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t
 \end{equation}
 
 %%%%%Modelling Page 7%%%%
-\subsubsection{ What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
-
 \begin{equation}
 \begin{array}{rcl}
 dS_t &=& \mu(S_t)dt+\sigma(S_t)dW_t\\
@@ -213,10 +208,22 @@ For this type of bubble, saying whether or not a bubble exists amounts to determ
 \begin{equation}
 \int_\alpha^\infty \frac{x}{\sigma\left(x\right)}dx < \infty  for all \alpha >0
 \end{equation} 
+ First We will obtain data from Google Finance and Yahoo Finance. Algorithms 1, 2 and 3 shows the process how to get Stock Prices.
  Floren Zmirou's non parametric estimator is based on the local time of the Diffusion Process.
- \subsubsection{Diffusion Process}
+ \begin{itemize}
+ \item{Diffusion Process}
+ \end{itemize}
  In probability theory, a branch of mathematics, a diffusion process is a solution to a stochastic differential equation. 
  It is a continuous-time Markov process with almost surely continuous sample paths.\\
+ \subsection {Theorem1}
+If $Sigma$is bounded above and below from zero, has three continuous and bounded
+derivatives, and if $(h_n)_n≥1 $satisfies $nh_n\rightarrow \infty $ and $nh_4n\rightarrow 0$, then $S_n(x)$ is a consistent estimator of $\sigma^2(x)$.\\
+ \subsection{Theorem2}
+ If $nh_n\rightarrow 0 $, then $\sqrt{N^n_x}((\frac{S_n(x)}{\sigma^2(x)})-1)$ converges in distribution to $\sqrt{2}Z$
+ where Z is a standard normal ransom variable and $N^n_x$ = $1_{\{|S_{ti}-x|<hn\}}$
+ 
+ Floren Zmirou estimator requires a grid step which is $h_n\rightarrow 0 $ such that $nh_n\rightarrow \infty $ and $nh^4_n\rightarrow 0 $.
+ We will choose step size $h_n = \frac{1}{n^\frac{1}{3}}$ so that all the conditions will be satisfied.
  \subsection{Floren Zmirou}
  Lets consider following equation:
  \begin{equation}
@@ -239,9 +246,6 @@ Let's assume that $nh_n \rightarrow \infty$ and $h_n\rightarrow 0$\\\\
 $\Longrightarrow L^n_{T}(x)= \frac{T}{2nh_n}\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} $\\\\
 estimator of $\sigma^2(S_{x})$ as follows:\\\\
 $S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}$\\\\
-\subsection {Theorem}
-If $Sigma$is bounded above and below from zero, has three continuous and bounded
-derivatives, and if $(h_n)_n≥1 $satisfies $nh_n\rightarrow \infty $ and $nh_4n\rightarrow 0$, then $S_n(x)$ is a consistent estimator of $\sigma^2(x)$.\\
 
 Now we have $\sigma^2(x)$ and we will use interpolation methods to see function's behaviour. 
 
@@ -273,10 +277,10 @@ decide if there is need of extrapolation.\\
 \subsection{Extrapolation ,Optimization and Minimization}
 Now since we have extended function $\sigma^b(x)$, we will extrapolate this over $\mathcal{R^+}$.\\
 Let's consider following optimization with minimazation problem:\\\\
-$m\bar$ = argmin_$m\geq 0 \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\sigma^b|^2}dS$\\\\
+$\bar{m}$ = argmin_$m\geq 0$ \sqrt{\int_{[a,\infty[\cap D} |\sigma_m -\sigma^b|^2}dS\\\\
 \begin{itemize}
   \item $\sigma_m$ will interpolate the input data points when n = 2.
-  \item $\sigma_m\bar$ has the asymptotic behavior that beast matches our function on the estimation interval. 
+  \item $\sigma_\bar{m}$ has the asymptotic behavior that beast matches our function on the estimation interval. 
   We will construct extrapolation by choosing the asymptotic weighting function parameter $m$ such that $f_m = \frac {1}{\sigma^2m}$.
   \item $a$ = max S - $\frac{1}{3}$(maxS-min S)
   \item $H_{2,m}$ allows the best interpolation of M which is estimated points such that the extrapolation function remains as close as possible to $\sigma^b(x)$.
