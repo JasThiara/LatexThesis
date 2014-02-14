@@ -254,8 +254,27 @@ Interpolation is a method of constructing new data points within the range of a 
 For example Linear Interpolation,polynomial interpolation, piecewise constant interpolation, spline interpolation.
 Here we will interpolate an estimate of $\sigma^2(x_i)$ where $i \in [1.M]$ within the bounded finite interval $D$ where we have observations.
 We used cubic spline interpolation and Reproducing Kernal Hilbert Spaces to get interpolation function.\\
-\subsubsection{Cubic Spline}
-A cubic spline is a spline for which the function is a polynomial of degree  3 on every subinterval, and a function with two continuous derivatives overall.
+\subsubsection{Cubic Spline Interpolation}
+\begin{itemize}
+\item {\bf Piecewise-polynomial approximation} : An alternative approach is to divide the interval into a collection of subintervals
+and construct a different approximating polynomial on each subinterval.
+Approximation by functions of this type is called piecewise-polynomial approximation.
+\item The most common piecewise-polynomial approximation uses cubic polynomial between each sucessive pair of nodes
+and is called {\bf cubic spline interpolation}.
+\item {\bf Cubic Spline Interpolation}\\
+Given a function f defined on [a,b] and a set of nodes $a = x_o<x_1<\ldots <x_n = b$
+a {\bf cubic spline interpolant S} for f is a function that satisfies the following conditions:\\\\
+a) $S(x)$ is a cubic polynomial, denoted $S_j(x)$ on the subinterval $[x_j,x_{j+1}]$ for each
+$j = 0,1,2,\ldots,n-1$;\\\\
+b) $S_j(x_j) = f(x_j)$ and $S_j(x_{j+1})= f(x_{j+1})$ for each $j = 0,1,2,\ldots,n-1$;\\\\
+c) $S_{j+1}(x_{j+1}) = S_j(x_{j+1})$ for each $j = 0,1,2,\ldots,n-2$;\\\\
+d) $S'_{j+1}(x_{j+1}) = S'_j(x_{j+1})$ for each $j = 0,1,2,\ldots,n-2$;\\\\
+e) $S''_{j+1}(x_{j+1}) = S''_j(x_{j+1})$ for each $j = 0,1,2,\ldots,n-2$;\\\\
+f) One of the following sets of boundry conditions is satisfied;\\\\
+      i) $S''(x_0) = S''x_n) = 0 $;\\\\
+      ii) $S'(x_0) = f'x_0)$ and $S'(x_n) = f'x_n) $\\
+\item {\bf Natural Spline} When the free boundry conditions occur, the spline is called {\bf natural spline}.
+\end{itemize}
 \subsubsection {Interpolation is seen as inverse problem.}
 \subsubsection {We will have two types of solutions for inverse problem.}
 \subsubsection{Normal Solution}
