@@ -178,7 +178,7 @@ We will implement floren Zmirou on the following functions. Floren Zmirou has Su
  We have $\sigma^2(x)$ for Stock Prices. Now we want to see how many stock prices are in each grid point. 
  If there are less than 0 or 1 percent of stock prices in grid then we will exclude that grid point from
  our calculation process.
- \item \verb! (DoGridAnalysis)!:Input for this function are T,S,x,n,hn.
+  \item \verb! (DoGridAnalysis)!:Input for this function are T,S,x,n,hn.
  Output for this function give us the list of usable grid points and for each usable grid point, the list of Stock prices.
   \begin{algorithm}
   \caption{DoGridAnalysis}
@@ -220,7 +220,6 @@ We will implement floren Zmirou on the following functions. Floren Zmirou has Su
   \Return{Points}
   \end{algorithmic}
   \end{algorithm}
-\end{enumerate}
   \item \verb! (GetGridInverseStandardDeviation)!:Input for this function is self.
   \begin{algorithm}
   \caption{GetGridInverseStandardDeviation}
@@ -233,6 +232,39 @@ We will implement floren Zmirou on the following functions. Floren Zmirou has Su
   \State{y = 1/sqrt(Sn(x))}
   \State{Put (x,y) in Points's list}\\
   \Return{Points}
+  \end{algorithmic}
+  \end{algorithm}\\
+ {\bf Natural Cubic Spline}- To construct the cubic spline interpolant $S$ for the function $f$, defined
+ at the numbers $x_0<x_1<\ldots<x_n$ satisfying $S''(x_0) = S''(x_n) = 0:$\\
+  \item \verb! (Natural Cubic Spline)
+  \begin{algorithm}
+  \caption{Natural Cubic Spline}
+  \bigskip
+  \textbf{INPUT}: $n, x_0,x_1,\ldots,x_n; a_0 = f(x_0), a_1 = f(x1),\ldots, a_n = f(x_n)$\\
+  \textbf{OUTPUT}: $a_j, b_j,c_j,d_j$ for $j = 0,1,\ldots,n-1$.\\
+  (note: $S_(x) = S_j(x) = a_j+b_j(x-x_j)+c_j(x-x_j)^2+d_j(x-x_j)^3$ for $x_j\leq x \leq x_{j+1}$)
+  \begin{algorithmic}[1]
+  \For{$i = 0,1,$\ldots$,n-1$}
+  \State{$h_i = x_{i+1}-x_i$}
+  \EndFor
+  \For{$i = 1,2,\ldots,n-1$}:
+  \State{$\alpha_i = \frac{3}{h_i}(a_{i+1}-a_i)-\frac{3}{h_{i-1}}(a_i-a_{i-1})$}
+  \EndFor
+  \item Set $l_0 = 1;$
+  \item $\mu = 0;$
+  \item $z_0 = 0.$
+  \For{$i = 1,2,\ldots,n-1$}
+  \State{$l_1 = 2(x_{i+1}-x_{i-1})-h_{i-1}\mu_{i-1}$};
+  \item $\mu_1 = \frac{h_1}{l_1};$
+  \item $z_1 = \frac{(\alpha_1 - h_{i-1}z_{i-1})}{l_1}.$
+  \item Set $l_n = 1;$
+  \item $z_n = 0;$
+  \item $c_n = 0.$
+  \For{$j = n-1,n-2,\ldots,0$}
+  \State{$ c_j = z_j-\mu_jc_{j+1};$}
+  \State{$b_j = (a_{j+1}-a_j)/h_j -h_j(c_{j+1}+2c_j)/3;$}
+  \State{$d_j = (c_{j+1}-c_j)/(3h_j)$}
+  \item Return (a_j,b_j,c_j,d_j for j = 0,1,\ldots,n-1);
   \end{algorithmic}
   \end{algorithm}
 \end{enumerate}
