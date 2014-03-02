@@ -70,6 +70,7 @@ There are four functions IsNumber,GetGoogleData, GetStockPrice,and init in Stock
   \end{algorithmic}
   \end{algorithm}
 \subsection{Floren Zmirou Class}
+This implements equation (\ref{florenZmirouEquation})
 \paragraph{Process to solve Floren Zmirou}
 Now we have Stock Prices from Stock class. We will obtain list of sigma values from list of Stock Prices.We will explain this class in following algorithms:\\\\
 T = 60*n where T is the minute to minute time period [0,T].\\
@@ -203,7 +204,7 @@ We will implement floren Zmirou on the following functions. Floren Zmirou has Su
   \If {Percent of Stock prices < Y}
   \State{Remove grid points from x}
   \State{Delete L}\\
-  \Return{x = usable grid points and d }
+  \Return{x = usable grid points and d }  
   \end{algorithmic}
   \end{algorithm}
   \item \verb! (GetGridVariance!:Input for this function is self.
