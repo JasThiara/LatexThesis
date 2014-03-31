@@ -2,36 +2,42 @@
 \\\\
 %Question 1.1 What problem are you trying to solve?  Why is it important? What is your goal?\\
 \indent Today's economy, financial asset bubble is  exciting and hot topic. 
-In most recent market news, we have read or seen sudden change in Gold price. 
-People are interested to know what will happen in the future. How someone can be millionaire by investing in stock market?
-How we will able to detect or estimate the future changes of any asset ( stock, gold, housing, commodity)? 
+In most recent market news, we have read or seen sudden change in gold price. 
+People are interested to know what will happen in the future. How someone can be millionaire by investing in stock market? How we will able to detect or estimate the future changes of any asset ( stock, gold, housing, commodity)? 
 How quickly asset price will jump? These are the questions which we will consider in this thesis work. 
 We will study how to determine whether any asset is experiencing a price bubble in a real time. 
-\\
-\indent Our solution of the problem will decide if an asset price is experiencing a price bubble in a finite and infinite time period.\\
-We will able to determine the volatility of asset price. Using some helpful techniques to determine asset bubble in real time will help finanial corporations, banks,and money marrkets to save or earn more money.\\
-They can lower their money damaging risks by using our methodology.
-According to `` There is a bubble'' paper paragraph 2, 
-``indeed 2009 the federal reserve chairman Ben bernanke said in congress testimony[1]\\
-``It is extraordinary difficult in real time to know if an asset price is appropriate or not''.\\
-\indent Our goal is to estimate stock price volatility by Floren Zmirou estimator and then we will extrapolate the volatility tale in order to check the integral.
-whether the integral is finite or infinite. 
- The process for bubble detection depends on a mathematical analysis that determines when an asset is undergoing speculative pricing
- i.e its market price is greater than its fundamental price.
- The difference between market and fundamential price, is the price bubble.\\
- %Challenges\\
-\indent As stated above, we will use a nonparametric estimator Floren -Zmirou which is based on local time of the diffusion process.
- The biggest challenge which we faced using non parametric estimator is that we can only estimate $\sigma(x)$ volatility function on the points which are visisted by the process.
- Only finite number of data points are used which is a compact subset of \mathcal{R+}.Therefore we can not be able to estimate the tail of the volatility.
- But by determining the tail of volatility, we can see if the integral is finite or infinite. We don't know the asymptotic behavior of the volatility.In order to check the tail of the volatility, we need to use extrapolation method.\\
+%  Asset bubbles are an exciting and hot topic.  Asset bubbles are [in one senctence describe an asset bubble].  If the price of an asset increases, i.e. bubbles, well beyond intrinsic value, an investor would like to be able to detect the bubble to manager their investments with respect to that asset.  In this thesis, we discuss a method for estimating volatility of an  asset price and test for an asset bubble.  We then cover some examples using out method to test whether an asset price is experiencing a price bubble.  
+
+\indent We estime the volatility of asset prices using the Florens-Zmirou estimator. Our goal is to estimate stock price volatility by Floren Zmirou estimator and then we will extrapolate the volatility tale in order to test if the price exhibits a martingale or supermartingale.%[citation needed here].
+%
+% 
+%Using some helpful techniques to determine asset bubble in real time will help finanial corporations, banks,and money marrkets to save or earn more money.\\
+%They can lower their money damaging risks by using our methodology.
+%According to `` There is a bubble'' paper paragraph 2, 
+%``indeed 2009 the federal reserve chairman Ben bernanke said in congress testimony[1]\\
+%``It is extraordinary difficult in real time to know if an asset price is appropriate or not''.\\
+%
+%
+%whether the integral is finite or infinite. 
+% 
+% \indent The process for bubble detection depends on a mathematical analysis that determines when an asset is undergoing speculative pricing
+%  i.e its market price is greater than its fundamental price.
+%  The difference between market and fundamential price, is the price bubble.\\
+%  %Challenges\\
+% \indent As stated above, we will use a nonparametric estimator Floren -Zmirou which is based on local time of the diffusion process.
+%  The biggest challenge which we faced using non parametric estimator is that we can only estimate $\sigma(x)$ volatility function on the points which are visisted by the process.
+%  Only finite number of data points are used which is a compact subset of \mathcal{R+}.Therefore we can not be able to estimate the tail of the volatility.
+%  But by determining the tail of volatility, we can see if the integral is finite or infinite. We don't know the asymptotic behavior of the volatility.In order to check the tail of the volatility, we need to use extrapolation method.\\
 %Summary of how you’ve addressed those challenges, what have you found/built?\\
-\indent After estimation of volatility function $\sigma(x)$, we will interpolate the function using cubic splines and Reproducing Kernal Hilbert Spaces. 
-Once we have interpolated function then we will focus on extending the function to infinity which is our extrapolation method. Using Reproducing Kernal Hilbert Spaces combined with optimization we can get best possible extension of the interpolation function.\\
+%vvvv----not necessary----vvvv
+% \indent After estimation of volatility function $\sigma(x)$, we will interpolate the function using cubic splines and Reproducing Kernal Hilbert Spaces. 
+% Once we have interpolated function then we will focus on extending the function to infinity which is our extrapolation method. Using Reproducing Kernal Hilbert Spaces combined with optimization we can get best possible extension of the interpolation function.\\
 %Overview of following chapters\\
-\indent 
-Our work is orginized as follow: in chapter 2 we present an overview of previos work, background of the problem, how the problem is connected to finance and mathematics, the methods to solve the problem, and 
-our best possible solution to the problem. In chapter 3 we will discuss the details of our algorithm and it's implementation and in chapter 4
-we present several numberical examples, conclusion and future work.
+%^^^^----not needed
+
+%vvvv---Everything below this comment needs a lot of work
+\indent Our work is orginized as follow: in chapter 2 we present an overview of previous work, background of the problem, how the problem is connected to finance and mathematics, the methods to solve the problem, and 
+our best possible solution to the problem. In chapter 3 we will discuss the details of our algorithm and it's implementation and in chapter 4 we present several numberical examples, conclusion and future work.
 \section{Previous Work}
 There are many methods which were reviewed by many researchers Since 1986.
 \subsection{Variance Bounds Tests of an Asset Pricing Model}
