@@ -1,17 +1,17 @@
 %{Chapter 2}
 \chapter{Theoretical Background}
 %Where does your problem come from? (you’ll have to talk about stochastic PDEs, volatility, assets price modeling, martingales, etc.) 
-First, we will study numerical methods of Stochastic Differential Equations (SDE). 
- SDE's are used in biology, physics, mathematics and ofcourse finance. The basic knowledge of SDE's comes from probability, random variables, variance and Stochastic Process. 
- These useful keywords are related to numberical methods of SDE's.
- Our problem focuses on finance, SDE's are used to model asset price with Brownian motion.\\
- Let's consider the Stochastic Differential Equation:
+Let's consider the Stochastic Differential Equation:
  \begin{equation}\label{Stochastic Differential Equation}
  dS_t &=& \mu(S_t)dt+\sigma(S_t)dW_t  
  S_0 = s_0
  \end{equation}
-For the numerical solutions we will assume drift $\mu$ and diffusion $\sigma$ coeficients are constants. Now Euler Muruyama method can be used to model asset price. \\
- \indent By studying numberical solutions of SDE's, we will have better understanding toward the theory of SDE. 
+In this chapter, we will focus on numerical methods of Stochastic Differential Equations (SDE). 
+SDE's are used in biology, physics, mathematics and ofcourse finance. The basic knowledge of SDE's comes from probability, random variables, variance and Stochastic Process. 
+ These useful keywords are related to numberical methods of SDE's.
+ Our problem focuses on finance, SDE's are used to model asset price with Brownian motion.\\
+\indent For the numerical solutions we will assume drift $\mu$ and diffusion $\sigma$ coeficients are constants. Now Euler Muruyama method can be used to model asset price.
+By studying numberical solutions of SDE's, we will have better understanding toward the theory of SDE. 
 SDE's are combined with continous Brownian Motion with different methods such as: Euler -Maruyama method, strong and weak convergence , milstein method. Let's start with finance background. 
 \begin{itemize}
 \item What is Asset Bubble?
@@ -156,71 +156,89 @@ for all $\alpha > 0$.
 asset return, (\ref{eqnMartingalesAndBubbles4-1}) is finite or not finite.
 \end{itemize}
 \section{Numerical Methods of SDE}
-For $t \in [0,T]$, $(\ref{eqnModelling4-1})$ can be represented in an integral form in the following way:
+For $t \in [0,T]$ equation $(\ref{eqnModelling4-1})$ can be represented in an integral form in the following way:
 \begin{eqnarray*}
 dS_t &=& \sigma(t)dW_t+\mu(t)dt\\
 \int_0^t dS_t &=& \int_0^t \sigma \left(S_t\right)dW_t+\int_0^t \underbrace{\mu\left(S_t\right)}_{\in
 \mathcal{R}^+}dt\\
 S_t - S_0   &=& \int_0^t \sigma\left(S_t\right)dW_t+ \left( \underbrace{\mu\left(S_t\right) \cdot t}_{ x_0} -
 \mu\left(S_t \right) \cdot 0\right) \\
-S_t &=& x_0 + \int_0^t \sigma\left(S_t\right)dW_t
 \end{eqnarray*} 
 %%%%%Modelling Page 6%%%%
-\subsection{What is $S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t$ ?}
-The price model is
-\begin{equation}\label{eqnModelling6-1}
-S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t
-\end{equation}
-%%%%%Modelling Page 7%%%%
 \begin{equation}
 \begin{array}{rcl}
-dS_t &=& \mu(S_t)dt+\sigma(S_t)dW_t\\
-S_0 \in \mathcal{R}
+S_t = x_0 + \int_0^t \sigma\left(S_t\right)dW_t
 \end{array}
-\end{equation}
+\end{equation}\\(1.5) is the price model which will be used in SDE's and Floren Zmirou Estimator
 \subsection{The Euler-Maruyama Method}
-Equation (4) can be written into integral form as:
+SDE can be written into integral form as:
 \begin{equation}
 S_t =S_0+ \int_0^t f\left(S_s\right)ds +\int_0^t g\left(S_s\right)dW(s)\hspace{.2in}t\in [0,T]\\
 \end{equation}
-$f$, $g$ are scalar function with $S_0 = x_0$ \textbf{fix me} random variable\\
+$f$, $g$ are scalar function with $S_0$ is a random variable.\\
 $$\begin{cases}
 dS_t = \mu(S_t)dt+\sigma(S_t)dW_t\\
 S(0) = S_0
 \end{cases}$$
- Using Euler Maruyama method:\\
- $w_0 = S_0$
- $w_{i+1} = w_i+a(t_i,w_i) \bigtriangleup t_{i+1}+b(t_i,w_i)\bigtriangleup W_{i+1}$
- $w_{i+1} = w_i+\mu w_i \bigtriangleup t_i+\sigma w_i\bigtriangleup W_i$
- $\bigtriangleup t_{i+1} = t_{i+1}-t_i$
- $\bigtriangleup W_{i+1} = W(t_{i+1}-W(t_i)$\\
+ Computing solution by  Euler Maruyama method as follows:\\
+ $$w_0 = S_0$$
+ $$w_{i+1} = w_i+\mu(t_i,w_i) \bigtriangleup t_{i+1}+\sigma(t_i,w_i)\bigtriangleup W_{i+1}$$
+ $$w_{i+1} = w_i+\mu w_i \bigtriangleup t_i+\sigma w_i\bigtriangleup W_i$$
+ $$\bigtriangleup t_{i+1} = t_{i+1}-t_i$$
+ $$\bigtriangleup W_{i+1} = W(t_{i+1}-W(t_i)$$
+The crucial question is how to model the Brownian motion $\bigtriangleup W_{i}$. Define N(0,1) to be the standard random variable that is normally distributed with mean 0 and standard deviation 1. 
 Now drift coefficient $\mu$ and diffusion coefficient $\sigma$ are constants, the SDE has an exact solution:
 \begin{equation}\label{eqnModelling7-2}
 S(t) = S_0 \cdot Exp \left( \left( \mu - \frac{1}{2} \sigma^2 \right)t + \sigma W(t) \right) 
 \end{equation} 
 For an example, we use the Euler-Maruyama Approximation Method on the SDE where the constants $\mu = 2$, $\sigma = 1$,
 and $S_0 = 1$ are given.
+
+Put figure 
+
 There are other methods such as Strong and weak convergence of the Euler Muruyama method, Milstein's Higher Order Method, Linear Stability and Stochastic Chain Rule are also used for numerical solutions for SDE.
 \begin{itemize}
-\item What will happen if $\sigma$ is not constant. We will approximate $\sigma$ with non parametric estimator method on local real time.
+\item What will happen if $\sigma$ is not constant. Our problem will focus on the scenario when $\sigm$ values will be approximate
+with non parametric estimator Floren Zmirou method on local real time.
 \end{itemize} 
-%(2.2) Describe the math problem: parametric estimation, interpolation, extrapolation, minimization
-%What is your solution?  Based on all this theory connecting math and finance and assets and asset bubbles, how can you get an answer to your (math) problem as you described in chapter (1).
-\section{Method used to solve our Problem}
+\section{Methodology}
 In this classical setting, Jarrow, Protter, and Shimbo [19], [20] show that there are three types of asset price bubbles possible. 
 Two of these price bubbles exist only in infinite horizon economies, the third—called type $3$ bubbles—exist in finite horizon settings. 
 Consequently, type $3$ bubbles are those most relevant to actual market experiences. 
 For this type of bubble, saying whether or not a bubble exists amounts to determining whether the price process under a risk neutral measure is a martingale or a strict local martingale: if it is a strict local martingale, there is a bubble.
  Stock price is strict local martingale if and only if \\
 \begin{equation}
-\int_\alpha^\infty \frac{x}{\sigma\left(x\right)}dx < \infty  for all \alpha >0
+\int_\alpha^\infty \frac{x}{\sigma\left(x\right)}dx < \infty    \forall   \alpha >0
 \end{equation} 
- First, we will obtain the data from Google Finance and Yahoo Finance. Algorithms 1, 2 and 3 show the process how to get Stock Prices.
- Floren Zmirou's non parametric estimator is based on the local time of the Diffusion Process.
- \begin{definition}[Diffusion Process]
- \emph{In probability theory, a branch of mathematics, a diffusion process is a solution to a stochastic differential equation. 
+Floren Zmirou's non parametric estimator is based on the local time of the Diffusion Process.
+\begin{definition}[Diffusion Process]
+\emph{In probability theory, a branch of mathematics, a diffusion process is a solution to a stochastic differential equation. 
  It is a continuous-time Markov process with almost surely continuous sample paths.}
- \end{definition}
+\end{definition}
+ \subsection{Floren Zmirou}
+ Lets consider following equation:\\
+ \begin{equation}
+S_t = S_0 + \int_0^t \sigma\left(S_t\right)dW_t
+\end{equation}
+In Floren Zmirou, the drift coefficient $\mu(S_{t})$ is null which is ignored without loss of generality. 
+It is not involved in our problem. $\sigma(S_{t})$ the volatility coefficient is unknown. We will follow steps for Floren Zmirou method:
+\begin{itemize}
+  \item $\left(S_{t_1},\ldots, S_{t_n} \right) $ are the stock prices in the interval $t_1,\ldots, t_n \in [0,T]$
+  \item Without loss of generality, we assume $T = 1$, therefore $t_i = \frac{i}{n}$
+\end{itemize}
+Estimator as follows:\\ 
+$$l_T(x)= lim_{\epsilon\longrightarrow 0} \frac{1}{2 \epsilon} \int_0^T 1_{\{|S_s-x|<\epsilon\}} d \langle S,S\rangle_s$$
+where $d \langle S,S\rangle_s = \sigma^2(S_{s})$
+$$L_T(x)= lim_{\epsilon\longrightarrow 0} \frac{1}{2 \epsilon} \int_0^T 1_{\{|S_s-x|<\epsilon\}} dS$$
+$$\Longrightarrow l_T(x) = \sigma^2(S_{s})L_T(x)$$
+$$\Longrightarrow \frac{l_T(x)}{L_T(x)} = \sigma^2(S_{s})$$
+Let's assume that $nh_n \rightarrow \infty$ and $h_n\rightarrow 0$
+$$L^n_{T}(x)= \frac{T}{2nh_n}\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} $$
+$$l^n_{T}(x)= \frac{T}{2nh_n}\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2 $$
+estimator of $\sigma^2(x)$ as follows:
+\begin{equation}\label{florenZmirouEquation}
+S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}
+\end{equation}
 \begin{thm}\label{theorem1}
 If $\sigma$ is bounded above and below from zero, has three continuous and bounded
 derivatives, and if $(h_n)_n≥1 $satisfies $nh_n\rightarrow \infty $ and $nh_4n\rightarrow 0$, then $S_n(x)$ is a consistent estimator of $\sigma^2(x)$.\\
@@ -232,33 +250,6 @@ In Theorem \ref{theorem1} we say XYZ\ldots.
  Floren Zmirou estimator requires a grid step which is $h_n\rightarrow 0 $ such that $nh_n\rightarrow \infty $ and $nh^4_n\rightarrow 0 $.
  We will choose step size $h_n = \frac{1}{n^\frac{1}{3}}$ so that all the conditions will be satisfied.
 \end{thm}
- \subsection{Floren Zmirou}
- Lets consider following equation:
- \begin{equation}
-S_t = S_0 + \int_0^t \sigma\left(S_t\right)dW_t
-\end{equation}
-In Floren Zmirou, the drift coefficient $\mu(S_{t})$ is null which is ignored without loss of generality. 
-It is not involved in our problem. $\sigma(S_{t})$ the volatility coefficient is unknown. We will follow steps for Floren Zmirou method:
-\begin{itemize}
-  \item $\left(S_{t_1},\ldots, S_{t_n} \right) $ are the stock prices in the interval $t_1,\ldots, t_n \in [0,T]$
-  \item Without loss of generality, we assume $T = 1$, therefore $t_i = \frac{i}{n}$
-\end{itemize}
-Estimator as follows:\\ 
-Local time = $l_T(x)= lim_{\epsilon\longrightarrow 0} \frac{1}{2 \epsilon} \int_0^T 1_{\{|S_s-x|<\epsilon\}} d \langle S,S\rangle_s$
-where $d \langle S,S\rangle_s = \sigma^2(S_{s})$
-$L_T(x)= lim_{\epsilon\longrightarrow 0} \frac{1}{2 \epsilon} \int_0^T 1_{\{|S_s-x|<\epsilon\}} dS$
-$\Longrightarrow l_T(x) = \sigma^2(S_{s})L_T(x)$
-$\Longrightarrow l_T(x)\L_T(x) = \sigma^2(S_{s})$
-Now we will define local time of $S_{s}$ in $x$ during [0,t].
-Let's assume that $nh_n \rightarrow \infty$ and $h_n\rightarrow 0$
-$\Longrightarrow L^n_{T}(x)= \frac{T}{2nh_n}\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} $
-estimator of $\sigma^2(S_{x})$ as follows:
-\begin{equation}\label{florenZmirouEquation}
-S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}
-\end{equation}
-$S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}$
-
-Now we have $\sigma^2(x)$ and we will use interpolation methods to see function's behaviour. 
  \subsection{Interpolation}
 Interpolation is a method of constructing new data points within the range of a discrete set of known data points. There are many methods to do interpolation. 
 For example Linear Interpolation,polynomial interpolation, piecewise constant interpolation, spline interpolation.
@@ -273,17 +264,17 @@ Approximation by functions of this type is called piecewise-polynomial approxima
 and is called {\bf cubic spline interpolation}.
 \item {\bf Cubic Spline Interpolation}\\
 Given a function f defined on [a,b] and a set of nodes $a = x_o<x_1<\ldots <x_n = b$
-a {\bf cubic spline interpolant S} for f is a function that satisfies the following conditions:
+a {\bf cubic spline interpolant S} for f is a function that satisfies the following conditions:\\
 a) $S(x)$ is a cubic polynomial, denoted $S_j(x)$ on the subinterval $[x_j,x_{j+1}]$ for each
-$j = 0,1,2,\ldots,n-1$;
-b) $S_j(x_j) = f(x_j)$ and $S_j(x_{j+1})= f(x_{j+1})$ for each $j = 0,1,2,\ldots,n-1$;
-c) $S_{j+1}(x_{j+1}) = S_j(x_{j+1})$ for each $j = 0,1,2,\ldots,n-2$;
-d) $S'_{j+1}(x_{j+1}) = S'_j(x_{j+1})$ for each $j = 0,1,2,\ldots,n-2$;
-e) $S''_{j+1}(x_{j+1}) = S''_j(x_{j+1})$ for each $j = 0,1,2,\ldots,n-2$;
-f) One of the following sets of boundry conditions is satisfied;
-      i) $S''(x_0) = S''x_n) = 0 $;
-      ii) $S'(x_0) = f'x_0)$ and $S'(x_n) = f'x_n) $\\
-\item {\bf Natural Spline} When the free boundry conditions occur, the spline is called {\bf natural spline}.
+$j = 0,1,2,\ldots,n-1$;\\
+b) $S_j(x_j) = f(x_j)$ and $S_j(x_{j+1})= f(x_{j+1})$ for each $j = 0,1,2,\ldots,n-1$;\\
+c) $S_{j+1}(x_{j+1}) = S_j(x_{j+1})$ for each $j = 0,1,2,\ldots,n-2$;\\
+d) $S'_{j+1}(x_{j+1}) = S'_j(x_{j+1})$ for each $j = 0,1,2,\ldots,n-2$;\\
+e) $S''_{j+1}(x_{j+1}) = S''_j(x_{j+1})$ for each $j = 0,1,2,\ldots,n-2$;\\
+f) One of the following sets of boundry conditions is satisfied;\\
+      i) $S''(x_0) = S''x_n) = 0 $;\\
+     ii) $S'(x_0) = f'x_0)$ and $S'(x_n) = f'x_n) $\\
+\item When the free boundry conditions occur, the spline is called {\bf natural spline}.
 \item {Interpolation is seen as inverse problem.}
 \item {We will have two types of solutions for inverse problem.}
 \item{Normal Solution}
