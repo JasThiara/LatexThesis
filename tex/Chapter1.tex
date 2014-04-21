@@ -1,54 +1,59 @@
 \section{Introduction}
-\\\\
-%Question 1.1 What problem are you trying to solve?  Why is it important? What is your goal?\\
-\indent Today's economy, financial asset bubble is  exciting and hot topic. 
-In most recent market news, we have read or seen sudden change in gold price. 
-People are interested to know what will happen in the future. How someone can be millionaire by investing in stock market? How we will able to detect or estimate the future changes of any asset ( stock, gold, housing, commodity)? 
-How quickly asset price will jump? These are the questions which we will consider in this thesis work. 
-We will study how to determine whether any asset is experiencing a price bubble in a real time. 
-%  Asset bubbles are an exciting and hot topic.  Asset bubbles are [in one senctence describe an asset bubble].  If the price of an asset increases, i.e. bubbles, well beyond intrinsic value, an investor would like to be able to detect the bubble to manager their investments with respect to that asset.  In this thesis, we discuss a method for estimating volatility of an  asset price and test for an asset bubble.  We then cover some examples using out method to test whether an asset price is experiencing a price bubble.  
+\indent In today's economy, financial asset bubbles are a trending topic linked with enthusiasm and interest. 
+In keeping a watchful eye on recent market trends, it has been noted that there has been an escalation in the prices of Gold. 
+Financial entrepreneurs and other interested parties are maintaining their posture, curios as to the future changes in these market prices. 
+How are we able to detect or estimate the future changes of any asset, such as stock, gold, housing, or various commodities? How quickly will an asset price will jump, or fall? 
+These are the questions which we will maintain our focus throughout this study, as we center our approach and define our reasonings. 
+If a computer program existed that accurately estimated the stock market and gave a real time minute by minute update, this would benefit not only day traders and investors but this tool would increase the quality of life in every dynamic for anyone who consistently made a fortune in the stock market. 
+In this paper we will study non-parametric estimator done by Florens Zmirou and Interpolation by cubic spline. 
+Therefore, we will reveal how to determine whether any asset is experiencing a price bubble in real time.\\
+\indent How will we detect asset bubbles in real time? 
+Our research problem will be in deciding whether an asset price is experiencing a price bubble in a finite, or an infinite time period.\\
+\indent We will be able to determine the volatility of asset prices. Using some helpful techniques to determine an asset bubble in real time will help financial corporations, banks, and money markets. 
+They can lower their money damaging risks by using our methodology. According to ``There is a bubble'' paper paragraph 2, indeed, in 2009 the federal reserve chairman Ben bernanke said in congress testimony[1] ``It is extraordinarily difficult in real time to know if an asset price is appropriate or not''. 
+Our goal is to estimate stock price volatility by way of the Florens Zmirou estimator, and then we will extrapolate the volatility tail in order to check the integral. 
+We will then be able to determine whether the integral is finite or infinite. The process for bubble detection depends on a mathematical analysis that determines when an asset is undergoing speculative pricing, i.e., its market price is greater than its fundamental price. 
+The difference between the market and the fundamental price, is a price bubble.\\
+\indent As stated above, we will use a nonparametric estimator Florens -Zmirou which is based on the local time of the diffusion process. 
+The biggest challenge we have faced in using a non-parametric estimator, is that we can only estimate $\sigma(x)$ volatility function on the points which are visited by the process. 
+Only a finite number of data points are used which is a compact subset of R+, therefore, we are not able to estimate the tail of the volatility. 
+However, by determining the tail of the volatility, we can then reveal whether the integral is finite or infinite. 
+We do not, as of yet, know the asymptotic behavior of the volatility.
+Only finite data points are used which is a compact subset of $R+$.  /therefore we will not able to estimate the tail of volatility.\\
+\indent After an estimation of the volatility function $\sigma(x)$, we will then interpolate the function using cubic splines and Reproducing Kernel Hilbert Spaces. 
+Since a Hilbert Space is an inward item space that is finished and distinct regarding the standard deﬁned by the internal item. 
+The stock market is unpredictable, unstable and an insecure source to grow one's net worth however; despite posing a risk, the stock market still provides an avenue to increase one's net worth and increase value in assets.  
+My program once debugged and completed will accurately estimate the volatility of stock and will interpolate the volatility function.
+We estimate the the volatility of asset prices using the Floren Zmirou estimator and then we will extrapolate the volatility tale in order to test if the prices exhibits a martin angle or submartinangle.  
+If the volatility is large enough then a bubble exists.  
+A non-parametric estimator Florens Zmirou, which is based on local tine of the diffusion process to estimate the volatility, function on the points which are visited by the process. 
+The Divarication in parameter decisions ultimately decides if the regression capacity overﬁts, underﬁts, or ﬁts ideally. 
+The association between characteristic spaces and smoothness is not self-evident, and subsequently, must be inspected utilizing a various methodologies. 
+Characteristic feature spaces may further be utilized to compare or synchronize articles which have a much greater complex arrangement.\\
+\indent In chapter 2, we will present an overview of previous work, literature reviews, and alternate methodologies and their outcome measures. 
+We will then present the background of the problem, and we will present how the problem is connected to finance and mathematics. 
+We will further present the methods we have uncovered to solve the problem, complete with our best possible solution to the problem. 
+In chapter 3, we will discuss the details of our algorithm, and we will further examine the probable and the extent of its implementation. 
+In chapter 4, we will present several numerical examples and variables. We will finally present our conclusion and future work.\\
 
-\indent We estime the volatility of asset prices using the Florens-Zmirou estimator. Our goal is to estimate stock price volatility by Floren Zmirou estimator and then we will extrapolate the volatility tale in order to test if the price exhibits a martingale or supermartingale.%[citation needed here].
-%
-% 
-%Using some helpful techniques to determine asset bubble in real time will help finanial corporations, banks,and money marrkets to save or earn more money.\\
-%They can lower their money damaging risks by using our methodology.
-%According to `` There is a bubble'' paper paragraph 2, 
-%``indeed 2009 the federal reserve chairman Ben bernanke said in congress testimony[1]\\
-%``It is extraordinary difficult in real time to know if an asset price is appropriate or not''.\\
-%
-%
-%whether the integral is finite or infinite. 
-% 
-% \indent The process for bubble detection depends on a mathematical analysis that determines when an asset is undergoing speculative pricing
-%  i.e its market price is greater than its fundamental price.
-%  The difference between market and fundamential price, is the price bubble.\\
-%  %Challenges\\
-% \indent As stated above, we will use a nonparametric estimator Floren -Zmirou which is based on local time of the diffusion process.
-%  The biggest challenge which we faced using non parametric estimator is that we can only estimate $\sigma(x)$ volatility function on the points which are visisted by the process.
-%  Only finite number of data points are used which is a compact subset of \mathcal{R+}.Therefore we can not be able to estimate the tail of the volatility.
-%  But by determining the tail of volatility, we can see if the integral is finite or infinite. We don't know the asymptotic behavior of the volatility.In order to check the tail of the volatility, we need to use extrapolation method.\\
-%Summary of how you’ve addressed those challenges, what have you found/built?\\
-%vvvv----not necessary----vvvv
-% \indent After estimation of volatility function $\sigma(x)$, we will interpolate the function using cubic splines and Reproducing Kernal Hilbert Spaces. 
-% Once we have interpolated function then we will focus on extending the function to infinity which is our extrapolation method. Using Reproducing Kernal Hilbert Spaces combined with optimization we can get best possible extension of the interpolation function.\\
-%Overview of following chapters\\
-%^^^^----not needed
+
+
+
 
 %vvvv---Everything below this comment needs a lot of work
-\indent Our work is orginized as follow: in chapter 2 we present an overview of previous work, background of the problem, how the problem is connected to finance and mathematics, the methods to solve the problem, and 
-our best possible solution to the problem. In chapter 3 we will discuss the details of our algorithm and it's implementation and in chapter 4 we present several numberical examples, conclusion and future work.
-\section{Previous Work}
-There are many methods which were reviewed by many researchers Since 1986.
-\subsection{Variance Bounds Tests of an Asset Pricing Model}
-The `` Asset Price Volatility, Bubbles, and Process Switching'' artile was published in 1986. This test will show that bubbles could in theory lead to excess volatility,but it shows that certain variance bounds tests preclude bubbles as an explanation.  
-\subsection{A Panal Data Approach}
-In 2007,''Testing for Bubbles in Housing Markets'' Vyacheslav Mikhed and Petrz Zemcik developed cross-sectionally robust panel data tests for unit roots and cointegration to find whether house prices reflect house related earnings. 
-\subsection{Reproducing Kernal Hilbert Space}
- In 2011,''How to detect Asset Bubble'' by Jarrow Robert, Kchia Younes, and Protter Philip used Reproducing kernal Hilbert Space and Optimization to detect asset Bubbles.
-\subsection{A monte Carlo Simulation}
-In 2011, ``Bootstrapping Asset Price Bubbles'' by Luciano Gutierrez used Monte Carlo Simulation.bootstrap procedures often provide better finite sample critical values for test-statistics than asymptotic theory does, bootstrap values are still approximations and are not exact. Davidson and Mackinnon (1999, 2006) 
-show that it is possible to estimate the size and power of bootstrap tests by running Monte Carlo simulations, when the condition of asymptotic independence of the bootstrapped statistic and the bootstrap Data Generating Process (DGP) holds.
-\subsection{State Space Model With Markov-Switching}
-In 2011,  ``A Financial Engineering Approach to Identify Stock Market Bubble'' by Guojin Chen and Chen Yan adopt a state space model with Markov-switching to identify the stock market bubbles both in China and US.
-
+% \indent Our work is orginized as follow: in chapter 2 we present an overview of previous work, background of the problem, how the problem is connected to finance and mathematics, the methods to solve the problem, and 
+% our best possible solution to the problem. In chapter 3 we will discuss the details of our algorithm and it's implementation and in chapter 4 we present several numberical examples, conclusion and future work.
+% \section{Previous Work}
+% There are many methods which were reviewed by many researchers Since 1986.
+% \subsection{Variance Bounds Tests of an Asset Pricing Model}
+% The `` Asset Price Volatility, Bubbles, and Process Switching'' artile was published in 1986. This test will show that bubbles could in theory lead to excess volatility,but it shows that certain variance bounds tests preclude bubbles as an explanation.  
+% \subsection{A Panal Data Approach}
+% In 2007,''Testing for Bubbles in Housing Markets'' Vyacheslav Mikhed and Petrz Zemcik developed cross-sectionally robust panel data tests for unit roots and cointegration to find whether house prices reflect house related earnings. 
+% \subsection{Reproducing Kernal Hilbert Space}
+%  In 2011,''How to detect Asset Bubble'' by Jarrow Robert, Kchia Younes, and Protter Philip used Reproducing kernal Hilbert Space and Optimization to detect asset Bubbles.
+% \subsection{A monte Carlo Simulation}
+% In 2011, ``Bootstrapping Asset Price Bubbles'' by Luciano Gutierrez used Monte Carlo Simulation.bootstrap procedures often provide better finite sample critical values for test-statistics than asymptotic theory does, bootstrap values are still approximations and are not exact. Davidson and Mackinnon (1999, 2006) 
+% show that it is possible to estimate the size and power of bootstrap tests by running Monte Carlo simulations, when the condition of asymptotic independence of the bootstrapped statistic and the bootstrap Data Generating Process (DGP) holds.
+% \subsection{State Space Model With Markov-Switching}
+% In 2011,  ``A Financial Engineering Approach to Identify Stock Market Bubble'' by Guojin Chen and Chen Yan adopt a state space model with Markov-switching to identify the stock market bubbles both in China and US.
+% 
