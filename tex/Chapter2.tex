@@ -2,10 +2,10 @@
 \chapter{Theoretical Background}
 %Where does your problem come from? (you’ll have to talk about stochastic PDEs, volatility, assets price modeling, martingales, etc.) 
 Let's consider the Stochastic Differential Equation:
- \begin{equation}\label{Stochastic Differential Equation}
- dS_t &=& \mu(S_t)dt+\sigma(S_t)dW_t  
+\begin{equation}
+ dS_t = \mu(S_t)dt+\sigma(S_t)dW_t  
  S_0 = s_0
- \end{equation}
+\end{equation}
 In this chapter, we will focus on numerical methods of Stochastic Differential Equations (SDE). 
 SDE's are used in biology, physics, mathematics and ofcourse finance. The basic knowledge of SDE's comes from probability, random variables, variance and Stochastic Process. 
  These useful keywords are related to numberical methods of SDE's.
@@ -58,9 +58,9 @@ where $X^{-1}(A):={\omega \epsilon \Omega\mid X(\omega) \epsilon A}$}
 \end{itemize}
 \begin{definition}[Stochastic Process]
 \emph{Given a probability space $\left( \Omega, \mathcal{F}, P \right) $, a stochastic process with state space X is a
-collection of X-valued random variables, $S_t$, on $\Omega$ indexed by a set $T$ (e.g. time).
-\begin{equation}\label{eqnModelling2-1}
-S = \left\lbrace S_t : t\in T \right\rbrace }
+collection of X-valued random variables, $S_t$, on $\Omega$ indexed by a set $T$ (e.g. time).}
+\begin{equation}
+S = \left\lbrace S_t : t\in T \right\rbrace
 \end{equation}
 \end{definition}
 One can think of $S_t$ as a asset price at time $t$.
@@ -198,7 +198,7 @@ Put figure
 
 There are other methods such as Strong and weak convergence of the Euler Muruyama method, Milstein's Higher Order Method, Linear Stability and Stochastic Chain Rule are also used for numerical solutions for SDE.
 \begin{itemize}
-\item What will happen if $\sigma$ is not constant. Our problem will focus on the scenario when $\sigm$ values will be approximate
+\item What will happen if $\sigma$ is not constant. Our problem will focus on the scenario when $\sigma$ values will be approximate
 with non parametric estimator Floren Zmirou method on local real time.
 \end{itemize} 
 \section{Methodology}
