@@ -91,124 +91,124 @@ for Google finance is used.
 \end{algorithm}
 \subsection {Example}
 \newpage
-\section{Floren Zmirou Class}
-This implements equation (\ref{florenZmirouEquation})
-\paragraph{Process to solve Floren Zmirou}
-Now we have Stock Prices from Stock class. We will obtain list of sigma values from list of Stock Prices.We will explain this class in following algorithms:\newline
-T = 60*n where T is the minute to minute time period [0,T].\\
-Now we will derive hn, x-step\_size, and x values which will be used in Floren Zmirou Estimator.
-  (Derive_hn): Input for this function is Stock Prices which we obtained from Stock class.
-  This function will derive hn which will be used in Floren Zmirou Estimator.
-  \begin{algorithm}
-  \caption{Derive hn}
-  \bigskip
-  \textbf{INPUT}: Stock Prices S\\
-  \textbf{OUTPUT}: hn
-  \begin{algorithmic}[1]
+\section{Floren Zmirou}
+This class will implement the following equation:
+\begin{equation}\label{florenZmirouEquation}
+S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}
+\end{equation}
+We obtained Stock Prices from Stock Class. Our goal is to get $\sigma(x)$ values from list of Stock Prices S.
+In order to use Floren Zmirou Estimator, first we will need following:\\
+\begin{itemize}
+  \item n
+  \item T
+  \item hn
+  \item x-step\-size
+  \item x values
+\end{itemize}
+\subsection{Floren Zmirou Class}
+\item (Derive hn): This function will derive hn which will be used in Floren Zmirou Estimator.
+\begin{algorithm}
+\caption{Derive hn}
+\bigskip
+\textbf{INPUT}: Stock Prices S\\
+\textbf{OUTPUT}: hn
+\begin{algorithmic}[1]
   \item n = length of Stock Prices S.
-  \item hn = 1.0/n**(1.0/3.0)
-  \item return hn
-  \end{algorithmic}
-  \end{algorithm}
-  (x_step_size): Input for this function is Stock Prices which we obtained from Stock class.
-  This function will derive x\_step\_size which will be used  to create step size to generate x.
-  \begin{algorithm}
-  \caption{x\_hn = x step size}
-  \bigskip
-  \textbf{INPUT}: Stock Prices S\\
-  \textbf{OUTPUT}: $\frac{x}{hn}$
-  \begin{algorithmic}[1]
-  \item We obtained hn from Derive hn function.
+  \item hn = 1.0/n**(1.0/3.0)\\
+  \Return {hn}
+\end{algorithmic}
+\end{algorithm}
+\item (x step size): This function will derive x step size which will be used  to create step size to generate x.
+\begin{algorithm}
+\caption{x\_hn = x step size}
+\bigskip
+\textbf{INPUT}: Stock Prices S\\
+\textbf{OUTPUT}: x\_hn
+\begin{algorithmic}[1]
   \item Double hn = 2 **hn
   \item Difference = max S-min S
-  \item x\_hn = Difference * Double hn
-  \item Return x\_hn
-  \end{algorithmic}
-  \end{algorithm}
-  (Derive_x_values): Input for this function is Stock Prices which we obtained from Stock class.
-  This function will derive x\_values which will be used  in Floren Zmirou Estimator.
-  \begin{algorithm}
-  \caption{Derive x Values}
-  \bigskip
-  \textbf{INPUT}: Stock Prices S\\
-  \textbf{OUTPUT}: x
-  \begin{algorithmic}[1]
-  \item halfh\_n = x\_hn /2.0
+  \item x\_hn = Difference * Double hn\\
+  \Return {x\_hn}
+\end{algorithmic}
+\end{algorithm}
+\item (Derive x values): This function will derive x values which will be used  in Floren Zmirou Estimator.
+\begin{algorithm}
+\caption { x Values}
+\bigskip
+\textbf{INPUT}: Stock Prices S\\
+\textbf{OUTPUT}: x
+\begin{algorithmic}[1]
+  \item half h\_n = x\_hn /2.0
   \item x = empty list.
-  \item Append x with min S + halfh\_n
-  \item We initilaize ex to be first element of x's list.
-  \While {ex < max S}
-  \State{ex = ex+x\_hn}
+  \item Append x with min S + half h\_n
+  \item FirstElement = first element of x's list.
+  \While {FirstElement < max S}
+  \State{FirstElement = FirstElement + x\_hn}
   \EndWhile
-  \item We will append ex into x's list
-  \item Return x
-  \end{algorithmic}
-  \end{algorithm}
-Now we have all the ingredients which will be usefull to solve floren zmirou estimator.
+  \item Append FirstElement into x's list.\\
+  \Return {x}
+\end{algorithmic}
+\end{algorithm}
 We will implement floren Zmirou on the following functions. Floren Zmirou has Sublocal time, Local time, volatility Estimator and Indicator function.
-(Sublocal Time): Input for this function are T,S,x,n,hn
-Output for this function will be $L_{T}^n(x) = (\frac{T}{2nhn}) \sum_{i =1}^ n 1_{\left\vert S_{t_i} - x \right\vert < h_n}$
-  \begin{algorithm}
-  \caption{Sublocal Time}
-  \bigskip
-  \textbf{INPUT}: T=Time,S= Stock Prices,x= grid points,n= number of total Stock Prices,hn=Step Size\\
-  \textbf{OUTPUT}: $L_{T}^n(x) = (\frac{T}{2nhn}) \sum_{i =1}^ n 1_{\left\vert S_{t_i} - x\right\vert }$
-  \begin{algorithmic}[1]
+\item (Sublocal Time):This function will give $L_{T}^n(x) = (\frac{T}{2nhn}) \sum_{i =1}^ n 1_{\left\vert S_{t_i} - x \right\vert < h_n}$
+\begin{algorithm}
+\caption{Sublocal Time}
+\bigskip
+\textbf{INPUT}: T, S, x, n, hn.\\
+\textbf{OUTPUT}: $L_{T}^n(x) = (\frac{T}{2nhn}) \sum_{i =1}^ n 1_{\left\vert S_{t_i} - x\right\vert }$
+\begin{algorithmic}[1]
   \item sum = 0.0
   \item scalar = T/(2.0*n*hn)
   \For {i in range of the length of Stock Prices}
-  \State{We initialize Sti to be the ith element of the list of Stock prices}
+  \State{Sti = i th element of the list of Stock prices}
   \State{absoluteValue = abs(Sti-x)}
-  \State{ We initilize indicatorValue to pass through indicator function}
+  \State{indicatorValue to pass through indicator function}
   \If{absoluteValue is less than hn}
-  \State{sum = sum+indicatorValue}
+  \State {sum = sum+indicatorValue}\\
   \Return{scalar*sum}
-  \end{algorithmic}
-  \end{algorithm}
-(Local Time): Input for this function are T,S,x,n,hn.
-Output for this function will be $L_{T}^n(x) = (\frac{T}{2nh_n}) \sum_{i =1}^ n 1_{\left\vert S_{t_i} - x\right\vert  < hn}*n(S(t(i+1))-S(t(i))^2$
-  \begin{algorithm}
-  \caption{Local Time}
-  \bigskip
-  \textbf{Inputs}: T=Time,S= Stock Prices,x= grid points,n= number of total Stock Prices,hn=Step Size\\
-  \textbf{Steps}
-  \begin{algorithmic}[1]
+\end{algorithmic}
+\end{algorithm}
+\item (Local Time): $L_{T}^n(x) = (\frac{T}{2nh_n}) \sum_{i =1}^ n 1_{\left\vert S_{t_i} - x\right\vert  < hn}*n(S(t(i+1))-S(t(i))^2$
+\begin{algorithm}
+\caption{Local Time}
+\bigskip
+\textbf{INPUT}: T, S, x, n, hn.
+\textbf{OUTPUT}:
+\begin{algorithmic}[1]
   \item sum = 0.0
   \item scalar = T/(2.0*n*hn)
-  \For{for i in range of the length of Stock prices - 1}
-  \State{We initialize Sti to be the ith element of the list of Stock prices}
-  \State{We initialize Stj to be the jth element of the list of Stock prices}
+  \For{ i in range of the length of Stock prices - 1}
+  \State{Sti = ith element of the list of Stock prices}
+  \State{Stj = jth element of the list of Stock prices}
   \State{absoluteValue = abs(Sti-x)}
   \State{Difference = (Stj-Sti)**2}
-  \State{ We initilize indicatorValue to pass through indicator function}
   \If{ absoluteValue is less than hn}
-  \State{sum = sum+indicatorValue*n*Difference}
+  \State{sum = sum+indicatorValue*n*Difference}\\
   \Return{scalar*sum}
-  \end{algorithmic}
-  \end{algorithm}
-(Volatility Estimator Sn(x)): Volatility Estimator is $\sigma^2(x)$.Input for this function are T,S,x,n,hn.
-Output for this function will be Local Time$/$Sublocal Time.
+\end{algorithmic}
+\end{algorithm}
+\item (Volatility Estimator Sn(x)): Volatility Estimator is $\sigma^2(x)$. This function will give Local Time$/$Sublocal Time.
 \begin{algorithm}
 \caption{Volatility Estimator}
 \bigskip
-\textbf{Inputs}: T=Time,S= Stock Prices,x= grid points,n= number of total Stock Prices,hn=Step Size\\
-\textbf{Steps}
+\textbf{INPUT}: T, S, x, n, hn.\\
+\textbf{OUTPUT}:
 \begin{algorithmic}[1]
-\item We will initialize ratio to be Local Time / Sublocal Time.
-\item Return ratio.
+  \item Ratio =  Local Time / Sublocal Time.\\
+  \Return {Ratio}
 \end{algorithmic}
 \end{algorithm}
+\newpage
 We have $\sigma^2(x)$ for Stock Prices. Now we want to see how many stock prices are in each grid point.
 If there are less than 0 or 1 percent of stock prices in grid then we will exclude that grid point from
 our calculation process.
-(DoGridAnalysis):Input for this function are T,S,x,n,hn.
-Output for this function give us the list of usable grid points and for each usable grid point, the list of Stock prices.
-  \begin{algorithm}
-  \caption{DoGridAnalysis}
-  \bigskip
-  \textbf{INPUT}: T=Time,S= Stock Prices,x= grid points,n= number of total Stock Prices,hn=Step Size,Y = Y percent of total data points.\\
-  \textbf{OUTPUT}:
-  \begin{algorithmic}[1]
+\item (DoGridAnalysis): This function give us the list of usable grid points and for each usable grid point, the list of Stock prices.
+\begin{algorithm}
+\caption{DoGridAnalysis}
+\bigskip
+\textbf{INPUT}: T,S,x,n,hn.\\
+\textbf{OUTPUT}:
+\begin{algorithmic}[1]
   \item x = useableGridPoints.
   \item d = empty dictionary
   \item Si =  length of stock prices.
@@ -227,37 +227,39 @@ Output for this function give us the list of usable grid points and for each usa
   \State{Remove grid points from x}
   \State{Delete L}\\
   \Return{x = usable grid points and d }
-  \end{algorithmic}
-  \end{algorithm}
-(GetGridVariance:Input for this function is self.
-  \begin{algorithm}
-  \caption{GetGridVariance}
-  \bigskip
-  \textbf{INPUT}: \\
-  \textbf{OUTPUT}: Standard Deviation of usable grid points
-  \begin{algorithmic}[1]
+\end{algorithmic}
+\end{algorithm}
+\item (Get Grid Variance):
+\begin{algorithm}
+\caption{Get Grid Variance}
+\bigskip
+\textbf{INPUT}: \\
+\textbf{OUTPUT}: Standard Deviation of usable grid points
+\begin{algorithmic}[1]
   \item Points = Empty list
   \For{x in usable grid points}
   \State{y =Sn(x))}
   \State{Put (x,y) in Points's list}\\
   \Return{Points}
-  \end{algorithmic}
-  \end{algorithm}
-(GetGridInverseStandardDeviation):Input for this function is self.
-  \begin{algorithm}
-  \caption{GetGridInverseStandardDeviation}
-  \bigskip
-  \textbf{INPUT}: \\
-  \textbf{OUTPUT}: Standard Deviation of usable grid points
-  \begin{algorithmic}[1]
+\end{algorithmic}
+\end{algorithm}
+\item (Get Grid Inverse Standard Deviation):
+\begin{algorithm}
+\caption{GetGridInverseStandardDeviation}
+\bigskip
+\textbf{INPUT}: \\
+\textbf{OUTPUT}: Standard Deviation of usable grid points
+\begin{algorithmic}[1]
   \item Points = Empty list
   \For{x in usable grid points}
   \State{y = 1/sqrt(Sn(x))}
   \State{Put (x,y) in Points's list}\\
   \Return{Points}
-  \end{algorithmic}
-  \end{algorithm}\\
-{\bf Natural Cubic Spline}- To construct the cubic spline interpolant $S$ for the function $f$, defined
+\end{algorithmic}
+\end{algorithm}\\
+Examples
+\newpage
+\section{ Natural Cubic Spline}- To construct the cubic spline interpolant $S$ for the function $f$, defined
 at the numbers $x_0<x_1<\ldots<x_n$ satisfying $S''(x_0) = S''(x_n) = 0:$\\
 (Natural Cubic Spline)
   \begin{algorithm}
@@ -289,5 +291,17 @@ at the numbers $x_0<x_1<\ldots<x_n$ satisfying $S''(x_0) = S''(x_n) = 0:$\\
   \State{$d_j = (c_{j+1}-c_j)/(3h_j)$}
   \item Return $(a_j,b_j,c_j,d_j for j = 0,1,\ldots,n-1)$;
   \end{algorithmic}
-  \end{algorithm}
+\end{algorithm}
 \end{enumerate}
+\section{Run the Program}
+\item (Run Class): 
+\begin{algorithm}
+\caption{}
+\bigskip
+\textbf{INPUT}:\\
+\textbf{OUTPUT}:
+\begin{algorithmic}[1]
+  \item\\
+  \Return 
+\end{algorithmic}
+\end{algorithm}
