@@ -1,38 +1,39 @@
 \chapter{Implementation of an Asset Bubble}
-In this chapter. we will provide detail information about the methods used in our problem. 
-We used sage python to solve this problem. We orgnize our data and process in six classes. 
+In this chapter. we will provide valueable information about the methods used in our problem. 
+We used sage python to solve this problem. We orgnize data and process in four classes. 
 Each class is designed to store the information about Stock, Floren Zmirou
 ,Cubic Spline,and Run.
 \section{Stock} 
-Let's consider these following questions: 
+Let's consider following questions: 
 \begin{itemize}
   \item What kind of Data will be used?
-  \item How someone can obtain accurate historic data information?
+  \item How can someone obtain accurate historic data information?
   \item Will it be Mintue to mintue data information?
   \item How we will store and use data information?
   \item Can we get data information for any stock symbol in market?
 \end{itemize} 
-Stock Class which will provide answers to all the above questions.
+Following Stock Class which will provide answers to all the above questions.
 \subsection{Stock Class}
-There are two types of methods first Google Finance and second CSV file from Yahoo Finance.
-IsNumber,GetGoogleData, GetStockPrice,and init are the four algorithms used in Stock Class.
+We used Google Finance and CSV file from Yahoo Finance methods to download stock data information.
+There are GetGoogleData, GetStockPrice and init are the four algorithms used in Stock Class which will decribe the process.
 \begin{itemize}
   \item S Stock Price.
   \item Smax Maximum Stock Price. 
   \item Smin Minimum Stock Price.
   \item Row of Stock prices is numberical string.
-  \item Ticker symbol name.
+  \item Ticker is Ticker symbol name.
   \item D Number of days.
-  \item T time in seconds interger.
+  \item T time in seconds in intergers.
 \end{itemize}
+We will read, download and save stock data by following methods.
 \subsubsection {Google Finance Stock Prices}
 \begin{enumerate}
 \item  Get Google Data: This function obtains mintue to mintue stock prices in numberical string for any ticker from Google Finance and save in array. 
 \begin{algorithm}
 \caption{Get Google Data}
 \bigskip
-\textbf{INPUT}: Ticker,D,T\\
-\textbf{OUTPUT}:$S = (S_{t_1}\ldots S_{t_n})$ in [0,T] where $t_i = \frac{i}{n}T$.
+\textbf{INPUT}: Ticker, D ,T\\
+\textbf{OUTPUT}: $S = (S_{t_1}\ldots S_{t_n})$ in [0,T] where $t_i = \frac{i}{n}T$.
 \begin{algorithmic}[1]
   \If {Ticker length $\leq$ 3}
   \State{exchange Ticker with New York Stock Exchange (NYSE)}.
@@ -44,37 +45,35 @@ IsNumber,GetGoogleData, GetStockPrice,and init are the four algorithms used in S
   \item TickerData = list of array of DataList.
   \item Put stock Prices in a list.
   \For {MinuteData in TickerData}
-  \State {Seperate MintueData with commas and put in a list.}
-  \State {Call a list S.}
-  \State {Append S in float and save it.}\\
+  \State {Seperate MintueData with commas and store in a list S.}
+  \State {Append S as float and save it.}\\
   \Return {S = Stock prices}
 \end{algorithmic}
 \end{algorithm}
 \subsubsection{Yahoo Finance Stock Prices}
-\item  Get Stock Prices : This function obtains the stock prices which are downloaded from yahoo finance and stored
+\item  Get Yahoo Data : This function obtains the stock prices which are downloaded from yahoo finance and stored
 in csv file by filename. It will provide the yahoo API based minute to minute data.
 \begin{algorithm}
-\caption{Get Stock Prices}
+\caption{Get Yahoo Data}
 \bigskip
 \textbf{INPUT}: Filename\\
-\textbf{OUTPUT}: S (Stock Prices) from CSV file.
+\textbf{OUTPUT}: S from CSV file.
 \begin{algorithmic}[1]
   \item Open Yahoo Finace link.
   \item Open and read the csv Filename as universal.
-  \item Store as Reader
   \item Skip the header.
   \item Create a empty list.
-  \For {Put row in Reader}
+  \For {row in csv Filename}
   \If {the second row is numberical string}
   \State {Add second row to empty list}
-  \item Call it S.\\
+  \item Name this row S.\\
   \Return{S}
 \end{algorithmic}
 \end{algorithm}
 \newpage
-\subsubsection{ Choosing either Google Ticker Or Yahoo CSV file}
-\item  Class Constructor: This function will analyzie wheather csv filename for Yahoo or Ticker 
-for Google finance is used.
+\subsubsection{Choosing either Google Ticker Or Yahoo CSV file}
+\item  Class Constructor: This function will analyzie wheather to use csv filename for Yahoo or Ticker 
+for Google finance.
 \begin{algorithm}
 \caption{--init--}
 \bigskip
@@ -96,17 +95,19 @@ This class will implement the following equation:
 \begin{equation}\label{florenZmirouEquation}
 S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}
 \end{equation}
-We obtained Stock Prices from Stock Class. Our goal is to get $\sigma(x)$ values from list of Stock Prices S.
-In order to use Floren Zmirou Estimator, first we will need following:\\
+Now we have Stock Prices from Stock Class. Our goal is to get $\sigma(x)$ values from list of Stock Prices S.
+We will import sage and stock class to Floren Zmirou class. In order to use Floren Zmirou Estimator, we will need following:\\
 \begin{itemize}
-  \item n
-  \item T
-  \item hn
+  \item n = Number of stock prices.
+  \item T = Time in seconds
+  \item hn = $1/(n)^(1/3)$
   \item x-step\-size
   \item x values
 \end{itemize}
+\begin{itemize}
+  \item We will implement hn, x-step\-size, and x values so we can use the terms in Floren zmirou estimator equation (1.1).
+\end{itemize}
 \subsection{Floren Zmirou Class}
-\item (Derive hn): This function will derive hn which will be used in Floren Zmirou Estimator.
 \begin{algorithm}
 \caption{Derive hn}
 \bigskip
@@ -118,7 +119,7 @@ In order to use Floren Zmirou Estimator, first we will need following:\\
   \Return {hn}
 \end{algorithmic}
 \end{algorithm}
-\item (x step size): This function will derive x step size which will be used  to create step size to generate x.
+\item (x step size): This function will be used  to create step size to generate x.
 \begin{algorithm}
 \caption{x\_hn = x step size}
 \bigskip
@@ -131,7 +132,6 @@ In order to use Floren Zmirou Estimator, first we will need following:\\
   \Return {x\_hn}
 \end{algorithmic}
 \end{algorithm}
-\item (Derive x values): This function will derive x values which will be used  in Floren Zmirou Estimator.
 \begin{algorithm}
 \caption { x Values}
 \bigskip
@@ -140,17 +140,20 @@ In order to use Floren Zmirou Estimator, first we will need following:\\
 \begin{algorithmic}[1]
   \item half h\_n = x\_hn /2.0
   \item x = empty list.
-  \item Append x with min S + half h\_n
+  \item Append x with Smin + half h\_n
   \item FirstElement = first element of x's list.
-  \While {FirstElement < max S}
+  \While {FirstElement < Smax}
   \State{FirstElement = FirstElement + x\_hn}
   \EndWhile
   \item Append FirstElement into x's list.\\
   \Return {x}
 \end{algorithmic}
 \end{algorithm}
-We will implement floren Zmirou on the following functions. Floren Zmirou has Sublocal time, Local time, volatility Estimator and Indicator function.
-\item (Sublocal Time):This function will give $L_{T}^n(x) = (\frac{T}{2nhn}) \sum_{i =1}^ n 1_{\left\vert S_{t_i} - x \right\vert < h_n}$
+\newpage
+\begin{itemize}
+  \item Now we will implement floren Zmirou Estimator. Floren Zmirou has Sublocal time, Local time, volatility Estimator and Indicator function.
+\end{itemize}
+\item Sublocal Time:This function will give $L_{T}^n(x) = (\frac{T}{2nhn}) \sum_{i =1}^ n 1_{\left\vert S_{t_i} - x \right\vert < h_n}$
 \begin{algorithm}
 \caption{Sublocal Time}
 \bigskip
@@ -168,11 +171,11 @@ We will implement floren Zmirou on the following functions. Floren Zmirou has Su
   \Return{scalar*sum}
 \end{algorithmic}
 \end{algorithm}
-\item (Local Time): $L_{T}^n(x) = (\frac{T}{2nh_n}) \sum_{i =1}^ n 1_{\left\vert S_{t_i} - x\right\vert  < hn}*n(S(t(i+1))-S(t(i))^2$
+\item Local Time: $L_{T}^n(x) = (\frac{T}{2nh_n}) \sum_{i =1}^ n 1_{\left\vert S_{t_i} - x\right\vert  < hn}*n(S(t(i+1))-S(t(i))^2$
 \begin{algorithm}
 \caption{Local Time}
 \bigskip
-\textbf{INPUT}: T, S, x, n, hn.
+\textbf{INPUT}: T, S, x, n, hn.\\
 \textbf{OUTPUT}:
 \begin{algorithmic}[1]
   \item sum = 0.0
@@ -187,7 +190,7 @@ We will implement floren Zmirou on the following functions. Floren Zmirou has Su
   \Return{scalar*sum}
 \end{algorithmic}
 \end{algorithm}
-\item (Volatility Estimator Sn(x)): Volatility Estimator is $\sigma^2(x)$. This function will give Local Time$/$Sublocal Time.
+\item Volatility Estimator Sn(x): Volatility Estimator is $\sigma^2(x)$. This function will give Local Time$/$Sublocal Time.
 \begin{algorithm}
 \caption{Volatility Estimator}
 \bigskip
@@ -199,9 +202,11 @@ We will implement floren Zmirou on the following functions. Floren Zmirou has Su
 \end{algorithmic}
 \end{algorithm}
 \newpage
-We have $\sigma^2(x)$ for Stock Prices. Now we want to see how many stock prices are in each grid point.
-If there are less than 0 or 1 percent of stock prices in grid then we will exclude that grid point from
+\begin{itemize}
+  \item We have $\sigma^2(x)$ for Stock Prices. Now we want to see how many stock prices are in each grid point.
+If there are less than 0 or 1 percent of stock prices in each grid then we will exclude that grid point from
 our calculation process.
+\end{itemize}
 \item (DoGridAnalysis): This function give us the list of usable grid points and for each usable grid point, the list of Stock prices.
 \begin{algorithm}
 \caption{DoGridAnalysis}
@@ -229,36 +234,33 @@ our calculation process.
   \Return{x = usable grid points and d }
 \end{algorithmic}
 \end{algorithm}
-\item (Get Grid Variance):
 \begin{algorithm}
 \caption{Get Grid Variance}
 \bigskip
-\textbf{INPUT}: \\
-\textbf{OUTPUT}: Standard Deviation of usable grid points
+\textbf{INPUT}: S,x\_hn, x values\\
+\textbf{OUTPUT}: Floren Zmirou estimation over usable grid points.
 \begin{algorithmic}[1]
-  \item Points = Empty list
+  \item Points = Empty list.
+  \item half x\_hn = x step size*(Stock Prices)/2.0
   \For{x in usable grid points}
   \State{y =Sn(x))}
-  \State{Put (x,y) in Points's list}\\
-  \Return{Points}
+  \State{Append (x,y)}\\
+  \Return{(x,y)}
 \end{algorithmic}
 \end{algorithm}
-\item (Get Grid Inverse Standard Deviation):
 \begin{algorithm}
 \caption{GetGridInverseStandardDeviation}
 \bigskip
-\textbf{INPUT}: \\
-\textbf{OUTPUT}: Standard Deviation of usable grid points
+\textbf{INPUT}:S,x\_hn,x values.\\
+\textbf{OUTPUT}: Standard Deviation of usable grid points.
 \begin{algorithmic}[1]
   \item Points = Empty list
   \For{x in usable grid points}
   \State{y = 1/sqrt(Sn(x))}
-  \State{Put (x,y) in Points's list}\\
-  \Return{Points}
+  \State{Append (x,y) in Points's list}\\
+  \Return{(x,y)}
 \end{algorithmic}
 \end{algorithm}\\
-Examples
-\newpage
 \section{ Natural Cubic Spline}- To construct the cubic spline interpolant $S$ for the function $f$, defined
 at the numbers $x_0<x_1<\ldots<x_n$ satisfying $S''(x_0) = S''(x_n) = 0:$\\
 (Natural Cubic Spline)
@@ -294,14 +296,3 @@ at the numbers $x_0<x_1<\ldots<x_n$ satisfying $S''(x_0) = S''(x_n) = 0:$\\
 \end{algorithm}
 \end{enumerate}
 \section{Run the Program}
-\item (Run Class): 
-\begin{algorithm}
-\caption{}
-\bigskip
-\textbf{INPUT}:\\
-\textbf{OUTPUT}:
-\begin{algorithmic}[1]
-  \item\\
-  \Return 
-\end{algorithmic}
-\end{algorithm}
