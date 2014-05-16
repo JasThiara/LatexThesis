@@ -243,7 +243,7 @@ our calculation process.
   \item Points = Empty list.
   \item half x\_hn = x step size*(Stock Prices)/2.0
   \For{x in usable grid points}
-  \State{y =Sn(x))}
+  \State{y =Sn(x)**2}
   \State{Append (x,y)}\\
   \Return{(x,y)}
 \end{algorithmic}
@@ -256,11 +256,24 @@ our calculation process.
 \begin{algorithmic}[1]
   \item Points = Empty list
   \For{x in usable grid points}
-  \State{y = 1/sqrt(Sn(x))}
+  \State{y = 1/sqrt(Sn(x))**2}
   \State{Append (x,y) in Points's list}\\
   \Return{(x,y)}
 \end{algorithmic}
-\end{algorithm}\\
+\end{algorithm}
+\begin{algorithm}
+\caption{GetGridSigma}
+\bigskip
+\textbf{INPUT}:S,x\_hn,x values.\\
+\textbf{OUTPUT}: Standard Deviation of usable grid points.
+\begin{algorithmic}[1]
+  \item Points = Empty list
+  \For{x in usable grid points}
+  \State{y = Sn(x)}
+  \State{Append (x,y) in Points's list}\\
+  \Return{(x,y)}
+\end{algorithmic}
+\end{algorithm}
 \section{ Natural Cubic Spline}- To construct the cubic spline interpolant $S$ for the function $f$, defined
 at the numbers $x_0<x_1<\ldots<x_n$ satisfying $S''(x_0) = S''(x_n) = 0:$\\
 (Natural Cubic Spline)

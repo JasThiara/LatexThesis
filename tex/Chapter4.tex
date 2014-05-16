@@ -4,8 +4,71 @@ We will provide examples which will give better understanding for our problem.
 \section{Numberical Solutions using implementation}
 Example 1
 \begin{itemize}
-  \item Ticker: Google
-  \item  D : 
+  \item Ticker: MWI Veterinary Supply Inc
+  \item  D : 05/16/2014
   \item  T : 60 seconds
   \item 
 \end{itemize}
+\section{Stock Class}
+\begin{center}
+\includegraphics[scale=0.75]{MWIV_stock_price.png}
+\end{center}
+\section{Floren Zmirou Estimation}
+\begin{center}
+\begin{equation}\label{florenZmirouEquation}
+S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}
+\end{equation}
+\end{center}
+\begin{center}
+\includegraphics[scale = 0.75]{MWIV_FZ_stddev_estimation.png}
+\end{center}
+\begin{table}
+\begin{tabular}{|1|c|r|}
+\hline
+Usable Grid Points  &  Estimated Sigma Zmirou  & Number of Points\\
+\hline
+141.842890874       &           1897.69862662  &              50\\
+\hline
+144.17445437        &          290.806107556   &            108\\
+\hline
+143.008672622       &           464.127160557  &              60\\
+\hline
+\end{tabular}
+\end{table}
+\section{Cublic Spline}
+\begin{center}
+\includegraphics[scale=0.75]{MWIV_variance_spline.png}
+\end{center}
+\begin{center}
+\includegraphics[scale=0.75]{MWIV_stddev_spline.png}
+\end{center}
+\newpage
+Example 2
+\begin{itemize}
+  \item Ticker: Google
+  \item  D : 05/16/2014
+  \item  T : 60 seconds
+  \item 
+\end{itemize}
+\section{Stock Class}
+\includegraphics[scale=0.75]{GOOG_stock_price.png}
+\section{Floren Zmirou Class}
+\includegraphics[scale=0.75]{GOOG_FZ_stddev_estimation.png}
+\begin{table}
+\begin{tabular}{|1|c|r|}
+\hline
+Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
+\hline
+516.530717358   &           1457.28946616      &          139\\
+\hline
+519.733586789   &         1665.54754231        &         49\\
+\hline
+518.132152074   &           1599.68642575      &          143\\
+\hline
+521.335021505   &          927.719546048       &         53\\
+\hline
+\end{tabular}
+\end{table}
+\section{Cubic Spline}
+\includegraphics[scale=0.75]{GOOG_stddev_spline.png}
+\includegraphics[scale=0.75]{GOOG_variance_spline.png}
