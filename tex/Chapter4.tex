@@ -1,27 +1,38 @@
 \chapter{Numerical Solution, Conclusion and Future Work}
 Since we have done lot of good work, now it is the time to check the implementation.
 We will provide examples which will give better understanding for our problem.
-\section{Numberical Solutions using implementation}
-Example 1
+{Numberical Solutions using implementation}
+\section{Example 1}
 \begin{itemize}
   \item Ticker: MWI Veterinary Supply Inc
   \item  D : 05/16/2014
   \item  T : 60 seconds
   \item 
 \end{itemize}
-\section{Stock Class}
-\begin{center}
-\includegraphics[scale=0.75]{MWIV_stock_price.png}
-\end{center}
-\section{Floren Zmirou Estimation}
+\subsection{Stock Class}
+We are using NASD. We download information from following website. Figure 1.1 shows stock prices vs. time in seconds.
+\begin{figure}
+  \centering
+    \includegraphics[scale=0.40]{MWIV_stock_price.png}
+  \caption{Stock Prices vs. Time}
+  \label{fig:Stock Price}
+\end{figure}
+\newpage
+Now we have stock prices for MWI Veterinary. We will use Floren Zmirou estimator to see the volatility of stock prices.
+\subsection{Floren Zmirou Estimation}
 \begin{center}
 \begin{equation}\label{florenZmirouEquation}
 S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}
+
 \end{equation}
 \end{center}
-\begin{center}
-\includegraphics[scale = 0.75]{MWIV_FZ_stddev_estimation.png}
-\end{center}
+\begin{figure}
+  \centering
+    \includegraphics[scale = 0.40]{MWIV_FZ_stddev_estimation.png}
+  \caption{Floren Zmirou Standard Deviation Estimation vs. Stock Prices}
+  \label{fig:Floren Zmirou Estimation}
+\end{figure}
+
 \begin{table}
 \begin{tabular}{|1|c|r|}
 \hline
@@ -35,25 +46,47 @@ Usable Grid Points  &  Estimated Sigma Zmirou  & Number of Points\\
 \hline
 \end{tabular}
 \end{table}
-\section{Cublic Spline}
-\begin{center}
-\includegraphics[scale=0.75]{MWIV_variance_spline.png}
-\end{center}
-\begin{center}
-\includegraphics[scale=0.75]{MWIV_stddev_spline.png}
-\end{center}
+Figure 1.2 shows volatility vs. stock prices. There are Floren Zmirou's estimated sigma values for 
+usable grid points and number of points in each usable grid point. Next we used Cubic spline to connect
+Floren Zmirou's sigma points. 
+\subsection{Cublic Spline}
+\begin{figure}
+  \centering
+    \includegraphics[scale=0.50]{MWIV_variance_spline.png}
+  \caption{Variance Cubic Spline vs. Stock Prices}
+  \label{fig:Cubic Spline}
+\end{figure}
+Figure 1.3 and 1.4 shows the variance and standard deviation for cubic spline. 
+\begin{figure}
+  \centering
+    \includegraphics[scale=0.50]{MWIV_stddev_spline.png}
+  \caption{Standard Deviation Cubic Spline vs. Stock Prices}
+  \label{fig:Cubic Spline}
+\end{figure}
 \newpage
-Example 2
+\section{Example 2}
 \begin{itemize}
   \item Ticker: Google
   \item  D : 05/16/2014
   \item  T : 60 seconds
   \item 
 \end{itemize}
-\section{Stock Class}
-\includegraphics[scale=0.75]{GOOG_stock_price.png}
-\section{Floren Zmirou Class}
-\includegraphics[scale=0.75]{GOOG_FZ_stddev_estimation.png}
+\subsection{Stock Class}
+\begin{figure}
+  \centering
+    \includegraphics[scale=0.50]{GOOG_stock_price.png}
+  \caption{Stock Prices vs. Time}
+  \label{fig:Stock Prices}
+\end{figure}
+
+\subsection{Floren Zmirou Class}
+\begin{figure}
+  \centering
+    \includegraphics[scale=0.50]{GOOG_FZ_stddev_estimation.png}
+  \caption{Floren Zmirou Standard Deviation Estimation vs. Stock Prices}
+  \label{fig:Floren Zmirou}
+\end{figure}
+\newpage
 \begin{table}
 \begin{tabular}{|1|c|r|}
 \hline
@@ -69,6 +102,124 @@ Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
 \hline
 \end{tabular}
 \end{table}
-\section{Cubic Spline}
-\includegraphics[scale=0.75]{GOOG_stddev_spline.png}
-\includegraphics[scale=0.75]{GOOG_variance_spline.png}
+\subsection{Cubic Spline}
+\begin{figure}
+  \centering
+   \includegraphics[scale=0.50]{GOOG_stddev_spline.png}
+  \caption{Standard Deviation Cubic Spline vs. Stock Prices}
+  \label{fig:Cubic Spline}
+\end{figure}
+
+\begin{figure}
+  \centering
+   \includegraphics[scale=0.50]{GOOG_variance_spline.png}
+  \caption{Variance Cubic Spline vs. Stock Prices}
+  \label{fig:Cubic Spline}
+\end{figure}
+\newpage
+\section{Example 3}
+\begin{itemize}
+  \item Ticker: APPLE inc
+  \item  D : 05/21/2014
+  \item  T : 60 seconds
+\end{itemize}
+\subsection{Stock Class}
+\begin{figure}
+  \centering
+    \includegraphics[scale=0.50]{AAPL_stock_price.png}
+  \caption{Apple Stock Prices vs. Time}
+  \label{fig:Stock Prices}
+\end{figure}
+\subsection{Floren Zmirou Estimation}
+\begin{center}
+\begin{equation}\label{florenZmirouEquation}
+S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}
+\end{equation}
+\end{center}
+\begin{figure}
+  \centering
+    \includegraphics[scale = 0.40]{AAPL_FZ_stddev_estimation.png}
+  \caption{Floren Zmirou Standard Deviation Estimation vs. Stock Prices}
+  \label{fig:Floren Zmirou Estimation}
+\end{figure}
+
+\begin{table}
+\begin{tabular}{|1|c|r|}
+\hline
+Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
+\hline
+602.871457276      &           138.351149247      &           42\\
+\hline
+603.874371827      &            245.251175157     &           125\\
+\hline
+604.877286378      &            102.97102087      &          104\\
+\hline
+\end{tabular}
+\end{table}
+\subsection{Cubic Spline}
+\begin{figure}
+  \centering
+   \includegraphics[scale=0.50]{AAPL_stddev_spline.png}
+  \caption{Standard Deviation Cubic Spline vs. Stock Prices}
+  \label{fig:Cubic Spline}
+\end{figure}
+
+\begin{figure}
+  \centering
+   \includegraphics[scale=0.50]{AAPL_variance_spline.png}
+  \caption{Variance Cubic Spline vs. Stock Prices}
+  \label{fig:Cubic Spline}
+\end{figure}
+\section{Example 4}
+begin{itemize}
+  \item Ticker: GROUPON Inc
+  \item  D : 05/21/2014
+  \item  T : 60 seconds
+\end{itemize}
+\subsection{Stock Class}
+\begin{figure}
+  \centering
+    \includegraphics[scale=0.50]{GRPN_stock_price.png}
+  \caption{Apple Stock Prices vs. Time}
+  \label{fig:Stock Prices}
+\end{figure}
+\subsection{Floren Zmirou Estimation}
+\begin{center}
+\begin{equation}\label{florenZmirouEquation}
+S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}
+\end{equation}
+\end{center}
+\begin{figure}
+  \centering
+    \includegraphics[scale = 0.40]{GRPN_FZ_stddev_estimation.png}
+  \caption{Floren Zmirou Standard Deviation Estimation vs. Stock Prices}
+  \label{fig:Floren Zmirou Estimation}
+\end{figure}
+
+\begin{table}
+\begin{tabular}{|1|c|r|}
+\hline
+Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
+\hline
+5.89881248479      &        0.000174386207801       &         154\\
+\hline
+5.95643745436      &        0.000631006527365       &         97\\
+\hline
+6.01406242393      &        0.00213227912639        &         50\\
+\hline
+\end{tabular}
+\end{table}
+\subsection{Cubic Spline}
+\begin{figure}
+  \centering
+   \includegraphics[scale=0.50]{GRPN_stddev_spline.png}
+  \caption{Standard Deviation Cubic Spline vs. Stock Prices}
+  \label{fig:Cubic Spline}
+\end{figure}
+
+\begin{figure}
+  \centering
+   \includegraphics[scale=0.50]{GRPN_variance_spline.png}
+  \caption{Variance Cubic Spline vs. Stock Prices}
+  \label{fig:Cubic Spline}
+\end{figure}
