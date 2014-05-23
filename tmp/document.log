@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  21 MAY 2014 20:21
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  23 MAY 2014 11:18
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -290,34 +290,40 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
 
 
-LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
+LaTeX Warning: Label `fig:Stock Price' multiply defined.
+
+
+LaTeX Warning: Label `fig:Stock Price' multiply defined.
 
 
 LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
 
 
-LaTeX Warning: Label `fig:Stock Prices' multiply defined.
+LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
+
+
+LaTeX Warning: Label `fig:Stock Price' multiply defined.
 
 
 LaTeX Warning: Label `florenZmirouEquation' multiply defined.
 
 
-LaTeX Warning: Label `fig:Floren Zmirou Estimation' multiply defined.
-
-
-LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
-
-
-LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
-
-
 LaTeX Warning: Label `florenZmirouEquation' multiply defined.
 
 
-LaTeX Warning: Label `fig:Stock Prices' multiply defined.
+LaTeX Warning: Label `fig:Stock Price' multiply defined.
 
 
-LaTeX Warning: Label `fig:Floren Zmirou Estimation' multiply defined.
+LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
+
+
+LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
+
+
+LaTeX Warning: Label `fig:Stock Price' multiply defined.
+
+
+LaTeX Warning: Label `fig:Stock Price' multiply defined.
 
 
 LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
@@ -432,12 +438,12 @@ e
 )))
 (./Abstract.tex) (./Chapter4.tex
 Chapter 1.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 7.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 18.
 (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 18.
 
 <MWIV_stock_price.png, id=22, 564.4287pt x 422.0568pt>
 File: MWIV_stock_price.png Graphic file (type png)
@@ -445,90 +451,61 @@ File: MWIV_stock_price.png Graphic file (type png)
 <use MWIV_stock_price.png> [1
 
  <./MWIV_stock_price.png>]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.26 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
 
-! Missing } inserted.
-<inserted text> 
-                }
-l.26 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+! Package array Error:  Illegal pream-token (1): `c' used.
 
-! Display math should end with $$.
-<to be read again> 
-                   \@@par 
-l.26 
-     
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
+See the array package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.39 \begin{tabular}{|1|c|r|}
+                             
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-! Extra }, or forgotten \endgroup.
-\par ...m \@noitemerr {\@@par }\fi \else {\@@par }
-                                                  \fi 
-l.26 
-     
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
+<MWIV_FZ_stddev_estimation.png, id=31, 564.4287pt x 421.3341pt>
+File: MWIV_FZ_stddev_estimation.png Graphic file (type png)
 
+<use MWIV_FZ_stddev_estimation.png> [2 <./MWIV_FZ_stddev_estimation.png>]
+<MWIV_variance_spline.png, id=42, 565.8741pt x 422.0568pt>
+File: MWIV_variance_spline.png Graphic file (type png)
 
-! LaTeX Error: Bad math environment delimiter.
+<use MWIV_variance_spline.png>
+<MWIV_stddev_spline.png, id=43, 565.8741pt x 422.0568pt>
+File: MWIV_stddev_spline.png Graphic file (type png)
+
+<use MWIV_stddev_spline.png>
+
+! LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.27 \end{equation}
-                   
+l.75 I
+      n above example,
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-! You can't use `\eqno' in vertical mode.
-\endmathdisplay@a ...\df@tag \@empty \else \veqno 
-                                                  \alt@tag \df@tag \fi \ifx ...
-l.27 \end{equation}
-                   
-Sorry, but I'm not programmed to handle this case;
-I'll just pretend that you didn't ask for it.
-If you're in the wrong mode, you might be able to
-return to the right one by typing `I}' or `I$' or `I\par'.
+<GOOG_stock_price.png, id=44, 564.4287pt x 422.0568pt>
+File: GOOG_stock_price.png Graphic file (type png)
 
-! Missing $ inserted.
-<inserted text> 
-                $
-l.27 \end{equation}
-                   
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
+<use GOOG_stock_price.png> [3 <./MWIV_variance_spline.png> <./MWIV_stddev_splin
+e.png>]
 
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.27 \end{equation}
-                   
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
+! LaTeX Error: There's no line here to end.
 
-<MWIV_FZ_stddev_estimation.png, id=31, 564.4287pt x 421.3341pt>
-File: MWIV_FZ_stddev_estimation.png Graphic file (type png)
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.93 \begin
+           {tabular}{|1|c|r|}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-<use MWIV_FZ_stddev_estimation.png>
 
 ! Package array Error:  Illegal pream-token (1): `c' used.
 
@@ -536,57 +513,54 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.37 \begin{tabular}{|1|c|r|}
+l.93 \begin{tabular}{|1|c|r|}
                              
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<MWIV_variance_spline.png, id=32, 565.8741pt x 422.0568pt>
-File: MWIV_variance_spline.png Graphic file (type png)
-
-<use MWIV_variance_spline.png>
-<MWIV_stddev_spline.png, id=33, 565.8741pt x 422.0568pt>
-File: MWIV_stddev_spline.png Graphic file (type png)
-
-<use MWIV_stddev_spline.png> [2 <./MWIV_FZ_stddev_estimation.png>] [3 <./MWIV_v
-ariance_spline.png> <./MWIV_stddev_spline.png>]
-<GOOG_stock_price.png, id=49, 564.4287pt x 422.0568pt>
-File: GOOG_stock_price.png Graphic file (type png)
-
-<use GOOG_stock_price.png>
 <GOOG_FZ_stddev_estimation.png, id=50, 564.4287pt x 421.3341pt>
 File: GOOG_FZ_stddev_estimation.png Graphic file (type png)
 
-<use GOOG_FZ_stddev_estimation.png> [4 <./GOOG_stock_price.png>]
+<use GOOG_FZ_stddev_estimation.png> [4 <./GOOG_stock_price.png> <./GOOG_FZ_stdd
+ev_estimation.png>] <GOOG_variance_spline.png, id=56, 565.8741pt x 422.0568pt>
+File: GOOG_variance_spline.png Graphic file (type png)
 
-! Package array Error:  Illegal pream-token (1): `c' used.
-
-See the array package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.91 \begin{tabular}{|1|c|r|}
-                             
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<GOOG_stddev_spline.png, id=55, 565.8741pt x 422.0568pt>
+<use GOOG_variance_spline.png>
+<GOOG_stddev_spline.png, id=57, 565.8741pt x 422.0568pt>
 File: GOOG_stddev_spline.png Graphic file (type png)
 
 <use GOOG_stddev_spline.png>
-<GOOG_variance_spline.png, id=56, 565.8741pt x 422.0568pt>
-File: GOOG_variance_spline.png Graphic file (type png)
 
-<use GOOG_variance_spline.png> [5 <./GOOG_FZ_stddev_estimation.png>] [6 <./GOOG
-_stddev_spline.png> <./GOOG_variance_spline.png>]
-<AAPL_stock_price.png, id=66, 564.4287pt x 422.0568pt>
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.128 I
+       n above example,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<AAPL_stock_price.png, id=58, 564.4287pt x 422.0568pt>
 File: AAPL_stock_price.png Graphic file (type png)
 
-<use AAPL_stock_price.png>
-<AAPL_FZ_stddev_estimation.png, id=67, 564.4287pt x 422.0568pt>
-File: AAPL_FZ_stddev_estimation.png Graphic file (type png)
+<use AAPL_stock_price.png> [5 <./GOOG_variance_spline.png> <./GOOG_stddev_splin
+e.png>]
 
-<use AAPL_FZ_stddev_estimation.png>
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.151 \begin
+            {tabular}{|1|c|r|}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
 
 ! Package array Error:  Illegal pream-token (1): `c' used.
 
@@ -594,81 +568,92 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.147 \begin{tabular}{|1|c|r|}
+l.151 \begin{tabular}{|1|c|r|}
                               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<AAPL_stddev_spline.png, id=68, 565.8741pt x 422.0568pt>
-File: AAPL_stddev_spline.png Graphic file (type png)
+<AAPL_FZ_stddev_estimation.png, id=64, 564.4287pt x 422.0568pt>
+File: AAPL_FZ_stddev_estimation.png Graphic file (type png)
 
-<use AAPL_stddev_spline.png>
+<use AAPL_FZ_stddev_estimation.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[6 <./AAPL_stock_price.png>]
 <AAPL_variance_spline.png, id=69, 565.8741pt x 422.0568pt>
 File: AAPL_variance_spline.png Graphic file (type png)
 
 <use AAPL_variance_spline.png>
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+! Package caption Error: \caption outside float.
 
-See the LaTeX manual or LaTeX Companion for explanation.
+See the caption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.175   \item T
-               icker: GROUPON Inc
+l.174 \caption
+              {Floren Zmirou Standard Deviation Estimation vs. Variance Cubi...
+
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+<AAPL_stddev_spline.png, id=70, 565.8741pt x 422.0568pt>
+File: AAPL_stddev_spline.png Graphic file (type png)
 
-Underfull \hbox (badness 10000) detected at line 175
-[][]
- []
+<use AAPL_stddev_spline.png> [7 <./AAPL_FZ_stddev_estimation.png> <./AAPL_varia
+nce_spline.png>]
 
+! Package caption Error: \caption outside float.
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
+See the caption package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.176   \item  D
-                 : 05/21/2014
+l.179 \caption
+              {Floren Zmirou Standard Deviation Estimation vs.Standard Devia...
+
+If you do not understand this error, please take a closer look
+at the documentation of the `caption' package, especially the
+section about errors.
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
+! Too many }'s.
+\@endfloatbox ...pagefalse \outer@nobreak \egroup 
+                                                  \color@endbox 
+l.181 \end{figure}
+                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
-Underfull \hbox (badness 10000) detected at line 176
-[][]
- []
+! Extra \endgroup.
+\color@endgroup ->\endgraf \endgroup 
+                                     
+l.181 \end{figure}
+                  
+Things are pretty mixed up, but I think the worst is over.
 
-[7 <./AAPL_stock_price.png>] [8 <./AAPL_FZ_stddev_estimation.png> <./AAPL_stdde
-v_spline.png>]
+! Too many }'s.
+\color@endbox ->\color@endgroup \egroup 
+                                        
+l.181 \end{figure}
+                  
+You've closed more groups than you opened.
+Such booboos are generally harmless, so keep going.
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
+
+! LaTeX Error: \begin{document} ended by \end{figure}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.177   \item  T
-                 : 60 seconds
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 177
-[][]
- []
-
-
-! LaTeX Error: \begin{document} ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.178 \end{itemize}
-                   
+l.181 \end{figure}
+                  
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
@@ -676,18 +661,28 @@ or  <return>  to continue without it.
 ! Extra \endgroup.
 <recently read> \endgroup 
                           
-l.178 \end{itemize}
-                   
+l.181 \end{figure}
+                  
 Things are pretty mixed up, but I think the worst is over.
 
-<GRPN_stock_price.png, id=80, 564.4287pt x 422.0568pt>
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.183 I
+       n above example,
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+<GRPN_stock_price.png, id=77, 564.4287pt x 422.0568pt>
 File: GRPN_stock_price.png Graphic file (type png)
 
-<use GRPN_stock_price.png>
-<GRPN_FZ_stddev_estimation.png, id=81, 564.4287pt x 422.0568pt>
-File: GRPN_FZ_stddev_estimation.png Graphic file (type png)
-
-<use GRPN_FZ_stddev_estimation.png>
+<use GRPN_stock_price.png> [8 <./AAPL_stddev_spline.png> <./GRPN_stock_price.pn
+g>]
 
 ! Package array Error:  Illegal pream-token (1): `c' used.
 
@@ -695,35 +690,51 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.200 \begin{tabular}{|1|c|r|}
+l.206 \begin{tabular}{|1|c|r|}
                               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<GRPN_stddev_spline.png, id=82, 565.8741pt x 422.0568pt>
-File: GRPN_stddev_spline.png Graphic file (type png)
+<GRPN_FZ_stddev_estimation.png, id=83, 564.4287pt x 422.0568pt>
+File: GRPN_FZ_stddev_estimation.png Graphic file (type png)
 
-<use GRPN_stddev_spline.png>
-<GRPN_variance_spline.png, id=83, 565.8741pt x 422.0568pt>
+<use GRPN_FZ_stddev_estimation.png> [9 <./GRPN_FZ_stddev_estimation.png>]
+<GRPN_variance_spline.png, id=88, 565.8741pt x 422.0568pt>
 File: GRPN_variance_spline.png Graphic file (type png)
 
-<use GRPN_variance_spline.png>) (./Ends/Ends/postfix.tex
+<use GRPN_variance_spline.png>
+<GRPN_stddev_spline.png, id=89, 565.8741pt x 422.0568pt>
+File: GRPN_stddev_spline.png Graphic file (type png)
+
+<use GRPN_stddev_spline.png>)
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \input
+          {Ends/Ends/postfix}
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+(./Ends/Ends/postfix.tex
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[9 <./AAPL_variance_spline.png>] [10 <./GRPN_stock_price.png> <./GRPN_FZ_stddev
-_estimation.png>] [11 <./GRPN_stddev_spline.png> <./GRPN_variance_spline.png>]
-(./document.aux)
+[10 <./GRPN_variance_spline.png> <./GRPN_stddev_spline.png>] (./document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 5023 strings out of 493747
- 70367 string characters out of 3143546
+ 5020 strings out of 493747
+ 70313 string characters out of 3143546
  131122 words of memory out of 3000000
- 8180 multiletter control sequences out of 15000+200000
+ 8177 multiletter control sequences out of 15000+200000
  14680 words of font info for 38 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 43i,9n,38p,414b,283s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 43i,8n,38p,414b,299s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local
 /texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/
 texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/te
@@ -734,10 +745,10 @@ e/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2
 10/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2010
 /texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb>
-Output written on document.pdf (17 pages, 404796 bytes).
+Output written on document.pdf (16 pages, 406585 bytes).
 PDF statistics:
- 129 PDF objects out of 1000 (max. 8388607)
- 68 compressed objects within 1 object stream
+ 126 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
