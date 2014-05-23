@@ -13,13 +13,14 @@
 Since we have done lot of good work, now it is the time to check the implementation.
 We will provide examples which will give better understanding for our problem.
 {Numberical Solutions using implementation}
-\section{Example 1}
+\section{Examples}
+\subsection{EXAMPLE 1}
 \begin{itemize}
   \item Ticker: \textbf{MWI Veterinary Supply Inc}
   \item  D : 05/16/2014
   \item  T : 60 seconds
 \end{itemize}
-\subsection{Stock Class}
+\textbf{Stock Class }\\
 We are using NASD. We download information from following website. Figure 1.1 shows stock prices vs. time in seconds.
 \begin{figure}[h]
 \begin{center}
@@ -29,8 +30,8 @@ We are using NASD. We download information from following website. Figure 1.1 sh
 \label{fig:Stock Price}
 \end{figure}
 \newpage
-Now we have stock prices for MWI Veterinary. We will use Floren Zmirou estimator to see the volatility of stock prices.
-\subsection{Floren Zmirou Estimation}
+Now we have stock prices for MWI Veterinary. We will use Floren Zmirou estimator to see the volatility of stock prices.\\
+\textbf{Floren Zmirou Class}
 \begin{center}
 \begin{equation}\label{florenZmirouEquation}
 S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}
@@ -58,7 +59,7 @@ Floren Zmirou's sigma points.
 \label{fig:Floren Zmirou Estimation}
 \end{figure}
 \newpage
-\subsection{Cublic Spline}
+\textbf{Cublic Spline}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.50]{MWIV_variance_spline.png}
@@ -74,13 +75,13 @@ Floren Zmirou's sigma points.
 \\
 In above example,  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Example 2}
+\subsection{EXAMPLE 2}
 \begin{itemize}
   \item Ticker:\textbf{ GOOGLE Inc.}
   \item  D : 05/16/2014
   \item  T : 60 seconds
 \end{itemize}
-\subsection{Stock Class}
+\textbf{Stock Class: }\\
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.40]{GOOG_stock_price.png}
@@ -88,19 +89,19 @@ In above example,
 \caption{Stock Prices vs. Time}
 \label{fig:Stock Price}
 \end{figure}
-\subsection{Floren Zmirou Class}
 \\
+\textbf{Floren Zmirou Class}\\\\
 \begin{tabular}{|1|c|r|}
 \hline
-Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
+Usable Grid Points &   Estimated Sigma Zmirou  & Number of Points\\
 \hline
-516.530717358   &           1457.28946616      &          139\\
+547.289611925      &            267.623605573  &              64\\
 \hline
-519.733586789   &         1665.54754231        &         49\\
+549.612686541      &            517.868135963  &             143\\
 \hline
-518.132152074   &           1599.68642575      &          143\\
+551.935761158      &           76.0733825073   &              17\\
 \hline
-521.335021505   &          927.719546048       &         53\\
+544.966537308      &               1890.46832  &               72\\
 \hline
 \end{tabular}
 \begin{figure}[h]
@@ -111,7 +112,7 @@ Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
 \label{fig:Stock Price}
 \end{figure}
 \newpage
-\subsection{Cublic Spline}
+\textbf{Cublic Spline}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.50]{GOOG_variance_spline.png}
@@ -127,13 +128,13 @@ Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
 \\
 In above example,  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Example 3}
+\subsection{EXAMPLE 3}
 \begin{itemize}
   \item Ticker: \textbf{APPLE Inc.}
   \item  D : 05/21/2014
   \item  T : 60 seconds
 \end{itemize}
-\subsection{Stock Class}
+\textbf{Stock Class}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.40]{AAPL_stock_price.png}
@@ -141,7 +142,8 @@ In above example,
 \caption{Stock Prices vs. Time}
 \label{fig:Stock Price}
 \end{figure}
-\subsection{Floren Zmirou Estimation}
+\\
+\textbf{Floren Zmirou Estimation}\\
 \begin{center}
 \begin{equation}\label{florenZmirouEquation}
 S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}
@@ -167,7 +169,7 @@ Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
 \label{fig:Stock Price}
 \end{figure}
 \newpage
-\subsection{Cublic Spline}
+\textbf{Cublic Spline}
 \begin{center}
 \includegraphics[scale=0.50]{AAPL_variance_spline.png}
 \end{center}
@@ -178,17 +180,16 @@ Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
 \end{center}
 \caption{Floren Zmirou Standard Deviation Estimation vs.Standard Deviation Cubic Spline}
 \label{fig:Cubic Spline}
-\end{figure}
 \\
 In above example,  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Example 4}
+\subsection{EXAMPLE 4}
 \begin{itemize}
   \item Ticker: \textbf{GROUPON Inc.}
   \item  D : 05/21/2014
   \item  T : 60 seconds
 \end{itemize}
-\subsection{Stock Class}
+\textbf{Stock Class}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.40]{GRPN_stock_price.png}
@@ -196,7 +197,8 @@ In above example,
 \caption{Stock Prices vs. Time}
 \label{fig:Stock Price}
 \end{figure}
-\subsection{Floren Zmirou Estimation}
+\\
+\textbf{Floren Zmirou Estimation}\\
 \begin{center}
 \begin{equation}\label{florenZmirouEquation}
 S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}}}
@@ -205,13 +207,15 @@ S_n(x) = \frac{\Sigma_{i=1}^{n} 1_{\{|S_{t_i}-x|<h_n\}} n (S_{t_i+1}-S_{t_i})^2}
 
 \begin{tabular}{|1|c|r|}
 \hline
-Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
+Usable Grid Points  &  Estimated Sigma Zmirou &  Number of Points\\
 \hline
-5.89881248479      &        0.000174386207801       &         154\\
+6.01159662403       &        0.0106001479673  &             25\\
 \hline
-5.95643745436      &        0.000631006527365       &         97\\
+6.0947898721        &        0.00331796023881 &              38\\
 \hline
-6.01406242393      &        0.00213227912639        &         50\\
+6.17798312017       &       0.000229293586847 &              155\\
+\hline
+6.26117636824       &      7.51642424675e-05  &              86\\
 \hline
 \end{tabular}
 \begin{figure}[h]
@@ -222,7 +226,7 @@ Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
 \label{fig:Stock Price}
 \end{figure}
 \newpage
-\subsection{Cublic Spline}
+\textbf{Cublic Spline}
 \begin{figure}[h]
 \begin{center}
 \includegraphics[scale=0.50]{GRPN_variance_spline.png}
@@ -236,3 +240,15 @@ Usable Grid Points &   Estimated Sigma Zmirou &  Number of Points\\
 \label{fig:Cubic Spline}
 \end{figure}
 \\
+\newpage
+\section{Future Work}
+\begin{itemize}
+  \item Still need to know tail of the volatility function.
+  \item Need to extrapolate the volatility with either Comparison Theorem Method or Reproducing Kernal Hilbert Spaces.
+  \item Need to know themorem 0.1.12 equation(3)
+  \begin{equation}
+  \int_\alpha^\infty \frac{x}{\sigma^2(x)}dx < \infty
+   \end{equation} 
+   for all $\alpha > 0$ is finite or infinite.
+  \item Determine from intergral if there is bubble or not.
+\end{itemize}
