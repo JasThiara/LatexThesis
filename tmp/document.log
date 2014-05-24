@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  23 MAY 2014 12:09
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  24 MAY 2014 13:14
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -290,12 +290,6 @@ Package graphics Info: Driver file: pdftex.def on input line 91.
 LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
 
 
-LaTeX Warning: Label `fig:Stock Price' multiply defined.
-
-
-LaTeX Warning: Label `fig:Stock Price' multiply defined.
-
-
 LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
 
 
@@ -308,7 +302,7 @@ LaTeX Warning: Label `fig:Stock Price' multiply defined.
 LaTeX Warning: Label `florenZmirouEquation' multiply defined.
 
 
-LaTeX Warning: Label `fig:Stock Price' multiply defined.
+LaTeX Warning: Label `fig:Floren Zmirou Estimation' multiply defined.
 
 
 LaTeX Warning: Label `fig:Cubic Spline' multiply defined.
@@ -451,6 +445,10 @@ File: MWIV_stock_price.png Graphic file (type png)
 <use MWIV_stock_price.png> [1
 
  <./MWIV_stock_price.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 32--35
+
+ []
+
 
 ! Package array Error:  Illegal pream-token (1): `c' used.
 
@@ -458,7 +456,7 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.40 \begin{tabular}{|1|c|r|}
+l.42 \begin{tabular}{|1|c|r|}
                              
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -466,19 +464,49 @@ If that doesn't work, type  X <return>  to quit.
 <MWIV_FZ_stddev_estimation.png, id=31, 564.4287pt x 421.3341pt>
 File: MWIV_FZ_stddev_estimation.png Graphic file (type png)
 
-<use MWIV_FZ_stddev_estimation.png> [2 <./MWIV_FZ_stddev_estimation.png>]
-<MWIV_variance_spline.png, id=42, 565.8741pt x 422.0568pt>
+<use MWIV_FZ_stddev_estimation.png>
+Underfull \hbox (badness 10000) in paragraph at lines 42--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--66
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--66
+
+ []
+
+[2 <./MWIV_FZ_stddev_estimation.png>]
+<MWIV_variance_spline.png, id=43, 565.8741pt x 422.0568pt>
 File: MWIV_variance_spline.png Graphic file (type png)
 
 <use MWIV_variance_spline.png>
-<MWIV_stddev_spline.png, id=43, 565.8741pt x 422.0568pt>
+<MWIV_stddev_spline.png, id=44, 565.8741pt x 422.0568pt>
 File: MWIV_stddev_spline.png Graphic file (type png)
 
 <use MWIV_stddev_spline.png>
-<GOOG_stock_price.png, id=44, 564.4287pt x 422.0568pt>
+Underfull \hbox (badness 10000) in paragraph at lines 67--86
+
+ []
+
+[3 <./MWIV_variance_spline.png> <./MWIV_stddev_spline.png>]
+<GOOG_stock_price.png, id=50, 564.4287pt x 422.0568pt>
 File: GOOG_stock_price.png Graphic file (type png)
 
 <use GOOG_stock_price.png>
+Underfull \hbox (badness 10000) in paragraph at lines 92--103
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 92--103
+
+ []
+
+[4 <./GOOG_stock_price.png>]
 
 ! Package array Error:  Illegal pream-token (1): `c' used.
 
@@ -486,38 +514,46 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.94 \begin{tabular}{|1|c|r|}
-                             
+l.106 \begin{tabular}{|1|c|r|}
+                              
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<GOOG_FZ_stddev_estimation.png, id=45, 564.4287pt x 422.0568pt>
+<GOOG_FZ_stddev_estimation.png, id=55, 564.4287pt x 422.0568pt>
 File: GOOG_FZ_stddev_estimation.png Graphic file (type png)
 
 <use GOOG_FZ_stddev_estimation.png>
-Underfull \hbox (badness 10000) in paragraph at lines 84--114
+Overfull \hbox (4.40388pt too wide) in paragraph at lines 104--128
+[] \T1/ptm/m/n/12 We are us-ing 4 points
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 104--128
 
  []
 
-[3 <./MWIV_variance_spline.png> <./MWIV_stddev_spline.png>] [4 <./GOOG_stock_pr
-ice.png> <./GOOG_FZ_stddev_estimation.png>]
-<GOOG_variance_spline.png, id=56, 565.1514pt x 422.0568pt>
+[5 <./GOOG_FZ_stddev_estimation.png>]
+<GOOG_variance_spline.png, id=60, 565.1514pt x 422.0568pt>
 File: GOOG_variance_spline.png Graphic file (type png)
 
 <use GOOG_variance_spline.png>
-<GOOG_stddev_spline.png, id=57, 565.1514pt x 422.0568pt>
+<GOOG_stddev_spline.png, id=61, 565.1514pt x 422.0568pt>
 File: GOOG_stddev_spline.png Graphic file (type png)
 
-<use GOOG_stddev_spline.png>
-<AAPL_stock_price.png, id=58, 564.4287pt x 422.0568pt>
+<use GOOG_stddev_spline.png> [6 <./GOOG_variance_spline.png> <./GOOG_stddev_spl
+ine.png>] <AAPL_stock_price.png, id=67, 564.4287pt x 422.0568pt>
 File: AAPL_stock_price.png Graphic file (type png)
 
 <use AAPL_stock_price.png>
-Underfull \hbox (badness 10000) in paragraph at lines 137--147
+Underfull \hbox (badness 10000) in paragraph at lines 153--165
 
  []
 
-[5 <./GOOG_variance_spline.png> <./GOOG_stddev_spline.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 153--165
+
+ []
+
 
 ! LaTeX Error: There's no line here to end.
 
@@ -525,7 +561,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.153 \begin
+l.171 \begin
             {tabular}{|1|c|r|}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -538,69 +574,49 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.153 \begin{tabular}{|1|c|r|}
+l.171 \begin{tabular}{|1|c|r|}
                               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<AAPL_FZ_stddev_estimation.png, id=64, 564.4287pt x 422.0568pt>
+<AAPL_FZ_stddev_estimation.png, id=68, 564.4287pt x 422.0568pt>
 File: AAPL_FZ_stddev_estimation.png Graphic file (type png)
 
 <use AAPL_FZ_stddev_estimation.png>
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[6 <./AAPL_stock_price.png>]
-<AAPL_variance_spline.png, id=69, 565.8741pt x 422.0568pt>
-File: AAPL_variance_spline.png Graphic file (type png)
-
-<use AAPL_variance_spline.png>
-
-! Package caption Error: \caption outside float.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.176 \caption
-              {Floren Zmirou Standard Deviation Estimation vs. Variance Cubi...
-
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<AAPL_stddev_spline.png, id=70, 565.8741pt x 422.0568pt>
-File: AAPL_stddev_spline.png Graphic file (type png)
-
-<use AAPL_stddev_spline.png> [7 <./AAPL_FZ_stddev_estimation.png> <./AAPL_varia
-nce_spline.png>]
-
-! Package caption Error: \caption outside float.
-
-See the caption package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.181 \caption
-              {Floren Zmirou Standard Deviation Estimation vs.Standard Devia...
-
-If you do not understand this error, please take a closer look
-at the documentation of the `caption' package, especially the
-section about errors.
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-<GRPN_stock_price.png, id=77, 564.4287pt x 422.0568pt>
-File: GRPN_stock_price.png Graphic file (type png)
-
-<use GRPN_stock_price.png>
-Underfull \hbox (badness 10000) in paragraph at lines 192--202
+Underfull \hbox (badness 10000) in paragraph at lines 171--190
 
  []
 
-[8 <./AAPL_stddev_spline.png> <./GRPN_stock_price.png>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 171--190
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7 <./AAPL_stock_price.png>] [8 <./AAPL_FZ_stddev_estimation.png>]
+<AAPL_variance_spline.png, id=78, 565.8741pt x 422.0568pt>
+File: AAPL_variance_spline.png Graphic file (type png)
+
+<use AAPL_variance_spline.png>
+<AAPL_stddev_spline.png, id=79, 565.8741pt x 422.0568pt>
+File: AAPL_stddev_spline.png Graphic file (type png)
+
+<use AAPL_stddev_spline.png> [9 <./AAPL_variance_spline.png> <./AAPL_stddev_spl
+ine.png>] <GRPN_stock_price.png, id=85, 564.4287pt x 422.0568pt>
+File: GRPN_stock_price.png Graphic file (type png)
+
+<use GRPN_stock_price.png>
+Underfull \hbox (badness 10000) in paragraph at lines 219--230
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 219--230
+
+ []
+
 
 ! Package array Error:  Illegal pream-token (1): `c' used.
 
@@ -608,40 +624,43 @@ See the array package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.208 \begin{tabular}{|1|c|r|}
+l.236 \begin{tabular}{|1|c|r|}
                               
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
-<GRPN_FZ_stddev_estimation.png, id=83, 564.4287pt x 422.0568pt>
+<GRPN_FZ_stddev_estimation.png, id=86, 564.4287pt x 422.0568pt>
 File: GRPN_FZ_stddev_estimation.png Graphic file (type png)
 
-<use GRPN_FZ_stddev_estimation.png> [9 <./GRPN_FZ_stddev_estimation.png>]
-<GRPN_variance_spline.png, id=88, 565.8741pt x 420.6114pt>
-File: GRPN_variance_spline.png Graphic file (type png)
-
-<use GRPN_variance_spline.png>
-<GRPN_stddev_spline.png, id=89, 565.8741pt x 422.0568pt>
-File: GRPN_stddev_spline.png Graphic file (type png)
-
-<use GRPN_stddev_spline.png>
-Underfull \hbox (badness 10000) in paragraph at lines 229--243
+<use GRPN_FZ_stddev_estimation.png>
+Underfull \hbox (badness 10000) in paragraph at lines 236--257
 
  []
 
-[10 <./GRPN_variance_spline.png> <./GRPN_stddev_spline.png>])
-(./Ends/Ends/postfix.tex
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[10 <./GRPN_stock_price.png>] [11 <./GRPN_FZ_stddev_estimation.png>]
+<GRPN_variance_spline.png, id=95, 565.8741pt x 420.6114pt>
+File: GRPN_variance_spline.png Graphic file (type png)
+
+<use GRPN_variance_spline.png>
+<GRPN_stddev_spline.png, id=96, 565.8741pt x 422.0568pt>
+File: GRPN_stddev_spline.png Graphic file (type png)
+
+<use GRPN_stddev_spline.png> [12 <./GRPN_variance_spline.png> <./GRPN_stddev_sp
+line.png>]) (./Ends/Ends/postfix.tex
 WARNING: YOU NEED A BIBLIOGRAPHY!! See the references macro
-[11] (./document.aux)
+[13] (./document.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) ) 
 Here is how much of TeX's memory you used:
- 5020 strings out of 493747
- 70313 string characters out of 3143546
+ 5022 strings out of 493747
+ 70350 string characters out of 3143546
  131122 words of memory out of 3000000
- 8177 multiletter control sequences out of 15000+200000
+ 8179 multiletter control sequences out of 15000+200000
  14680 words of font info for 38 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  43i,8n,38p,414b,302s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -651,15 +670,16 @@ texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/tex
 live/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texli
 ve/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive
-/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-10/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/201
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2010/
-texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb>
-Output written on document.pdf (17 pages, 417346 bytes).
+/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/20
+10/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2010/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2010/tex
+mf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/texmf-dist/fo
+nts/type1/urw/times/utmr8a.pfb>
+Output written on document.pdf (19 pages, 429339 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
- 71 compressed objects within 1 object stream
+ 144 PDF objects out of 1000 (max. 8388607)
+ 79 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  81 words of extra memory for PDF output out of 10000 (max. 10000000)
 
