@@ -3,48 +3,112 @@
 \@writefile{toc}{\contentsline {chapter}{Dedication}{iii}}
 \@writefile{toc}{\contentsline {chapter}{Acknowledgements}{iv}}
 \@writefile{toc}{\contentsline {chapter}{Abstract}{vi}}
-\@writefile{toc}{\contentsline {chapter}{\numberline {1}Numerical Solution, Conclusion and Future Work}{1}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {1}Bubbles}{1}}
 \@writefile{lof}{\addvspace {10\p@ }}
 \@writefile{lot}{\addvspace {10\p@ }}
-\@writefile{toc}{\contentsline {section}{\numberline {1.1}Examples}{1}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.1}EXAMPLE 1}{1}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.1}{\ignorespaces Stock Prices vs. Time\relax }}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.1}Introduction}{1}}
+\@writefile{toc}{\contentsline {section}{\numberline {1.2}Previous Work}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.1}Variance Bounds Tests of an Asset Pricing Model}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.2}A Panal Data Approach}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.3}Reproducing Kernal Hilbert Space}{2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.4}A monte Carlo Simulation}{3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2.5}State Space Model With Markov-Switching}{3}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {2}Theoretical Background}{4}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {2.1}Definations}{4}}
+\newlabel{def1}{{2.1.2}{4}}
+\newlabel{eqnModelling4-1}{{2.3}{5}}
+\newlabel{thm:supermartingale}{{2.1.1}{7}}
+\newlabel{thmRelatingMartingalesAndBubbles}{{2.1.2}{7}}
+\newlabel{eqnMartingalesAndBubbles4-1}{{2.4}{7}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.2}Numerical Methods of SDE}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2.1}The Euler-Maruyama Method}{8}}
+\newlabel{eqnModelling7-2}{{2.7}{8}}
+\@writefile{toc}{\contentsline {section}{\numberline {2.3}Methodology}{9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.1}Floren Zmirou}{9}}
+\newlabel{florenZmirouEquation}{{2.10}{10}}
+\newlabel{theorem1}{{2.3.1}{10}}
+\newlabel{thm:Theorem2}{{2.3.2}{10}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.2}Interpolation}{10}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2.1}Cubic Spline Interpolation}{10}}
+\@writefile{toc}{\contentsline {paragraph}{Regularized solution with Kernal function}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3.3}Extrapolation ,Optimization and Minimization}{11}}
+\newlabel{eqn}{{2.11}{11}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {3}Implementation of an Asset Bubble}{13}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {3.1}Stock}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.1}Stock Class}{13}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.1}Google Finance Stock Prices}{14}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {1}{\ignorespaces Get Google Data\relax }}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.2}Yahoo Finance Stock Prices}{14}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {2}{\ignorespaces Get Yahoo Data\relax }}{14}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {3.1.1.3}Choosing either Google Ticker Or Yahoo CSV file}{15}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {3}{\ignorespaces --init--\relax }}{15}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1.2}Example}{15}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.2}Floren Zmirou}{16}}
+\newlabel{florenZmirouEquation}{{3.1}{16}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2.1}Floren Zmirou Class}{16}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {4}{\ignorespaces Derive hn\relax }}{16}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {5}{\ignorespaces x\_hn = x step size\relax }}{16}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {6}{\ignorespaces  x Values\relax }}{17}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {7}{\ignorespaces Sublocal Time\relax }}{17}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {8}{\ignorespaces Local Time\relax }}{18}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {9}{\ignorespaces Volatility Estimator\relax }}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.3} Natural Cubic Spline}{18}}
+\@writefile{toc}{\contentsline {section}{\numberline {3.4}Run the Program}{18}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {10}{\ignorespaces DoGridAnalysis\relax }}{19}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {11}{\ignorespaces Get Grid Variance\relax }}{19}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {12}{\ignorespaces GetGridInverseStandardDeviation\relax }}{20}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {13}{\ignorespaces GetGridSigma\relax }}{20}}
+\@writefile{loa}{\contentsline {algorithm}{\numberline {14}{\ignorespaces Natural Cubic Spline\relax }}{21}}
+\@writefile{toc}{\contentsline {chapter}{\numberline {4}Numerical Solution, Conclusion and Future Work}{22}}
+\@writefile{lof}{\addvspace {10\p@ }}
+\@writefile{lot}{\addvspace {10\p@ }}
+\@writefile{toc}{\contentsline {section}{\numberline {4.1}Examples}{22}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.1}EXAMPLE 1}{22}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Stock Prices vs. Time\relax }}{22}}
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:Stock Price}{{1.1}{1}}
-\newlabel{florenZmirouEquation}{{1.1}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.2}{\ignorespaces Stock Prices vs.Floren Zmirou Standard Deviation Estimation\relax }}{2}}
-\newlabel{fig:Floren Zmirou Estimation}{{1.2}{2}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.3}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Variance Cubic Spline\relax }}{3}}
-\newlabel{fig:Cubic Spline}{{1.3}{3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.4}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs.Standard Deviation Cubic Spline\relax }}{3}}
-\newlabel{fig:Cubic Spline}{{1.4}{3}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.2}EXAMPLE 2}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.5}{\ignorespaces Stock Prices vs. Time\relax }}{4}}
-\newlabel{fig:Stock Prices}{{1.5}{4}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.6}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Stock Prices\relax }}{5}}
-\newlabel{fig:Floren Zmirou}{{1.6}{5}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.7}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Variance Cubic Spline\relax }}{6}}
-\newlabel{fig:Cubic Spline}{{1.7}{6}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.8}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs.Standard Deviation Cubic Spline\relax }}{6}}
-\newlabel{fig:Cubic Spline}{{1.8}{6}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.3}EXAMPLE 3}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.9}{\ignorespaces Stock Prices vs. Time\relax }}{7}}
-\newlabel{fig:Stock Price}{{1.9}{7}}
-\newlabel{florenZmirouEquation}{{1.2}{7}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.10}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Stock Prices\relax }}{8}}
-\newlabel{fig:Floren Zmirou Estimation}{{1.10}{8}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.11}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Variance Cubic Spline\relax }}{9}}
-\newlabel{fig:Cubic Spline}{{1.11}{9}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.12}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs.Standard Deviation Cubic Spline\relax }}{9}}
-\newlabel{fig:Cubic Spline}{{1.12}{9}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {1.1.4}EXAMPLE 4}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.13}{\ignorespaces Stock Prices vs. Time\relax }}{10}}
-\newlabel{fig:Stock Price}{{1.13}{10}}
-\newlabel{florenZmirouEquation}{{1.3}{10}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.14}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Stock Prices\relax }}{11}}
-\newlabel{fig:Stock Price}{{1.14}{11}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.15}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Variance Cubic Spline\relax }}{12}}
-\newlabel{fig:Cubic Spline}{{1.15}{12}}
-\@writefile{lof}{\contentsline {figure}{\numberline {1.16}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs.Standard Deviation Cubic Spline\relax }}{12}}
-\newlabel{fig:Cubic Spline}{{1.16}{12}}
-\@writefile{toc}{\contentsline {section}{\numberline {1.2}Future Work}{13}}
+\newlabel{fig:Stock Price}{{4.1}{22}}
+\newlabel{florenZmirouEquation}{{4.1}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.2}{\ignorespaces Stock Prices vs.Floren Zmirou Standard Deviation Estimation\relax }}{23}}
+\newlabel{fig:Floren Zmirou Estimation}{{4.2}{23}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.3}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Variance Cubic Spline\relax }}{24}}
+\newlabel{fig:Cubic Spline}{{4.3}{24}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.4}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs.Standard Deviation Cubic Spline\relax }}{24}}
+\newlabel{fig:Cubic Spline}{{4.4}{24}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.2}EXAMPLE 2}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.5}{\ignorespaces Stock Prices vs. Time\relax }}{25}}
+\newlabel{fig:Stock Prices}{{4.5}{25}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.6}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Stock Prices\relax }}{26}}
+\newlabel{fig:Floren Zmirou}{{4.6}{26}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.7}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Variance Cubic Spline\relax }}{27}}
+\newlabel{fig:Cubic Spline}{{4.7}{27}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.8}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs.Standard Deviation Cubic Spline\relax }}{27}}
+\newlabel{fig:Cubic Spline}{{4.8}{27}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.3}EXAMPLE 3}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.9}{\ignorespaces Stock Prices vs. Time\relax }}{28}}
+\newlabel{fig:Stock Price}{{4.9}{28}}
+\newlabel{florenZmirouEquation}{{4.2}{28}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.10}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Stock Prices\relax }}{29}}
+\newlabel{fig:Floren Zmirou Estimation}{{4.10}{29}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.11}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Variance Cubic Spline\relax }}{30}}
+\newlabel{fig:Cubic Spline}{{4.11}{30}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.12}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs.Standard Deviation Cubic Spline\relax }}{30}}
+\newlabel{fig:Cubic Spline}{{4.12}{30}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1.4}EXAMPLE 4}{31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.13}{\ignorespaces Stock Prices vs. Time\relax }}{31}}
+\newlabel{fig:Stock Price}{{4.13}{31}}
+\newlabel{florenZmirouEquation}{{4.3}{31}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.14}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Stock Prices\relax }}{32}}
+\newlabel{fig:Stock Price}{{4.14}{32}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.15}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs. Variance Cubic Spline\relax }}{33}}
+\newlabel{fig:Cubic Spline}{{4.15}{33}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4.16}{\ignorespaces Floren Zmirou Standard Deviation Estimation vs.Standard Deviation Cubic Spline\relax }}{33}}
+\newlabel{fig:Cubic Spline}{{4.16}{33}}
+\citation{*}
+\bibstyle{plain}
+\bibdata{Biblio}
+\@writefile{toc}{\contentsline {section}{\numberline {4.2}Future Work}{34}}
+\bibcite{Asset}{1}
