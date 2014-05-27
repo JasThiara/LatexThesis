@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  27 MAY 2014 10:39
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.7.21)  27 MAY 2014 10:45
 entering extended mode
  restricted \write18 enabled.
  Source specials enabled.
@@ -1059,7 +1059,7 @@ LaTeX Warning: There were multiply-defined labels.
  ) ) 
 Here is how much of TeX's memory you used:
  5099 strings out of 493747
- 71446 string characters out of 3143546
+ 71447 string characters out of 3143546
  144122 words of memory out of 3000000
  8241 multiletter control sequences out of 15000+200000
  23538 words of font info for 44 fonts, out of 3000000 for 9000
@@ -1079,7 +1079,7 @@ mf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2010/texmf
 -dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2010/texmf-dist/font
 s/type1/urw/times/utmr8a.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on document.pdf (41 pages, 516998 bytes).
+Output written on document.pdf (41 pages, 517443 bytes).
 PDF statistics:
  224 PDF objects out of 1000 (max. 8388607)
  134 compressed objects within 2 object streams
